@@ -13,27 +13,37 @@
       .map((p) => ({ p, state: projectStateAt(p, ui.t) }))
       .filter((x) => x.state !== null)
   );
+
+  let open = $state(false);
+
+  /* deep links to a nationwide project should reveal its chip */
+  $effect(() => {
+    if (ui.selected && items.some((x) => x.p.id === ui.selected)) open = true;
+  });
 </script>
 
 {#if items.length}
   <div class="tray">
-    <div class="head">
-      <span class="wl-label">// Nationwide · no map pin</span>
+    <button class="head" aria-expanded={open} onclick={() => (open = !open)}>
+      <span class="wl-label">// {items.length} nationwide reversal{items.length === 1 ? '' : 's'} — no map pin</span>
       <span class="rule"></span>
-    </div>
-    <div class="chips">
-      {#each items as { p, state } (p.id)}
-        <button
-          class="chip"
-          class:active={ui.selected === p.id}
-          onclick={() => (ui.selected = ui.selected === p.id ? null : p.id)}
-          title={p.summary}
-        >
-          <StatusGlyph g={STATUS[state].glyph} size={11} color={STATUS[state].color} />
-          <span class="wl-mono name">{p.name}</span>
-        </button>
-      {/each}
-    </div>
+      <span class="wl-label chev">{open ? '▾' : '▸'}</span>
+    </button>
+    {#if open}
+      <div class="chips">
+        {#each items as { p, state } (p.id)}
+          <button
+            class="chip"
+            class:active={ui.selected === p.id}
+            onclick={() => (ui.selected = ui.selected === p.id ? null : p.id)}
+            title={p.summary}
+          >
+            <StatusGlyph g={STATUS[state].glyph} size={11} color={STATUS[state].color} />
+            <span class="wl-mono name">{p.name}</span>
+          </button>
+        {/each}
+      </div>
+    {/if}
   </div>
 {/if}
 
@@ -48,7 +58,16 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    margin-bottom: 7px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .head:hover .wl-label {
+    color: var(--signal);
+  }
+
+  .chev {
+    flex: none;
   }
 
   .rule {
@@ -61,6 +80,7 @@
     display: flex;
     gap: 7px;
     flex-wrap: wrap;
+    margin-top: 8px;
   }
 
   .chip {

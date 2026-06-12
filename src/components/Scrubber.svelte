@@ -99,25 +99,23 @@
 </script>
 
 <div class="scrub" class:compact>
+  <!-- one header row: era · live readout · position -->
   <div class="row">
     <span class="wl-label">// {TIMELINE.from}</span>
-    <span class="wl-label sig">{idle ? '▎scrub to replay history' : fracLabel(ui.t)}</span>
-    <span class="wl-label">{atToday ? 'Today' : 'Today →'}</span>
-  </div>
-
-  <!-- state readout: idle count · replay count · the status-flip moment -->
-  <div class="readout" aria-live="polite">
-    {#if idle}
-      <span class="wl-mono quiet">{flips.length} reversals on the record · drag the handle to replay</span>
-    {:else if nearestFlip}
-      <StatusGlyph g="half" size={14} color="var(--ink-3)" />
-      <span class="wl-mono quiet">under way</span>
-      <span class="wl-mono arrow">→</span>
-      <StatusGlyph g={STATUS[nearestFlip.status].glyph} size={14} color="var(--signal)" />
-      <span class="wl-mono flipname">{nearestFlip.name} · {STATUS[nearestFlip.status].label.toUpperCase()}</span>
-    {:else}
-      <span class="wl-mono quiet">{visibleCount} of {db.projects.length} projects visible at this date</span>
-    {/if}
+    <span class="readout" aria-live="polite">
+      {#if idle}
+        <span class="wl-mono quiet">{db.projects.length} reversals on the record · drag the handle to replay</span>
+      {:else if nearestFlip}
+        <StatusGlyph g="half" size={13} color="var(--ink-3)" />
+        <span class="wl-mono quiet">under way</span>
+        <span class="wl-mono arrow">→</span>
+        <StatusGlyph g={STATUS[nearestFlip.status].glyph} size={13} color="var(--signal)" />
+        <span class="wl-mono flipname">{nearestFlip.name} · {STATUS[nearestFlip.status].label.toUpperCase()}</span>
+      {:else}
+        <span class="wl-mono quiet">{visibleCount} of {db.projects.length} projects visible</span>
+      {/if}
+    </span>
+    <span class="wl-label sig">{atToday ? 'Today' : fracLabel(ui.t)}</span>
   </div>
 
   <!-- pointer affordance only; keyboard semantics live on the slider handle -->
@@ -173,6 +171,8 @@
   .row {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 5px;
   }
 
@@ -181,7 +181,10 @@
     align-items: center;
     gap: 6px;
     min-height: 16px;
-    margin-bottom: 4px;
+    flex: 1;
+    justify-content: center;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
   .quiet {

@@ -1,6 +1,8 @@
 /* The three-part Policy Whiplash essay series on jonno.nz.
-   Working titles; url stays null until each part publishes —
-   the app renders unpublished parts as "coming soon". */
+   Final titles locked 2026-06-12 (headline-skill pass). url stays null until
+   each part publishes — the app renders unpublished parts as "coming soon".
+   Planned slugs: zero-metres-of-track, fastest-repealers-in-the-west,
+   i-parsed-the-nz-statute-book. */
 
 export const SERIES_NAME = 'Policy Whiplash';
 export const SERIES_HOME = 'https://jonno.nz/';
@@ -8,7 +10,7 @@ export const SERIES_HOME = 'https://jonno.nz/';
 export const ESSAYS = [
   {
     part: 1,
-    title: 'The Billion-Dollar U-Turn',
+    title: 'Six Years, $228 Million, Zero Metres of Track',
     blurb: 'What serial reversal of big projects actually costs.',
     url: null,
   },
@@ -20,7 +22,7 @@ export const ESSAYS = [
   },
   {
     part: 3,
-    title: 'Watching the Whiplash',
+    title: "I Parsed All 182,156 Amendments in New Zealand's Statute Book",
     blurb: 'Building this tracker, and what the statute book shows.',
     url: null,
   },
