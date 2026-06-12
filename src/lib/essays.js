@@ -22,7 +22,7 @@ export const ESSAYS = [
   },
   {
     part: 3,
-    title: "I Parsed All 182,156 Amendments in New Zealand's Statute Book",
+    title: "I Parsed All 241,456 Amendments in New Zealand's Statute Book",
     blurb: 'Building this tracker, and what the statute book shows.',
     url: null,
   },

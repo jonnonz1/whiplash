@@ -5,125 +5,126 @@
   "per_term": [
     {
       "govt": "key3",
-      "amendments": 14584,
-      "repeals": 2844,
+      "amendments": 18670,
+      "repeals": 4359,
       "by_sector": {
-        "other": 9006,
-        "tax": 2942,
-        "health": 327,
-        "justice": 1552,
-        "economy": 862,
-        "education": 867,
-        "transport": 557,
-        "environment": 1167,
+        "other": 12034,
+        "tax": 3093,
+        "health": 650,
+        "justice": 2201,
+        "economy": 1200,
+        "education": 974,
+        "transport": 873,
+        "environment": 1697,
         "water": 1,
-        "energy": 147
+        "energy": 306
       }
     },
     {
       "govt": "ardern2",
-      "amendments": 16818,
-      "repeals": 2648,
+      "amendments": 25654,
+      "repeals": 4725,
       "by_sector": {
-        "other": 10382,
-        "justice": 566,
-        "environment": 1230,
-        "energy": 501,
-        "education": 765,
-        "health": 1375,
-        "economy": 832,
-        "transport": 1271,
-        "tax": 1679,
+        "other": 14991,
+        "justice": 991,
+        "environment": 2690,
+        "energy": 723,
+        "education": 1001,
+        "health": 4336,
+        "economy": 1128,
+        "transport": 1851,
+        "tax": 1803,
         "water": 865
       }
     },
     {
       "govt": "key2",
-      "amendments": 15144,
-      "repeals": 3499,
+      "amendments": 21415,
+      "repeals": 4937,
       "by_sector": {
-        "other": 10824,
-        "transport": 1028,
-        "health": 536,
-        "justice": 1046,
+        "other": 13529,
+        "transport": 1383,
+        "health": 960,
+        "justice": 2318,
         "water": 1,
-        "economy": 896,
-        "environment": 729,
-        "energy": 696,
-        "education": 461,
-        "tax": 2426
+        "economy": 1157,
+        "environment": 1714,
+        "energy": 2179,
+        "education": 581,
+        "tax": 2530
       }
     },
     {
       "govt": "ardern1",
-      "amendments": 17538,
-      "repeals": 2467,
+      "amendments": 23819,
+      "repeals": 3909,
       "by_sector": {
-        "other": 11297,
-        "environment": 1588,
-        "justice": 927,
-        "education": 1306,
-        "health": 299,
-        "energy": 108,
-        "economy": 1071,
-        "tax": 2786,
-        "transport": 623
+        "other": 14994,
+        "environment": 2886,
+        "justice": 1911,
+        "education": 1793,
+        "health": 645,
+        "energy": 125,
+        "economy": 1359,
+        "tax": 3130,
+        "transport": 884,
+        "water": 1
       }
     },
     {
       "govt": "luxon1",
-      "amendments": 12710,
-      "repeals": 2024,
+      "amendments": 18747,
+      "repeals": 3111,
       "by_sector": {
-        "other": 7162,
-        "environment": 1086,
-        "health": 421,
-        "justice": 865,
-        "education": 853,
-        "transport": 928,
-        "tax": 2050,
-        "economy": 512,
-        "energy": 318,
-        "water": 539
+        "other": 10031,
+        "environment": 1769,
+        "health": 739,
+        "justice": 2431,
+        "education": 1167,
+        "transport": 1414,
+        "tax": 2170,
+        "economy": 715,
+        "energy": 860,
+        "water": 562
       },
       "partial": true
     },
     {
       "govt": "clark3",
-      "amendments": 4966,
-      "repeals": 662,
+      "amendments": 6412,
+      "repeals": 1314,
       "by_sector": {
-        "other": 2437,
-        "economy": 511,
-        "environment": 290,
-        "justice": 278,
-        "health": 72,
-        "transport": 692,
-        "education": 187,
-        "energy": 265,
-        "tax": 895,
-        "water": 1
+        "other": 3191,
+        "economy": 643,
+        "environment": 543,
+        "justice": 531,
+        "health": 113,
+        "transport": 877,
+        "education": 226,
+        "energy": 622,
+        "tax": 976,
+        "water": 4
       },
       "partial": true
     },
     {
       "govt": "key1",
-      "amendments": 13426,
-      "repeals": 2391,
+      "amendments": 17046,
+      "repeals": 3427,
       "by_sector": {
-        "other": 6542,
-        "health": 108,
-        "energy": 515,
-        "environment": 1533,
-        "economy": 882,
-        "justice": 651,
-        "education": 537,
-        "transport": 671,
-        "tax": 4378
+        "other": 8306,
+        "health": 251,
+        "energy": 727,
+        "environment": 2599,
+        "economy": 1170,
+        "justice": 1081,
+        "education": 762,
+        "transport": 1044,
+        "tax": 4533
       }
     }
   ],
-  "half_life_years": 16,
+  "half_life_years": 14,
   "most_amended": [
     {
       "id": "DLM1512300",
@@ -198,9 +199,9 @@
     {
       "id": "half-life",
       "status": "sourced",
-      "value": "16 yrs",
+      "value": "14 yrs",
       "label": "Age of a law when part of it gets struck out",
-      "sub": "median age of an act when one of its provisions is repealed — across 37,957 repeal events in the statute book",
+      "sub": "median age of an act when one of its provisions is repealed — across 49,639 repeal events in the statute book",
       "source": "Whiplash pipeline — PCO legislation XML"
     },
     {
