@@ -10,7 +10,6 @@
   import { markerRadius, fmtMoney } from '../lib/format.js';
   import Hud from './Hud.svelte';
   import FilterBar from './FilterBar.svelte';
-  import Legend from './Legend.svelte';
   import DetailPanel from './DetailPanel.svelte';
 
   let mapEl;
@@ -148,12 +147,10 @@
   <Hud />
 
   <div class="topright">
-    <span class="legend-sm"><Legend /></span>
     <FilterBar />
   </div>
 
   <div class="bottomleft">
-    <Legend />
     {#if db.generated}
       <span class="wl-mono asat">data as at {db.generated}</span>
     {/if}
@@ -186,9 +183,6 @@
     max-width: 60%;
   }
 
-  .legend-sm {
-    display: none;
-  }
 
   .bottomleft {
     position: absolute;
@@ -219,10 +213,6 @@
       flex-direction: column;
       gap: 6px;
       align-items: stretch;
-    }
-
-    .legend-sm {
-      display: block;
     }
 
     .bottomleft {
