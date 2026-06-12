@@ -1,0 +1,358 @@
+/* ============================================================
+   WHIPLASH — Direction A · Seismograph
+   Ported from the design handoff (whiplash.css, .thm-a scope).
+   Dark navy instrument panel; one amber signal colour.
+   ============================================================ */
+
+:root {
+  --font-sans: 'Roboto', system-ui, sans-serif;
+  --font-mono: 'Roboto Mono', ui-monospace, monospace;
+
+  /* status family — shape always accompanies colour */
+  --st-cancelled: #d4a853;
+  --st-reversed: #e0894f;
+  --st-rescoped: #c98a3a;
+  --st-restored: #7eb8a8;
+  --st-zombie: #b07cc6;
+  --st-underway: #647a8e;
+
+  /* party colours: factual government bands ONLY, muted */
+  --gov-lab: #dc2626;
+  --gov-nat: #2563eb;
+
+  /* Theme A · Seismograph */
+  --bg: #0c1520;
+  --surface: #141f2e;
+  --surface-2: #0f1925;
+  --ink: #e4e9ee;
+  --ink-2: #bfc8d2;
+  --ink-3: #7d92a6;
+  --line: rgba(255, 255, 255, 0.07);
+  --line-2: rgba(255, 255, 255, 0.13);
+  --signal: #d4a853;
+  --land: #1a2738;
+  --land-line: rgba(127, 184, 168, 0.22);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--ink-2);
+  font-family: var(--font-sans);
+  font-weight: 300;
+}
+
+#app {
+  height: 100%;
+}
+
+a {
+  color: var(--signal);
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* ---------------- primitives ---------------- */
+.wl-mono {
+  font-family: var(--font-mono);
+}
+
+.wl-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+.wl-label.sig {
+  color: var(--signal);
+}
+
+.wl-data {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.wl-disp {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: var(--ink);
+  line-height: 0.98;
+}
+
+/* top bar */
+.wl-top {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 0 18px;
+  height: 52px;
+  border-bottom: 1px solid var(--line-2);
+  background: var(--surface-2);
+  flex: none;
+}
+
+.wl-top .nav {
+  display: flex;
+  gap: 2px;
+  margin-left: auto;
+}
+
+.wl-tab {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 6px 12px;
+  color: var(--ink-3);
+  border: 1px solid transparent;
+  border-radius: 0;
+}
+
+.wl-tab:hover {
+  color: var(--ink-2);
+}
+
+.wl-tab.on {
+  color: var(--bg);
+  background: var(--ink);
+  font-weight: 700;
+}
+
+.wl-logo {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+}
+
+.wl-logo .word {
+  font-family: var(--font-sans);
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+.wl-logo .word .dot {
+  color: var(--signal);
+}
+
+/* status chip */
+.wl-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 7px 3px 5px;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+}
+
+/* firm vs contested figures — the credibility mechanic */
+.fig-firm {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.fig-firm .src {
+  color: var(--signal);
+  border-bottom: 1px dotted var(--signal);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fig-contested {
+  font-family: var(--font-mono);
+  font-weight: 500;
+  color: var(--ink-3);
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent,
+    transparent 3px,
+    var(--line) 3px,
+    var(--line) 4px
+  );
+  padding: 1px 5px;
+  border: 1px dashed var(--line-2);
+  border-radius: 2px;
+}
+
+.chip-claimed {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border: 1px solid var(--line-2);
+  padding: 1px 4px;
+  border-radius: 2px;
+  white-space: nowrap;
+}
+
+/* hairline data grid */
+.wl-grid {
+  display: grid;
+  gap: 1px;
+  background: var(--line-2);
+  border: 1px solid var(--line-2);
+}
+
+.wl-cell {
+  background: var(--bg);
+  padding: 10px 12px;
+}
+
+/* government band strip */
+.gov-band {
+  display: flex;
+  width: 100%;
+}
+
+.gov-band .seg {
+  opacity: 0.62;
+}
+
+.gov-band .seg.labour {
+  background: var(--gov-lab);
+}
+
+.gov-band .seg.national {
+  background: var(--gov-nat);
+}
+
+/* engineering grid backdrop */
+.eng-grid {
+  position: absolute;
+  inset: 0;
+  opacity: 0.5;
+  pointer-events: none;
+  background-image: linear-gradient(var(--line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: 42px 42px;
+}
+
+/* pill (filters, share) */
+.wl-pill {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+  border: 1px solid var(--line-2);
+  border-radius: 2px;
+  padding: 4px 8px;
+  background: rgba(12, 21, 32, 0.82);
+}
+
+select.wl-pill {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 18px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='6'%3E%3Cpath d='M0 0h8L4 6z' fill='%237d92a6'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  cursor: pointer;
+}
+
+select.wl-pill:focus-visible,
+.wl-pill:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 1px;
+}
+
+select.wl-pill option {
+  background: var(--surface);
+  color: var(--ink-2);
+}
+
+/* map marker buttons */
+.wl-marker {
+  display: block;
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.wl-marker svg {
+  overflow: visible;
+}
+
+.wl-marker:focus-visible {
+  outline: 2px solid var(--signal);
+  outline-offset: 2px;
+  border-radius: 50%;
+}
+
+/* screen-reader-only text */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line-2);
+  border-radius: 3px;
+}
+
+/* maplibre cosmetics */
+.maplibregl-ctrl-attrib {
+  background: rgba(12, 21, 32, 0.7) !important;
+  font-family: var(--font-mono);
+  font-size: 9px !important;
+}
+
+.maplibregl-ctrl-attrib a {
+  color: var(--ink-3) !important;
+}
+
+.maplibregl-canvas:focus-visible {
+  outline: 2px solid var(--signal);
+}
+
+/* motion discipline */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

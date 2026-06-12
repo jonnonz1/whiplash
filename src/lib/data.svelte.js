@@ -1,0 +1,87 @@
+/* Data loading + derived lookups. All four JSON files are part of the
+   pipeline contract (specs/whiplash/02-app-spec.md in the jonno.nz repo). */
+
+import { dateToFrac } from './format.js';
+
+export const db = $state({
+  ready: false,
+  error: null,
+  governments: [],
+  projects: [],
+  lanes: [],
+  aggregates: null,
+  generated: null,
+});
+
+export async function loadData() {
+  try {
+    const [govs, projects, acts, aggregates] = await Promise.all(
+      ['governments', 'projects', 'churn-acts', 'churn-aggregates'].map((f) =>
+        fetch(`${import.meta.env.BASE_URL}data/${f}.json`).then((r) => {
+          if (!r.ok) throw new Error(`${f}.json → HTTP ${r.status}`);
+          return r.json();
+        })
+      )
+    );
+    db.governments = govs;
+    db.projects = projects.projects;
+    db.lanes = acts.lanes;
+    db.aggregates = aggregates;
+    db.generated = projects.generated;
+    db.ready = true;
+  } catch (e) {
+    db.error = String(e);
+  }
+}
+
+export function govtAt(frac) {
+  for (const g of db.governments) {
+    const s = dateToFrac(g.start);
+    const e = g.end ? dateToFrac(g.end) : Infinity;
+    if (frac >= s && frac < e) return g;
+  }
+  return db.governments[db.governments.length - 1] || null;
+}
+
+export function govtById(id) {
+  return db.governments.find((g) => g.id === id) || null;
+}
+
+/* Project state at scrubber time t: null = not yet announced,
+   'underway' = announced but not yet ended, else its final status. */
+export function projectStateAt(p, t) {
+  if (dateToFrac(p.announced) > t) return null;
+  if (p.ended && dateToFrac(p.ended) <= t) return p.status;
+  return 'underway';
+}
+
+export function matchesFilters(p, f) {
+  if (f.govt && p.started_by !== f.govt && p.ended_by !== f.govt) return false;
+  if (f.sector && p.sector !== f.sector) return false;
+  if (f.status && p.status !== f.status) return false;
+  if (f.minCost && (p.sunk_nzd || 0) < f.minCost) return false;
+  return true;
+}
+
+/* The HUD numbers: directly sunk + cancellation costs for reversals landed
+   by the government in power at time t, up to time t — firm figures only —
+   plus the separately-tracked consequential (do-over) spend, never summed. */
+export function hudTotal(t) {
+  const g = govtAt(t);
+  if (!g) return { govt: null, total: 0, count: 0, consequential: 0 };
+  let total = 0;
+  let count = 0;
+  let consequential = 0;
+  for (const p of db.projects) {
+    if (p.ended_by !== g.id || !p.ended) continue;
+    if (dateToFrac(p.ended) > t) continue;
+    if (p.sunk_nzd) {
+      total += p.sunk_nzd;
+      count++;
+    }
+    for (const c of p.consequential || []) {
+      if (c.amount_nzd) consequential += c.amount_nzd;
+    }
+  }
+  return { govt: g, total, count, consequential };
+}

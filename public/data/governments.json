@@ -1,0 +1,58 @@
+[
+  {
+    "id": "clark3",
+    "label": "Clark (Lab)",
+    "party": "labour",
+    "start": "2005-11-02",
+    "end": "2008-11-19",
+    "parliament": 48
+  },
+  {
+    "id": "key1",
+    "label": "Key (Nat)",
+    "party": "national",
+    "start": "2008-11-19",
+    "end": "2011-12-14",
+    "parliament": 49
+  },
+  {
+    "id": "key2",
+    "label": "Key (Nat)",
+    "party": "national",
+    "start": "2011-12-14",
+    "end": "2014-10-08",
+    "parliament": 50
+  },
+  {
+    "id": "key3",
+    "label": "Key / English (Nat)",
+    "party": "national",
+    "start": "2014-10-08",
+    "end": "2017-10-26",
+    "parliament": 51
+  },
+  {
+    "id": "ardern1",
+    "label": "Ardern (Lab–NZF–Grn)",
+    "party": "labour",
+    "start": "2017-10-26",
+    "end": "2020-11-06",
+    "parliament": 52
+  },
+  {
+    "id": "ardern2",
+    "label": "Ardern / Hipkins (Lab)",
+    "party": "labour",
+    "start": "2020-11-06",
+    "end": "2023-11-27",
+    "parliament": 53
+  },
+  {
+    "id": "luxon1",
+    "label": "Luxon (Nat–ACT–NZF)",
+    "party": "national",
+    "start": "2023-11-27",
+    "end": null,
+    "parliament": 54
+  }
+]
