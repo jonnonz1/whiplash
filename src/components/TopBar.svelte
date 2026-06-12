@@ -3,6 +3,7 @@
   import { ui, urlQuery } from '../lib/state.svelte.js';
 
   const taglines = {
+    landing: 'what you didn’t get',
     map: 'the graveyard',
     churn: 'the statute book, moving',
     method: 'how we count',
@@ -28,7 +29,7 @@
 </script>
 
 <header class="wl-top">
-  <button class="wl-logo" onclick={() => go('map')} aria-label="Whiplash home">
+  <button class="wl-logo" onclick={() => go('landing')} aria-label="Whiplash home">
     <WLMark />
     <span class="word">WHIP<span class="dot">·</span>LASH</span>
   </button>
