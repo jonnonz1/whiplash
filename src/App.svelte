@@ -2,7 +2,9 @@
   import { onMount } from 'svelte';
   import { ui, initFromURL, urlQuery } from './lib/state.svelte.js';
   import { db, loadData } from './lib/data.svelte.js';
+  import { trackView } from './lib/analytics.js';
   import TopBar from './components/TopBar.svelte';
+  import Landing from './components/Landing.svelte';
   import MapView from './components/MapView.svelte';
   import ChurnView from './components/ChurnView.svelte';
   import Methodology from './components/Methodology.svelte';
@@ -12,6 +14,11 @@
   onMount(() => {
     initFromURL();
     loadData();
+  });
+
+  /* One GA pageview per view change (SPA — no real page loads). */
+  $effect(() => {
+    trackView(ui.view);
   });
 
   /* every state is a shareable deep link; debounced so scrubbing doesn't
@@ -32,22 +39,16 @@
 </script>
 
 <div class="shell">
-  <TopBar />
-
-  {#if !ui.introDismissed && ui.view === 'map'}
-    <div class="intro">
-      <span class="wl-mono introtext">
-        Every cancelled project and reversed law since 2008, with what it cost — and what the churn costs the next
-        generation. Drag the timeline to replay history; every number links to its source.
-      </span>
-      <button class="wl-mono introclose" onclick={() => (ui.introDismissed = true)} aria-label="Dismiss">✕</button>
-    </div>
+  {#if ui.view !== 'landing'}
+    <TopBar />
   {/if}
 
   {#if db.error}
     <div class="err wl-mono">Failed to load data: {db.error}</div>
   {:else if !db.ready}
     <div class="loading wl-label">// loading the receipts…</div>
+  {:else if ui.view === 'landing'}
+    <Landing />
   {:else if ui.view === 'map'}
     <MapView />
     <NationwideTray />
@@ -64,28 +65,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-  }
-
-  .intro {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 7px 18px;
-    background: var(--surface);
-    border-bottom: 1px solid var(--line);
-  }
-
-  .introtext {
-    font-size: 10px;
-    color: var(--ink-2);
-    line-height: 1.5;
-  }
-
-  .introclose {
-    margin-left: auto;
-    color: var(--ink-3);
-    font-size: 11px;
-    flex: none;
   }
 
   .loading,

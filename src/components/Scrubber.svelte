@@ -18,6 +18,18 @@
   const span = TIMELINE.to - TIMELINE.from;
   const pos = $derived(((ui.t - TIMELINE.from) / span) * 100);
 
+  /* Zero-explanation presets — the scrubber must work with a thumb and no
+     instructions. "Today" is the live end; the others mark the two most-cited
+     turning points. */
+  const presets = [
+    { label: '2017', frac: dateToFrac('2017-09-23') },
+    { label: 'Election day 2023', frac: dateToFrac('2023-10-14') },
+    { label: 'Today', frac: TIMELINE.to },
+  ];
+  function atPreset(frac) {
+    return Math.abs(ui.t - frac) < 1 / 24;
+  }
+
   /* Reversal events: when each project ended (= flipped status). */
   const flips = $derived(
     db.projects
@@ -99,6 +111,19 @@
 </script>
 
 <div class="scrub" class:compact>
+  <!-- presets: jump the timeline with a thumb, no explanation needed -->
+  <div class="presets">
+    {#each presets as p}
+      <button
+        class="preset wl-mono"
+        class:on={atPreset(p.frac)}
+        onclick={() => (ui.t = clamp(p.frac, TIMELINE.from, TIMELINE.to))}
+        aria-pressed={atPreset(p.frac)}
+      >{p.label}</button>
+    {/each}
+    <span class="wl-label or">or drag</span>
+  </div>
+
   <!-- one header row: era · live readout · position -->
   <div class="row">
     <span class="wl-label">// {TIMELINE.from}</span>
@@ -166,6 +191,40 @@
 
   .scrub.compact {
     padding: 8px 14px 12px;
+  }
+
+  .presets {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 9px;
+    flex-wrap: wrap;
+  }
+
+  .preset {
+    font-size: 9.5px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid var(--line-2);
+    color: var(--ink-3);
+    cursor: pointer;
+  }
+
+  .preset:hover {
+    color: var(--ink-2);
+  }
+
+  .preset.on {
+    border-color: var(--signal);
+    color: var(--signal);
+    font-weight: 700;
+  }
+
+  .or {
+    margin-left: auto;
+    font-size: 9px;
   }
 
   .row {

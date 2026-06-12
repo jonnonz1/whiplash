@@ -4,7 +4,7 @@
 import { dateToFrac, fracToDate, nowFrac, clamp, TIMELINE_FROM } from './format.js';
 
 export const ui = $state({
-  view: 'map',
+  view: 'landing',
   t: nowFrac(), // fractional year on the scrubber
   govt: '',
   sector: '',
@@ -17,7 +17,7 @@ export const ui = $state({
 
 export const TIMELINE = { from: TIMELINE_FROM, to: nowFrac() };
 
-const VIEWS = ['map', 'churn', 'method'];
+const VIEWS = ['landing', 'map', 'churn', 'method'];
 
 export function initFromURL() {
   const q = new URLSearchParams(location.search);
@@ -38,7 +38,7 @@ export function initFromURL() {
 
 export function urlQuery() {
   const q = new URLSearchParams();
-  if (ui.view !== 'map') q.set('view', ui.view);
+  if (ui.view !== 'landing') q.set('view', ui.view);
   if (TIMELINE.to - ui.t > 1 / 24) {
     const d = fracToDate(ui.t);
     q.set('t', `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`);
