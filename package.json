@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "start": "serve -s dist -l ${PORT:-3000}"
   },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^7.1.2",
@@ -14,6 +15,7 @@
     "vite": "^8.0.12"
   },
   "dependencies": {
-    "maplibre-gl": "^5.24.0"
+    "maplibre-gl": "^5.24.0",
+    "serve": "^14.2.4"
   }
 }
