@@ -1,0 +1,216 @@
+{
+  "_note": "Aggregate stats. status:'sourced' cards carry a citation; status:'pending' cards are waiting on the legislation pipeline (specs/whiplash/03-data-pipeline.md) and must never show an invented number. per_term stays empty until the pipeline's amendment graph reproduces the known-facts benchmark.",
+  "generated": "2026-06-12",
+  "sources_note": "Legislation data: Parliamentary Counsel Office — free of copyright under s 27 Copyright Act 1994; reuse statement CC BY 4.0.",
+  "per_term": [
+    {
+      "govt": "key3",
+      "amendments": 14584,
+      "repeals": 2844,
+      "by_sector": {
+        "other": 9006,
+        "tax": 2942,
+        "health": 327,
+        "justice": 1552,
+        "economy": 862,
+        "education": 867,
+        "transport": 557,
+        "environment": 1167,
+        "water": 1,
+        "energy": 147
+      }
+    },
+    {
+      "govt": "ardern2",
+      "amendments": 16818,
+      "repeals": 2648,
+      "by_sector": {
+        "other": 10382,
+        "justice": 566,
+        "environment": 1230,
+        "energy": 501,
+        "education": 765,
+        "health": 1375,
+        "economy": 832,
+        "transport": 1271,
+        "tax": 1679,
+        "water": 865
+      }
+    },
+    {
+      "govt": "key2",
+      "amendments": 15144,
+      "repeals": 3499,
+      "by_sector": {
+        "other": 10824,
+        "transport": 1028,
+        "health": 536,
+        "justice": 1046,
+        "water": 1,
+        "economy": 896,
+        "environment": 729,
+        "energy": 696,
+        "education": 461,
+        "tax": 2426
+      }
+    },
+    {
+      "govt": "ardern1",
+      "amendments": 17538,
+      "repeals": 2467,
+      "by_sector": {
+        "other": 11297,
+        "environment": 1588,
+        "justice": 927,
+        "education": 1306,
+        "health": 299,
+        "energy": 108,
+        "economy": 1071,
+        "tax": 2786,
+        "transport": 623
+      }
+    },
+    {
+      "govt": "luxon1",
+      "amendments": 12710,
+      "repeals": 2024,
+      "by_sector": {
+        "other": 7162,
+        "environment": 1086,
+        "health": 421,
+        "justice": 865,
+        "education": 853,
+        "transport": 928,
+        "tax": 2050,
+        "economy": 512,
+        "energy": 318,
+        "water": 539
+      },
+      "partial": true
+    },
+    {
+      "govt": "clark3",
+      "amendments": 4966,
+      "repeals": 662,
+      "by_sector": {
+        "other": 2437,
+        "economy": 511,
+        "environment": 290,
+        "justice": 278,
+        "health": 72,
+        "transport": 692,
+        "education": 187,
+        "energy": 265,
+        "tax": 895,
+        "water": 1
+      },
+      "partial": true
+    },
+    {
+      "govt": "key1",
+      "amendments": 13426,
+      "repeals": 2391,
+      "by_sector": {
+        "other": 6542,
+        "health": 108,
+        "energy": 515,
+        "environment": 1533,
+        "economy": 882,
+        "justice": 651,
+        "education": 537,
+        "transport": 671,
+        "tax": 4378
+      }
+    }
+  ],
+  "half_life_years": 16,
+  "most_amended": [
+    {
+      "id": "DLM1512300",
+      "title": "Income Tax Act 2007",
+      "count": 11577
+    },
+    {
+      "id": "DLM348342",
+      "title": "Tax Administration Act 1994",
+      "count": 4181
+    },
+    {
+      "id": "DLM230264",
+      "title": "Resource Management Act 1991",
+      "count": 3877
+    },
+    {
+      "id": "DLM245341",
+      "title": "Income Tax Act 2004",
+      "count": 3300
+    },
+    {
+      "id": "DLM175958",
+      "title": "Education Act 1989",
+      "count": 2558
+    },
+    {
+      "id": "DLM433612",
+      "title": "Land Transport Act 1998",
+      "count": 2355
+    },
+    {
+      "id": "DLM359106",
+      "title": "Social Security Act 1964",
+      "count": 2261
+    },
+    {
+      "id": "DLM158583",
+      "title": "Climate Change Response Act 2002",
+      "count": 2046
+    },
+    {
+      "id": "DLM147087",
+      "title": "Oranga Tamariki Act 1989",
+      "count": 1965
+    },
+    {
+      "id": "DLM81034",
+      "title": "Goods and Services Tax Act 1985",
+      "count": 1675
+    }
+  ],
+  "stat_cards": [
+    {
+      "id": "urgency-hours",
+      "status": "sourced",
+      "value": "32%",
+      "label": "of the House's 2025 sitting hours were under urgency",
+      "sub": "644 hours sat vs a 508-hour long-run average — both records",
+      "source": "David Farrar / Point of Order, 16 Mar 2026",
+      "source_url": "https://pointoforder.blog"
+    },
+    {
+      "id": "urgency-bills",
+      "status": "sourced",
+      "value": "~57%",
+      "label": "of this Parliament's bills have had a stage under urgency",
+      "sub": "21 urgency occasions this term; ~30 bills passed with no select-committee scrutiny at all (Newsroom)",
+      "source": "nzpt.cjs.nz live tracker · Newsroom, 16 Apr 2026",
+      "source_url": "https://nzpt.cjs.nz"
+    },
+    {
+      "id": "half-life",
+      "status": "sourced",
+      "value": "16 yrs",
+      "label": "Age of a law when part of it gets struck out",
+      "sub": "median age of an act when one of its provisions is repealed — across 37,957 repeal events in the statute book",
+      "source": "Whiplash pipeline — PCO legislation XML"
+    },
+    {
+      "id": "most-amended",
+      "status": "sourced",
+      "value": "11,577×",
+      "label": "Most-amended statute",
+      "sub": "Income Tax Act 2007 — provision-level amendment events on record",
+      "source": "Whiplash pipeline — PCO legislation XML"
+    }
+  ],
+  "half_life_note": "median age of an act when one of its provisions is repealed or revoked; provision-level, not whole-act lifespan"
+}

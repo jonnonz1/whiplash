@@ -1,0 +1,17 @@
+{
+  "_note": "Manual sector overrides — substring match on title (case-insensitive), checked before keywords. These are the acts readers will click; misclassification here is the most likely public-criticism vector, so this table is published and auditable.",
+  "Resource Management Act": "environment",
+  "Natural and Built Environment": "environment",
+  "Spatial Planning": "environment",
+  "Water Services": "water",
+  "Local Government (Water Services": "water",
+  "Smokefree Environments": "health",
+  "Pae Ora": "health",
+  "Fair Pay Agreements": "justice",
+  "Sentencing and Parole Reform": "justice",
+  "Three Strikes": "justice",
+  "Land Transport (Clean Vehicles": "transport",
+  "Crown Minerals": "energy",
+  "Income Tax Act": "tax",
+  "Education and Training Act": "education"
+}

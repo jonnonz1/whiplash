@@ -1,0 +1,2670 @@
+{
+  "_note": "Hand-curated from the Policy Whiplash evidence dossier (research/compass_artifact_wf-e9ff7eff, jonno.nz repo). RULES: sunk_nzd and firm[] hold ONLY individually-cited, directly sunk or cancellation/exit costs. Projections and politically-claimed totals live in contested[] and are NEVER summed. extra_costs[] is factual context, not counted. sunk_nzd: null means money was spent but no clean figure is on the public record yet; 0 means the reversal had no direct sunk cost. consequential[] holds real, individually-cited money spent BECAUSE of a reversal but that bought something (replacement programmes, re-establishment costs) — displayed separately, NEVER summed into sunk totals.",
+  "generated": "2026-06-11",
+  "projects": [
+    {
+      "id": "auckland-light-rail",
+      "name": "Auckland Light Rail",
+      "lat": -36.8485,
+      "lng": 174.7633,
+      "region": "Auckland",
+      "sector": "transport",
+      "status": "cancelled",
+      "announced": "2017-09-01",
+      "ended": "2024-01-14",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 228000000,
+      "firm": [
+        {
+          "label": "Spent over six years on planning, design and business cases",
+          "amount_nzd": 228000000,
+          "source": "Beehive release, 14 Jan 2024",
+          "url": "https://www.beehive.govt.nz/release/government-cancels-auckland-light-rail"
+        }
+      ],
+      "extra_costs": [
+        {
+          "label": "Peak consultancy burn",
+          "note": "~$920,000/week to two engineering firms, plus ~$310,000/week to ALR Ltd's own contractors and consultants (NZ Herald)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$15b–$29.2b",
+          "label": "Projected full build cost cited by ministers",
+          "note": "A projection of avoided future cost, not money spent. Never counted here.",
+          "source": "RNZ, Jan 2024"
+        }
+      ],
+      "summary": "Six years, $228m, zero metres of track.",
+      "plain": "A tram line from Auckland's city centre to the airport, promised in 2017. After six years of planning and re-planning, it was cancelled in January 2024 with nothing built.",
+      "events": [
+        {
+          "date": "2017-09-01",
+          "what": "Promised in the 2017 election campaign: light rail city to airport.",
+          "op": "Promised"
+        },
+        {
+          "date": "2020-07-01",
+          "what": "Reset after twin-track process stalls; back to the drawing board.",
+          "op": "Reset"
+        },
+        {
+          "date": "2021-10-01",
+          "what": "Reset again — tunnelled/surface hybrid option chosen.",
+          "op": "Reset"
+        },
+        {
+          "date": "2024-01-14",
+          "what": "Cancelled as a coalition 100-day-plan item. $228m spent, no track laid.",
+          "source": "https://www.beehive.govt.nz/release/government-cancels-auckland-light-rail",
+          "op": "Cancelled"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — Government cancels Auckland Light Rail (Jan 2024)",
+          "url": "https://www.beehive.govt.nz/release/government-cancels-auckland-light-rail"
+        },
+        {
+          "title": "RNZ — Auckland Light Rail cancelled",
+          "url": "https://www.rnz.co.nz/news/political/506674"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "irex-ferries",
+      "name": "iReX Cook Strait Ferries",
+      "lat": -41.246,
+      "lng": 174.787,
+      "region": "Wellington",
+      "sector": "transport",
+      "status": "cancelled",
+      "announced": "2021-06-01",
+      "ended": "2023-12-13",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": 651300000,
+      "firm": [
+        {
+          "label": "Directly sunk: procurement, design, consenting, enabling works, settlements",
+          "amount_nzd": 507300000,
+          "source": "KiwiRail, confirmed to RNZ",
+          "url": "https://www.rnz.co.nz/news/political/560273"
+        },
+        {
+          "label": "Hyundai Mipo shipbuild contract exit settlement",
+          "amount_nzd": 144000000,
+          "source": "1News, 15 Aug 2025",
+          "url": "https://www.1news.co.nz/2025/08/15/how-much-it-cost-to-cancel-irex-ferry-contract-671-million/"
+        }
+      ],
+      "extra_costs": [
+        {
+          "label": "Replacement programme",
+          "note": "$1.86b for smaller replacement ferries (due 2029), on top of the money already sunk."
+        },
+        {
+          "label": "Rail link severed",
+          "note": "The rail-enabled Aratere was retired in 2025, severing the Cook Strait rail-ferry link for roughly five years. Keeping the old fleet running is projected to cost up to ~$65m/year in maintenance."
+        },
+        {
+          "label": "Context",
+          "note": "Treasury papers indicate ~80% of the iReX cost escalation was seismic wharf upgrades needed regardless of which ferries were bought (The Conversation)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "~$1.16b",
+          "label": "Total cancellation cost claimed by Labour's Tangi Utikere",
+          "note": "Bundles ongoing maintenance and opportunity costs with sunk costs. Attributed, not counted.",
+          "source": "Labour, 2025"
+        }
+      ],
+      "summary": "$507.3m sunk, $144m to walk away — and new ferries ordered anyway.",
+      "plain": "Two big rail-capable ferries ordered in 2021 to replace the ageing Interislander fleet. Cancelled in December 2023 over cost blowouts; New Zealand then paid $144m to exit the shipbuilding contract and ordered different ferries.",
+      "events": [
+        {
+          "date": "2021-06-01",
+          "what": "Approved: two rail-enabled ferries (Hyundai Mipo, $551m fixed price) plus port upgrades, ~$1.45b programme.",
+          "op": "Approved"
+        },
+        {
+          "date": "2023-12-13",
+          "what": "Cancelled by the incoming government after Treasury warned of escalation toward ~$3b.",
+          "op": "Cancelled"
+        },
+        {
+          "date": "2025-08-15",
+          "what": "Final Hyundai exit settlement confirmed: $144m.",
+          "source": "https://www.1news.co.nz/2025/08/15/how-much-it-cost-to-cancel-irex-ferry-contract-671-million/",
+          "op": "Exit paid"
+        },
+        {
+          "date": "2025-11-19",
+          "what": "Replacement programme confirmed: ~$1.86b, smaller ferries due 2029.",
+          "op": "Rescoped"
+        }
+      ],
+      "sources": [
+        {
+          "title": "RNZ — KiwiRail confirms $507.3m spent on iReX",
+          "url": "https://www.rnz.co.nz/news/political/560273"
+        },
+        {
+          "title": "1News — What it cost to cancel the iReX ferry contract (Aug 2025)",
+          "url": "https://www.1news.co.nz/2025/08/15/how-much-it-cost-to-cancel-irex-ferry-contract-671-million/"
+        },
+        {
+          "title": "The Conversation — Why are we so bad at infrastructure planning?",
+          "url": "https://theconversation.com/nz-will-soon-have-no-real-interisland-rail-ferry-link-why-are-we-so-bad-at-infrastructure-planning-260279"
+        }
+      ],
+      "essay": null,
+      "consequential": [
+        {
+          "label": "Replacement ferry programme",
+          "amount_nzd": 1860000000,
+          "note": "Smaller replacement ferries ordered after the cancellation, due 2029 — the do-over.",
+          "source": "1News, 19 Nov 2025"
+        },
+        {
+          "label": "Keeping the old fleet alive",
+          "amount_nzd": null,
+          "note": "Maintenance on the ageing ferries across the ~5-year gap projected to nearly double to ~$65m/year; no clean total yet."
+        }
+      ]
+    },
+    {
+      "id": "lgwm",
+      "name": "Let's Get Wellington Moving",
+      "lat": -41.2889,
+      "lng": 174.7772,
+      "region": "Wellington",
+      "sector": "transport",
+      "status": "cancelled",
+      "announced": "2015-07-01",
+      "ended": "2023-12-12",
+      "started_by": "key3",
+      "ended_by": "luxon1",
+      "sunk_nzd": 109700000,
+      "firm": [
+        {
+          "label": "NZTA's share of the $180.7m spent July 2015 - March 2024",
+          "amount_nzd": 109700000,
+          "source": "The Post / Wikipedia",
+          "url": "https://en.wikipedia.org/wiki/Let%27s_Get_Wellington_Moving"
+        }
+      ],
+      "extra_costs": [
+        {
+          "label": "Total tri-party spend",
+          "note": "$180.7m across the whole programme July 2015 - March 2024; the ~$71m non-NZTA balance was borne by Wellington City and Greater Wellington councils and is not counted in the central-government sunk total."
+        },
+        {
+          "label": "Consultancy burn",
+          "note": "~$100,000/week on consultants at one point (NZ Herald)."
+        }
+      ],
+      "contested": [],
+      "summary": "$180.7m programme spend over nine years (NZTA share $109.7m counted); disbanded with little built.",
+      "plain": "A joint central-and-local-government plan to fix Wellington transport, running since 2015. Disbanded in December 2023 after spending $180.7m, most of it on planning and consultants.",
+      "events": [
+        {
+          "date": "2015-07-01",
+          "what": "Tri-party programme launched: NZTA + Wellington City + Greater Wellington.",
+          "op": "Started"
+        },
+        {
+          "date": "2023-12-12",
+          "what": "Disbanded. Minister Bishop: 'a bit of a disaster… spent a lot of money without a lot of delivery.'",
+          "op": "Cancelled"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Let's Get Wellington Moving",
+          "url": "https://en.wikipedia.org/wiki/Let%27s_Get_Wellington_Moving"
+        },
+        {
+          "title": "RNZ — LGWM disbanded",
+          "url": "https://www.rnz.co.nz/news/political/504987"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "three-waters",
+      "name": "Three Waters / Affordable Water",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "water",
+      "status": "reversed",
+      "announced": "2020-07-01",
+      "ended": "2024-02-14",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Money was spent standing the reform up, but a clean Treasury/DIA figure for the total sunk before repeal is not on the public record. Until one is sourced, this project contributes $0 to every total on this site.",
+      "extra_costs": [
+        {
+          "label": "The underlying problem didn't go anywhere",
+          "note": "$120–185b of water infrastructure investment needed over 30 years, per DIA — unchanged by the repeal."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$2–3b",
+          "label": "Projected establishment-cost blowout reported by NZ Herald",
+          "note": "A projection of establishment costs, not a measure of money actually spent before repeal.",
+          "source": "NZ Herald"
+        }
+      ],
+      "summary": "Seven years of water reform, repealed under urgency.",
+      "plain": "A plan to move drinking, waste and storm water from 67 councils into larger regional entities, prompted by the Havelock North contamination that made an estimated 5,500 people sick. Repealed under parliamentary urgency in February 2024 and replaced with a new model.",
+      "events": [
+        {
+          "date": "2016-08-01",
+          "what": "Havelock North campylobacter outbreak: ~5,500 ill (Government Inquiry figure). The review that follows starts the reform.",
+          "op": "Trigger"
+        },
+        {
+          "date": "2020-07-01",
+          "what": "Three Waters reform programme launched.",
+          "op": "Started"
+        },
+        {
+          "date": "2022-12-14",
+          "what": "Water Services Entities Act passed — four (later ten) public water entities.",
+          "op": "Passed"
+        },
+        {
+          "date": "2024-02-14",
+          "what": "Repealed under urgency (Water Services Acts Repeal Act 2024); 'Local Water Done Well' replaces it.",
+          "op": "Repealed"
+        }
+      ],
+      "sources": [
+        {
+          "title": "DIA — Water services reform programme",
+          "url": "https://www.dia.govt.nz/Water-services-reform-about-the-reform-programme"
+        },
+        {
+          "title": "Wikipedia — Water Services Reform Programme",
+          "url": "https://en.wikipedia.org/wiki/Water_Services_Reform_Programme"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "rma-replacement",
+      "name": "RMA Replacement (NBA + SPA)",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "environment",
+      "status": "zombie",
+      "announced": "2023-08-23",
+      "ended": "2023-12-19",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Years of policy work and a full select-committee process were spent on the repealed acts; no clean dollar figure for that work is on the public record.",
+      "extra_costs": [],
+      "contested": [],
+      "summary": "Thirty years to replace the RMA; the replacement lasted four months.",
+      "plain": "After decades of complaints about the Resource Management Act, Parliament passed two replacement laws in August 2023. The next government repealed them four months later — then introduced its own replacement in 2025, which critics note 'all but mirrors' the laws it repealed.",
+      "events": [
+        {
+          "date": "2023-08-23",
+          "what": "Natural and Built Environment Act + Spatial Planning Act receive royal assent.",
+          "op": "Passed"
+        },
+        {
+          "date": "2023-12-19",
+          "what": "Both repealed as a coalition 100-day-plan item, ~4 months after assent.",
+          "source": "https://www.beehive.govt.nz/release/nba-and-spa-successfully-repealed",
+          "op": "Repealed"
+        },
+        {
+          "date": "2025-12-01",
+          "what": "Coalition's replacement (Planning Bill + Natural Environment Bill) introduced; The Spinoff: principles 'all but mirror' the repealed laws.",
+          "op": "Revived"
+        },
+        {
+          "date": "2026-06-26",
+          "what": "Replacement bills due back from select committee.",
+          "source": "https://www.rnz.co.nz/news/political/581993/legislation-to-replace-rma-sent-to-environment-select-committee",
+          "op": "Pending"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — NBA and SPA repealed (Dec 2023)",
+          "url": "https://www.beehive.govt.nz/release/nba-and-spa-successfully-repealed"
+        },
+        {
+          "title": "The Spinoff — The new RMA replacement 'all but mirrors' the old one (Dec 2025)",
+          "url": "https://thespinoff.co.nz/the-bulletin/10-12-2025"
+        },
+        {
+          "title": "RNZ — RMA replacement bills sent to select committee",
+          "url": "https://www.rnz.co.nz/news/political/581993/legislation-to-replace-rma-sent-to-environment-select-committee"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "te-pukenga",
+      "name": "Te Pūkenga Polytechnic Merger",
+      "lat": -37.787,
+      "lng": 175.2793,
+      "region": "Hamilton (HQ)",
+      "sector": "education",
+      "status": "reversed",
+      "announced": "2019-02-13",
+      "ended": "2026-01-01",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 9500000,
+      "firm": [
+        {
+          "label": "Redundancy payouts (288 payments) during the unwind, 2024 reporting year",
+          "amount_nzd": 9500000,
+          "source": "RNZ, 26 Jun 2025 (figure from Te Pūkenga 2024 Annual Report)",
+          "url": "https://www.rnz.co.nz/news/top/565230/te-pukenga-disestablishment-continues-despite-16-point-6m-surplus"
+        }
+      ],
+      "extra_costs": [
+        {
+          "label": "Staff lost",
+          "note": "855 staff (about 1 in 10) lost between 2023 and 2024."
+        },
+        {
+          "label": "Re-establishment funding",
+          "note": "$325m allocated to the 10 re-established polytechnics, plus $62.7m to 5 new Industry Skills Boards (Feb 2026). Real money triggered by the reversal, but it buys functioning institutions, so it is not counted as sunk."
+        },
+        {
+          "label": "De-merger consultants",
+          "note": "Eight consultancies (incl. PwC, Deloitte) hired to facilitate the de-merger."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$80m / $810m",
+          "label": "Funding figures from The Spinoff's OIA reporting",
+          "note": "Not yet verified against annual reports. Attributed, not counted.",
+          "source": "The Spinoff, 16 Jul 2025"
+        }
+      ],
+      "summary": "Merged 16 polytechnics in 2020; unmerged them in 2026.",
+      "plain": "In 2020, New Zealand's 16 polytechnics were merged into one national mega-institute. In 2026 it was broken back up into 10 regional polytechnics. Six years, two restructures, and the staff lived through both.",
+      "events": [
+        {
+          "date": "2019-02-13",
+          "what": "Reform of Vocational Education announced.",
+          "op": "Promised"
+        },
+        {
+          "date": "2020-04-01",
+          "what": "Te Pūkenga established: 16 polytechnics + 9 industry training organisations merged.",
+          "op": "Merged"
+        },
+        {
+          "date": "2023-12-01",
+          "what": "Disestablishment confirmed as a coalition 100-day-plan item.",
+          "op": "Confirmed"
+        },
+        {
+          "date": "2026-01-01",
+          "what": "Ten stand-alone polytechnics re-established.",
+          "op": "De-merged"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Te Pūkenga",
+          "url": "https://en.wikipedia.org/wiki/Te_P%C5%ABkenga"
+        },
+        {
+          "title": "The Spinoff — Te Pūkenga OIA figures (Jul 2025)",
+          "url": "https://thespinoff.co.nz/politics/16-07-2025"
+        },
+        {
+          "title": "RNZ — Te Pūkenga disestablishment continues despite $16.6m surplus",
+          "url": "https://www.rnz.co.nz/news/top/565230/te-pukenga-disestablishment-continues-despite-16-point-6m-surplus"
+        },
+        {
+          "title": "RNZ — Ten polytechs return to regional governance",
+          "url": "https://www.rnz.co.nz/news/political/566857/te-pukenga-changes-10-polytechs-to-return-to-regional-governance"
+        }
+      ],
+      "essay": null,
+      "consequential": [
+        {
+          "label": "Re-establishing ten polytechnics",
+          "amount_nzd": 325000000,
+          "note": "Feb 2026 allocation to stand up the regional polytechnics the merger had absorbed.",
+          "source": "RNZ, Feb 2026"
+        },
+        {
+          "label": "Five new Industry Skills Boards",
+          "amount_nzd": 62700000,
+          "note": "Replacing workforce-development functions unwound with the merger.",
+          "source": "RNZ, Feb 2026"
+        }
+      ]
+    },
+    {
+      "id": "dunedin-hospital",
+      "name": "New Dunedin Hospital",
+      "lat": -45.8742,
+      "lng": 170.5036,
+      "region": "Dunedin",
+      "sector": "health",
+      "status": "rescoped",
+      "announced": "2017-05-01",
+      "ended": "2025-01-31",
+      "started_by": "key3",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "The cost of repeated redesigns and delay has not been released as a clean figure. Until it is, this project contributes $0 to every total here.",
+      "extra_costs": [],
+      "contested": [
+        {
+          "figure": "~$3b",
+          "label": "Completion cost claimed by ministers in Sept 2024",
+          "note": "Critics (Gordon Campbell/Scoop) note the figure does not appear in the Rust review the government cited. A ministerial claim, not counted.",
+          "source": "Beehive / Scoop"
+        }
+      ],
+      "summary": "Eight years of rescoping; 35,000 people marched.",
+      "plain": "The replacement for Dunedin's ageing hospital, first costed in 2017. Re-budgeted, cut back, partly reinstated and re-announced repeatedly under two governments; in September 2024 a scale-back drew a ~35,000-strong march described as the city's biggest protest in decades.",
+      "events": [
+        {
+          "date": "2017-05-01",
+          "what": "Business case: $1.2–1.4b (National government).",
+          "op": "Costed"
+        },
+        {
+          "date": "2021-06-01",
+          "what": "Budget revised to $1.47b (Labour government).",
+          "op": "Re-costed"
+        },
+        {
+          "date": "2022-12-01",
+          "what": "+$110m with ward and theatre cuts.",
+          "op": "Rescoped"
+        },
+        {
+          "date": "2024-05-30",
+          "what": "Budget 2024 puts it at ~$1.88b.",
+          "op": "Re-costed"
+        },
+        {
+          "date": "2024-09-26",
+          "what": "Scale-back announced, citing Rust review: delivery 'probably not achievable' within $1.88b.",
+          "op": "Rescoped"
+        },
+        {
+          "date": "2024-09-28",
+          "what": "~35,000 march in the Octagon - described as Dunedin's biggest protest in decades.",
+          "op": "Protest"
+        },
+        {
+          "date": "2025-01-31",
+          "what": "Full new build confirmed on the Cadbury site at $1.9b; 351 beds; open 2031.",
+          "source": "https://www.rnz.co.nz/news/national/529094",
+          "op": "Confirmed"
+        }
+      ],
+      "sources": [
+        {
+          "title": "RNZ — $1.9b Dunedin Hospital build confirmed (Jan 2025)",
+          "url": "https://www.rnz.co.nz/news/national/529094"
+        },
+        {
+          "title": "Wikipedia — Dunedin Hospital",
+          "url": "https://en.wikipedia.org/wiki/Dunedin_Hospital"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "smokefree-generation",
+      "name": "Smokefree Generation Law",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "health",
+      "status": "reversed",
+      "announced": "2022-12-16",
+      "ended": "2024-02-28",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A pure policy reversal: the law was repealed before its measures took effect, so there is no sunk construction or contract cost to count.",
+      "extra_costs": [
+        {
+          "label": "Modelled health cost of repeal",
+          "note": "Modelling (van der Deen et al.) projected the laws would have prevented ~8,150 deaths over 20 years and saved the health system ~$1.3b. Modelled futures, so never counted in totals here."
+        },
+        {
+          "label": "Why it was repealed",
+          "note": "An NZ First coalition commitment; the finance minister also cited ~$1b of tobacco tax revenue to the government books."
+        }
+      ],
+      "contested": [],
+      "summary": "A world first, repealed before it took effect.",
+      "plain": "A law banning cigarette sales to anyone born on or after 1 January 2009, passed in December 2022 and watched worldwide. It was repealed under parliamentary urgency in February 2024, before any of it had come into force.",
+      "events": [
+        {
+          "date": "2022-12-16",
+          "what": "Smokefree generation, outlet cut (6,000→600) and denicotinisation passed.",
+          "op": "Passed"
+        },
+        {
+          "date": "2024-02-28",
+          "what": "Repealed under urgency before taking effect.",
+          "source": "https://www.rnz.co.nz/news/political/510439",
+          "op": "Repealed"
+        }
+      ],
+      "sources": [
+        {
+          "title": "RNZ — Smokefree law repealed under urgency",
+          "url": "https://www.rnz.co.nz/news/political/510439"
+        },
+        {
+          "title": "RNZ — Smokefree repeal: what it means",
+          "url": "https://www.rnz.co.nz/news/political/503241"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "bright-line",
+      "name": "Bright-line Test",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "tax",
+      "status": "reversed",
+      "announced": "2015-10-01",
+      "ended": "2024-07-01",
+      "started_by": "key3",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A tax-setting ping-pong rather than a project: the cost is borne as planning uncertainty by households and investors, not as a government write-off.",
+      "extra_costs": [],
+      "contested": [],
+      "summary": "Four settings in nine years: 2, 5, 10, 2.",
+      "plain": "A de-facto capital gains test on quickly resold residential property. National invented it at 2 years in 2015; Labour stretched it to 5, then 10; National snapped it back to 2 in 2024. If you bought a rental in that window, the tax rules changed underneath you up to three times.",
+      "events": [
+        {
+          "date": "2015-10-01",
+          "what": "Introduced at 2 years (National).",
+          "op": "Set: 2yr"
+        },
+        {
+          "date": "2018-03-29",
+          "what": "Extended to 5 years (Labour).",
+          "op": "Set: 5yr"
+        },
+        {
+          "date": "2021-03-27",
+          "what": "Extended to 10 years (Labour).",
+          "op": "Set: 10yr"
+        },
+        {
+          "date": "2024-07-01",
+          "what": "Reverted to 2 years (National).",
+          "op": "Set: 2yr"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Opes Partners — The bright-line test, every setting",
+          "url": "https://www.opespartners.co.nz/tax/bright-line"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "interest-deductibility",
+      "name": "Landlord Interest Deductibility",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "tax",
+      "status": "reversed",
+      "announced": "2021-10-01",
+      "ended": "2023-12-20",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A tax-setting reversal; the churn cost lands on taxpayers' planning, not as a Crown write-off.",
+      "extra_costs": [],
+      "contested": [],
+      "summary": "Phased out from 2021, fully restored from 2023.",
+      "plain": "Labour phased out landlords' ability to deduct mortgage interest from rental income, starting 2021. National restored it in the December 2023 mini-Budget. A textbook multi-cycle reversal that directly changed investment maths twice in three years.",
+      "events": [
+        {
+          "date": "2021-10-01",
+          "what": "Phase-out begins (Labour).",
+          "op": "Phase-out"
+        },
+        {
+          "date": "2023-12-20",
+          "what": "Full restoration announced in the mini-Budget, phased from 2024 (National).",
+          "op": "Restored"
+        }
+      ],
+      "sources": [
+        {
+          "title": "The Conversation — Landlords gain from interest deductibility repeal",
+          "url": "https://theconversation.com/yes-nz-landlords-gain-from-the-repeal-of-interest-deductibility-rules-but-it-was-a-flawed-law-from-the-outset-218818"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "oil-gas-ban",
+      "name": "Oil & Gas Exploration Ban",
+      "lat": -39.4,
+      "lng": 173.5,
+      "region": "Taranaki (offshore)",
+      "sector": "energy",
+      "status": "restored",
+      "announced": "2018-04-12",
+      "ended": "2025-07-31",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "The ban and its reversal involved no direct construction write-off; the documented cost is investment uncertainty, which this site does not put a number on.",
+      "extra_costs": [
+        {
+          "label": "Budget 2025 co-investment",
+          "note": "$200m over four years committed to co-invest in new gas fields after the ban was lifted."
+        },
+        {
+          "label": "The kicker",
+          "note": "The government concedes new supply is unlikely for about a decade — roughly three more elections."
+        }
+      ],
+      "contested": [],
+      "summary": "Banned in 2018, un-banned in 2025.",
+      "plain": "New offshore oil and gas exploration was banned in 2018. In July 2025 Parliament lifted the ban, 68 votes to 54. Whatever you think of either decision, the investment signal reversed completely within seven years.",
+      "events": [
+        {
+          "date": "2018-04-12",
+          "what": "New offshore exploration permits banned (legislated Nov 2018).",
+          "op": "Banned"
+        },
+        {
+          "date": "2025-07-31",
+          "what": "Ban lifted 68–54 (Crown Minerals Amendment); applications reopened Sept 2025.",
+          "source": "https://www.beehive.govt.nz/release/government-reverse-oil-and-gas-exploration-ban",
+          "op": "Restored"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — Government reverses oil and gas exploration ban",
+          "url": "https://www.beehive.govt.nz/release/government-reverse-oil-and-gas-exploration-ban"
+        }
+      ],
+      "essay": null,
+      "consequential": [
+        {
+          "label": "Budget 2025 co-investment to restart exploration",
+          "amount_nzd": 200000000,
+          "note": "Crown co-investment in new gas fields to lure back the investment the ban expelled.",
+          "source": "Budget 2025 / Beehive"
+        }
+      ]
+    },
+    {
+      "id": "public-service-swing",
+      "name": "Public Service Workforce Swing",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "economy",
+      "status": "reversed",
+      "announced": "2017-10-26",
+      "ended": "2024-05-30",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 80000000,
+      "firm": [
+        {
+          "label": "Redundancy payouts across 24 agencies by late 2024",
+          "amount_nzd": 80000000,
+          "source": "RNZ / NZ Herald",
+          "url": "https://www.nzherald.co.nz/nz/public-sector-cuts-80m-spent-on-redundancies-since-govt-took-office/CKCB47ZFINHRHE2W242N322MFE/"
+        }
+      ],
+      "extra_costs": [
+        {
+          "label": "The swing itself",
+          "note": "~50,000 FTE at the end of the Key/English era → 63,117 FTE by mid-2023 → cuts under Budget 2024 savings targets. The PSA warned the cuts would push up external contractor spend."
+        },
+        {
+          "label": "Budget 2026 second-round savings target",
+          "note": "Budget 2026 targets $2.4b of savings from 8,700 further job cuts (sinking lid: 2%, then 5% and 5% on most agencies' operating budgets); future redundancy costs not yet on the public record."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "~$250m",
+          "label": "Payout trajectory reported by BusinessDesk",
+          "note": "$106m paid plus $144m expected — a projection of where payouts were heading, so attributed rather than counted.",
+          "source": "BusinessDesk"
+        }
+      ],
+      "summary": "Hired up 13,000, then paid $80m+ in redundancies.",
+      "plain": "The public service grew by roughly 13,000 full-timers between 2017 and 2023, then shrank under cost-cutting targets — with at least $80m paid out in redundancies across 24 agencies. Many of the same roles were created and then bought out within a few years.",
+      "events": [
+        {
+          "date": "2023-06-30",
+          "what": "Public service peaks at 63,117 FTE.",
+          "op": "Peak"
+        },
+        {
+          "date": "2024-05-30",
+          "what": "Budget 2024 sets 6.5–7.5% savings targets across agencies.",
+          "op": "Cuts"
+        },
+        {
+          "date": "2024-11-01",
+          "what": "Redundancy payouts reach $80m+ across 24 agencies.",
+          "op": "Payouts"
+        },
+        {
+          "date": "2026-05-19",
+          "what": "Second round announced ahead of Budget 2026: 8,700 more jobs to go over three years for $2.4b savings - core public service from ~63,600 to ~55,000 FTE by mid-2029, with agency mergers to follow.",
+          "source": "https://www.1news.co.nz/2026/05/19/thousands-of-public-service-jobs-to-go-major-govt-shake-up-announced/",
+          "op": "More cuts"
+        },
+        {
+          "date": "2026-05-28",
+          "what": "Budget 2026 confirms the sinking-lid savings track: 2% cuts next financial year, then 5% in each of the following two.",
+          "source": "https://www.1news.co.nz/2026/05/28/govts-budget-2026-spending-and-cuts-everything-we-know-so-far/",
+          "op": "Budget"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Te Kawa Mataaho — Public service workforce data",
+          "url": "https://www.publicservice.govt.nz/data/workforce-data"
+        },
+        {
+          "title": "The Spinoff — Tracking the public sector cuts (Apr 2024)",
+          "url": "https://thespinoff.co.nz/politics/18-04-2024"
+        },
+        {
+          "title": "1News — 8,700 public service jobs to go (May 2026)",
+          "url": "https://www.1news.co.nz/2026/05/19/thousands-of-public-service-jobs-to-go-major-govt-shake-up-announced/"
+        },
+        {
+          "title": "RNZ — Public sector redundancies reach $80m",
+          "url": "https://www.rnz.co.nz/news/political/531703/public-sector-cuts-80m-spent-on-redundancies-since-govt-took-office"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "northern-pathway",
+      "name": "Northern Pathway / Harbour Bridge Cycleway",
+      "lat": -36.829,
+      "lng": 174.745,
+      "region": "Auckland",
+      "sector": "transport",
+      "status": "cancelled",
+      "announced": "2019-05-01",
+      "ended": "2021-10-01",
+      "started_by": "ardern1",
+      "ended_by": "ardern2",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "No clean sunk-cost write-off figure has been published. Included because the saga is well documented; it contributes $0 to every total here until a figure is sourced.",
+      "extra_costs": [],
+      "contested": [
+        {
+          "figure": "$360m–$785m",
+          "label": "Announced programme costs across the saga's two iterations",
+          "note": "What was promised, not what was written off.",
+          "source": "Waka Kotahi / NZ Herald"
+        }
+      ],
+      "summary": "Announced twice, built zero times — by the same government.",
+      "plain": "A walking and cycling crossing of Auckland's harbour: announced as a $360m pathway in 2019, scrapped over engineering problems with the bridge piers, re-announced as a $785m standalone bridge in 2021, then cancelled after public backlash. Both the announcing and the cancelling happened under the same government — reversals aren't only a change-of-government story.",
+      "events": [
+        {
+          "date": "2019-05-01",
+          "what": "$360m Northern Pathway announced ($240m bridge section + $120m extension).",
+          "op": "Promised"
+        },
+        {
+          "date": "2021-06-01",
+          "what": "Re-announced as a $785m standalone cycling bridge.",
+          "op": "Re-promised"
+        },
+        {
+          "date": "2021-10-01",
+          "what": "Scrapped after backlash and 'significant and complex engineering issues' with the piers.",
+          "op": "Cancelled"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — Government decides not to proceed with Northern Pathway",
+          "url": "https://www.beehive.govt.nz/release/government-decides-not-proceed-northern-pathway"
+        },
+        {
+          "title": "NZ Herald — SkyPath scrapped",
+          "url": "https://www.nzherald.co.nz/nz/skypath-scrapped-national-calls-for-funds-to-be-redirected-to-second-harbour-crossing/YKKTN6NK6B5DUM7D3J4X5WOYAI/"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "lake-onslow",
+      "name": "Lake Onslow Pumped Hydro (NZ Battery)",
+      "lat": -45.55,
+      "lng": 169.62,
+      "region": "Central Otago",
+      "sector": "energy",
+      "status": "cancelled",
+      "announced": "2020-07-01",
+      "ended": "2023-12-01",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "No clean MBIE/Treasury figure for total investigation spend at cancellation is on the public record. RNZ reported \"more than $20 million\" spent at cancellation (3 Dec 2023); the NZ Battery project manager put feasibility spend at $24.1m to Dec 2022 ($19.4m of it on Onslow). Contributes $0 to totals until a primary figure is sourced.",
+      "extra_costs": [
+        {
+          "label": "Programme budget context",
+          "note": "NZ Battery was a ~$100m MBIE-led programme: ~$30m for phase 1 feasibility and ~$63m for the detailed business case phase (with the remainder on staffing and overheads), cancelled before the business case was completed (Newsroom)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$20m-$30m",
+          "label": "Reported investigation spend range",
+          "note": "RNZ said \"more than $20m\" at cancellation; ODT (via project manager David Darby) put feasibility spend at $24.1m to Dec 2022; Newsroom reported $21.8m (Oct 2023) and later ~$30m (2025). No primary final figure - never counted.",
+          "source": "RNZ / ODT / Newsroom"
+        }
+      ],
+      "summary": "A dry-year battery for the whole grid, cancelled at business-case stage.",
+      "plain": "A giant pumped-hydro scheme in Central Otago meant to solve New Zealand's dry-year electricity problem. The investigation was cancelled in December 2023 before a final business case was complete.",
+      "events": [
+        {
+          "date": "2020-07-01",
+          "what": "NZ Battery project launched to investigate dry-year storage options.",
+          "source": "https://www.beehive.govt.nz/release/100-renewable-electricity-grid-explored-pumped-storage-%E2%80%98battery%E2%80%99",
+          "op": "Started"
+        },
+        {
+          "date": "2023-12-01",
+          "what": "Work on the investigation ceased.",
+          "op": "Stopped"
+        },
+        {
+          "date": "2023-12-03",
+          "what": "Government confirmed cancellation of the NZ Battery investigation as a coalition 100-day-plan item.",
+          "source": "https://www.rnz.co.nz/news/national/503816/govt-confirms-it-is-dumping-hugely-wasteful-lake-onslow-battery-project",
+          "op": "Cancelled"
+        }
+      ],
+      "sources": [
+        {
+          "title": "RNZ — Government dumps 'hugely wasteful' Lake Onslow project",
+          "url": "https://www.rnz.co.nz/news/national/503816/govt-confirms-it-is-dumping-hugely-wasteful-lake-onslow-battery-project"
+        },
+        {
+          "title": "Beehive — Pumped storage 'battery' to be explored (Jul 2020)",
+          "url": "https://www.beehive.govt.nz/release/100-renewable-electricity-grid-explored-pumped-storage-%E2%80%98battery%E2%80%99"
+        },
+        {
+          "title": "MBIE — NZ Battery Project",
+          "url": "https://www.mbie.govt.nz/building-and-energy/energy-and-natural-resources/low-emissions-economy/nz-battery"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "fair-pay-agreements",
+      "name": "Fair Pay Agreements",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "justice",
+      "status": "reversed",
+      "announced": "2022-10-26",
+      "ended": "2023-12-20",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "MBIE stood the FPA system up from December 2022 and was processing bargaining applications when the Act was repealed; no clean figure for that spend is on the public record. Contributes $0 to every total here.",
+      "extra_costs": [],
+      "contested": [
+        {
+          "figure": "$65m",
+          "label": "Five-year future savings claimed by Workplace Relations Minister Brooke van Velden",
+          "note": "A projection of avoided future cost, not money spent. Never counted.",
+          "source": "Scoop/Beehive, 4 Jun 2024"
+        }
+      ],
+      "summary": "A sector-bargaining system live for a year; repealed before a single agreement was reached.",
+      "plain": "A system letting workers bargain industry-wide minimum terms, passed in October 2022 and live from December 2022. Six sectors, including bus drivers, cleaners and early childhood educators, had approval to start bargaining when the new government repealed the law in December 2023. No fair pay agreement was ever concluded.",
+      "events": [
+        {
+          "date": "2022-10-26",
+          "op": "Passed",
+          "what": "Fair Pay Agreements Act passes 76-43 (royal assent 1 Nov 2022)."
+        },
+        {
+          "date": "2022-12-01",
+          "op": "Started",
+          "what": "System comes into force; unions begin applying to initiate bargaining."
+        },
+        {
+          "date": "2023-12-20",
+          "op": "Repealed",
+          "what": "Repeal in force (assent 19 Dec) as a coalition 100-day-plan item. Six sectors had initiated bargaining, none concluded.",
+          "source": "https://en.wikipedia.org/wiki/Fair_Pay_Agreements_Act_2022"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Fair Pay Agreements Act 2022",
+          "url": "https://en.wikipedia.org/wiki/Fair_Pay_Agreements_Act_2022"
+        },
+        {
+          "title": "MBIE — Fair Pay Agreements",
+          "url": "https://www.mbie.govt.nz/business-and-employment/employment-and-skills/fair-pay-agreements"
+        },
+        {
+          "title": "Scoop — 'Scrapping FPAs saves taxpayers $65 million' (claim)",
+          "url": "https://www.scoop.co.nz/stories/PA2406/S00014/scrapping-fair-pay-agreements-saves-taxpayers-65-million.htm"
+        },
+        {
+          "title": "The Spinoff — The hard-won and swiftly lost dream of fair pay agreements",
+          "url": "https://thespinoff.co.nz/politics/22-12-2023/the-hard-won-and-swiftly-lost-dream-of-fair-pay-agreements"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "clean-car-discount",
+      "name": "Clean Car Discount",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "transport",
+      "status": "reversed",
+      "announced": "2021-07-01",
+      "ended": "2023-12-31",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A policy termination with no cancellation or exit write-off: rebates already paid bought EVs on the road, so nothing is counted as sunk.",
+      "extra_costs": [
+        {
+          "label": "Final scheme accounts (NZTA, June 2024)",
+          "note": "$617.2m paid out in 192,100 rebates against $297.4m collected in fees on 128,300 high-emission vehicles, plus $11.9m administration and $5.4m project costs ($634.5m total expenditure). The $337.1m gap was Crown-funded, from a $401.4m appropriation ($301.4m original + $100m Budget 2023); $64.3m of grant was unspent at closure."
+        }
+      ],
+      "contested": [],
+      "summary": "EVs subsidised from 2021, scheme axed under urgency in 2023.",
+      "plain": "The 'feebate' scheme: rebates on electric and low-emission imports from July 2021, funded from April 2022 by fees on high-emission vehicles. The new government repealed it under urgency in December 2023 and it ended on 31 December 2023. EV sales fell from roughly one in four new vehicles in 2023 to one in 26 in January 2024.",
+      "events": [
+        {
+          "date": "2021-07-01",
+          "op": "Started",
+          "what": "Scheme starts: rebates on new and used EV/low-emission imports."
+        },
+        {
+          "date": "2022-04-01",
+          "op": "Expanded",
+          "what": "Full feebate begins: fees on high-emission vehicles fund the rebates."
+        },
+        {
+          "date": "2023-12-14",
+          "op": "Repealed",
+          "what": "Repeal bill (introduced 12 Dec) passes all three readings under urgency; royal assent 19 Dec.",
+          "source": "https://www.rnz.co.nz/news/political/504757/parliament-repeals-clean-car-discount"
+        },
+        {
+          "date": "2023-12-31",
+          "op": "Ended",
+          "what": "Scheme ends; no rebate applications accepted after 11:59pm.",
+          "source": "https://www.nzta.govt.nz/vehicles/clean-car-programme/clean-car-discount-ended-on-31-december-2023"
+        },
+        {
+          "date": "2024-02-07",
+          "op": "Aftermath",
+          "what": "EV registrations plummet: from ~1 in 4 new vehicles in 2023 to 1 in 26 in January 2024.",
+          "source": "https://newsroom.co.nz/2024/02/07/ev-sales-plummet-after-clean-car-discount-scrapped/"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NZTA — Clean Car Discount final scheme financials",
+          "url": "https://www.nzta.govt.nz/vehicles/clean-car-programme/clean-car-discount-ended-on-31-december-2023/clean-car-discount-scheme-financial-reports"
+        },
+        {
+          "title": "NZTA — Clean Car Discount ended 31 December 2023",
+          "url": "https://www.nzta.govt.nz/vehicles/clean-car-programme/clean-car-discount-ended-on-31-december-2023"
+        },
+        {
+          "title": "Wikipedia — Clean Vehicle Discount Scheme Repeal Act 2023",
+          "url": "https://en.wikipedia.org/wiki/Land_Transport_(Clean_Vehicle_Discount_Scheme_Repeal)_Amendment_Act_2023"
+        },
+        {
+          "title": "Newsroom — EV sales plummet after Clean Car Discount scrapped",
+          "url": "https://newsroom.co.nz/2024/02/07/ev-sales-plummet-after-clean-car-discount-scrapped/"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "fees-free",
+      "name": "Fees-Free Tertiary Education",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "education",
+      "status": "reversed",
+      "announced": "2018-01-01",
+      "ended": "2026-05-28",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A policy termination, not a write-off: subsidies already paid covered real tuition, so nothing is counted as sunk.",
+      "extra_costs": [
+        {
+          "label": "Scale of the scheme",
+          "note": "Roughly $350m/yr at the end; Budget 2026 books over $1b of savings across the forecast period, with $69m of it redirected to double Trades Academy places from 10,000 to 20,000."
+        }
+      ],
+      "contested": [],
+      "summary": "Free first year from 2018, final year from 2025, no year from 2026.",
+      "plain": "Labour's flagship 2018 policy paid the first year of tertiary study (up to $12,000). The coalition narrowed it to final-year-only from 2025, then scrapped it entirely in Budget 2026. Eight years, three settings, gone.",
+      "events": [
+        {
+          "date": "2018-01-01",
+          "op": "Started",
+          "what": "First-year fees-free (up to $12,000) begins under Labour."
+        },
+        {
+          "date": "2025-01-01",
+          "op": "Rescoped",
+          "what": "Narrowed to final-year-only under the coalition."
+        },
+        {
+          "date": "2026-05-08",
+          "op": "Leaked",
+          "what": "Winston Peters leaks the scrapping on Newstalk ZB: 'I'll give you a Budget leak right here, right now, the answer is yes.'"
+        },
+        {
+          "date": "2026-05-09",
+          "op": "Confirmed",
+          "what": "Nicola Willis confirms 2026 is the final eligible cohort."
+        },
+        {
+          "date": "2026-05-28",
+          "op": "Scrapped",
+          "what": "Budget 2026 scraps the scheme; savings over $1b across the forecast period.",
+          "source": "https://www.1news.co.nz/2026/05/28/govts-budget-2026-spending-and-cuts-everything-we-know-so-far/"
+        },
+        {
+          "date": "2026-06-05",
+          "op": "Protest",
+          "what": "Students protest the scrapping.",
+          "source": "https://www.rnz.co.nz/news/national/596634"
+        }
+      ],
+      "sources": [
+        {
+          "title": "1News — Budget 2026: spending and cuts (May 2026)",
+          "url": "https://www.1news.co.nz/2026/05/28/govts-budget-2026-spending-and-cuts-everything-we-know-so-far/"
+        },
+        {
+          "title": "RNZ — Students protest Fees-Free scrapping (Jun 2026)",
+          "url": "https://www.rnz.co.nz/news/national/596634"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "cambridge-piarere",
+      "name": "Cambridge to Piarere Expressway (RoNS)",
+      "lat": -37.91,
+      "lng": 175.62,
+      "region": "Waikato",
+      "sector": "transport",
+      "status": "restored",
+      "announced": "2017-08-20",
+      "ended": "2026-05-28",
+      "started_by": "key3",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A funded commitment, not a reversal write-off: the $1.773b is future construction spend and is never counted as sunk. It sits on this map as the clearest case of whiplash cutting both ways: stopped by one government, un-stopped by another.",
+      "extra_costs": [
+        {
+          "label": "Budget 2026 commitment",
+          "note": "$1.773b allocated in Budget 2026 for the 16km four-lane extension; BCR 2.7-3.1 per the minister; major construction expected late 2026/early 2027 (NZTA), taking ~5-6 years."
+        }
+      ],
+      "contested": [],
+      "summary": "Promised 2017, shelved 2018, revived 2024, funded 2026.",
+      "plain": "A 16km four-lane extension of the Waikato Expressway. Named in National's next-generation roads list in 2017, dropped from funding plans in 2018 and again in 2020, restored as a Road of National Significance in 2024, and finally funded in Budget 2026. Nine years from promise to funding, spanning three governments.",
+      "events": [
+        {
+          "date": "2017-08-20",
+          "op": "Promised",
+          "what": "Corridor named in National's 'next generation' Roads of National Significance campaign list."
+        },
+        {
+          "date": "2018-06-01",
+          "op": "Shelved",
+          "what": "GPS 2018 reprioritises away from new state highways; corridor unfunded."
+        },
+        {
+          "date": "2020-01-01",
+          "op": "Shelved",
+          "what": "NZ Upgrade Programme reprioritises funding away from Cambridge-Piarere."
+        },
+        {
+          "date": "2024-03-04",
+          "op": "Revived",
+          "what": "Draft GPS 2024 restores the corridor as a Road of National Significance."
+        },
+        {
+          "date": "2025-09-01",
+          "op": "Consented",
+          "what": "Consents granted."
+        },
+        {
+          "date": "2025-12-01",
+          "op": "Early works",
+          "what": "Early works approved by the NZTA Board."
+        },
+        {
+          "date": "2026-05-28",
+          "op": "Funded",
+          "what": "$1.773b allocated in Budget 2026.",
+          "source": "https://www.beehive.govt.nz/release/extending-waikato-expressway"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — Extending the Waikato Expressway (Budget 2026)",
+          "url": "https://www.beehive.govt.nz/release/extending-waikato-expressway"
+        },
+        {
+          "title": "NZTA — Cambridge to Piarere project page",
+          "url": "https://www.nzta.govt.nz/projects/cambridge-to-piarere"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "te-aka-whai-ora",
+      "name": "Te Aka Whai Ora (Māori Health Authority)",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "health",
+      "status": "reversed",
+      "announced": "2021-04-21",
+      "ended": "2024-06-30",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Real money went into standing the authority up — Budget 2021 allocated $98.1m for establishment and consultant spend ran over $1m a month in its first eight months — but no clean public figure isolates what was directly sunk on establishment and wind-down. The official post-mortem numbers are returns and savings, not spend. Until a clean figure is sourced, this project contributes $0 to every total on this site.",
+      "extra_costs": [
+        {
+          "label": "Establishment money",
+          "note": "Budget 2021 allocated $98.1m to establish the authority (Beehive, May 2021); it then spent $9.2m on contractors and consultants in its first eight months — about $1.15m a month — per figures released through written parliamentary questions (NZ Herald, Apr 2023)."
+        },
+        {
+          "label": "Slow start",
+          "note": "A Hauora Māori Advisory Committee review found a $66m commissioning underspend in the authority's first year (NZ Herald, Aug 2023) — later a key argument for scrapping it."
+        },
+        {
+          "label": "Service funding continued",
+          "note": "The Hauora Māori Services appropriation (~$749.4m in 2024/25) moved to Health New Zealand rather than disappearing, so operating and commissioning funding is not counted as sunk."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$35.5m",
+          "label": "Savings booked in Budget 2024 from the disestablishment",
+          "note": "A projected saving on the government's books, not money recovered. Never counted here.",
+          "source": "RNZ, 31 May 2024"
+        },
+        {
+          "figure": "$31.5m + $1m/yr",
+          "label": "Return shown in the 2024/25 Estimates from the disestablishment",
+          "note": "Unused establishment funding, interest earnings and reduced consultant spend handed back, plus ongoing board-fee savings, per a Ministry of Health memo. A return, not a sunk cost.",
+          "source": "Ministry of Health memo H2024044051, Jun 2024"
+        }
+      ],
+      "summary": "A national Māori health agency, stood up and shut down in exactly two years.",
+      "plain": "A standalone agency created in July 2022 to plan and fund health services for Māori, in response to persistent gaps in Māori health outcomes. The coalition scrapped it as a 100-day commitment, and it ceased to exist on 30 June 2024 — after exactly two years of operation. Its staff and roughly $749m a year of service funding moved into Health New Zealand and the Ministry of Health; the Waitangi Tribunal later found the Crown breached Te Tiriti in how it was scrapped.",
+      "events": [
+        {
+          "date": "2021-04-21",
+          "what": "Health reform announcement: DHBs abolished, Health NZ created, and a Māori Health Authority with direct commissioning power promised.",
+          "source": "https://www.beehive.govt.nz/release/major-reforms-will-make-healthcare-accessible-all-nzers",
+          "op": "Announced"
+        },
+        {
+          "date": "2022-06-14",
+          "what": "Pae Ora (Healthy Futures) Act 2022 receives royal assent, establishing the Māori Health Authority from 1 July.",
+          "source": "https://www.legislation.govt.nz/act/public/2022/0030/latest/whole.html",
+          "op": "Passed"
+        },
+        {
+          "date": "2022-07-01",
+          "what": "Te Aka Whai Ora begins operating as a standalone authority commissioning hauora Māori services.",
+          "source": "https://www.legislation.govt.nz/act/public/2022/0030/latest/whole.html",
+          "op": "Established"
+        },
+        {
+          "date": "2024-02-28",
+          "what": "Disestablishment bill passes its third reading 68–54 under urgency — a coalition 100-day-plan item.",
+          "source": "https://www.rnz.co.nz/news/political/510396/bill-to-disestablish-maori-health-authority-passes-third-reading",
+          "op": "Repealed"
+        },
+        {
+          "date": "2024-06-30",
+          "what": "Formally disestablished after exactly two years of operation; functions, staff and funding move to Health NZ and the Ministry of Health.",
+          "source": "https://www.legislation.govt.nz/act/public/2024/0005/latest/whole.html",
+          "op": "Scrapped"
+        },
+        {
+          "date": "2024-11-29",
+          "what": "Waitangi Tribunal's Hautupua report finds the Crown breached Te Tiriti principles and failed to follow its own policy process in the disestablishment.",
+          "source": "https://www.waitangitribunal.govt.nz/en/news/tribunal-releases-report-on-disestablishment-of-te-aka-whai-ora",
+          "op": "Censured"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — Major reforms will make healthcare accessible for all NZers (21 Apr 2021)",
+          "url": "https://www.beehive.govt.nz/release/major-reforms-will-make-healthcare-accessible-all-nzers"
+        },
+        {
+          "title": "Beehive — Government invests in the wellbeing of whānau Māori (Budget 2021, $98.1m establishment funding)",
+          "url": "https://www.beehive.govt.nz/release/government-invests-wellbeing-wh%C4%81nau-m%C4%81ori"
+        },
+        {
+          "title": "Legislation — Pae Ora (Healthy Futures) Act 2022",
+          "url": "https://www.legislation.govt.nz/act/public/2022/0030/latest/whole.html"
+        },
+        {
+          "title": "Legislation — Pae Ora (Disestablishment of Māori Health Authority) Amendment Act 2024",
+          "url": "https://www.legislation.govt.nz/act/public/2024/0005/latest/whole.html"
+        },
+        {
+          "title": "RNZ — Bill to disestablish Māori Health Authority passes third reading (28 Feb 2024)",
+          "url": "https://www.rnz.co.nz/news/political/510396/bill-to-disestablish-maori-health-authority-passes-third-reading"
+        },
+        {
+          "title": "RNZ — What is in Budget 2024 for Māori? ($35.5m claimed savings, 31 May 2024)",
+          "url": "https://www.rnz.co.nz/news/te-manu-korihi/518248/what-is-in-budget-2024-for-maori"
+        },
+        {
+          "title": "NZ Herald — Māori Health Authority spending over $1m a month on consultants and contractors (13 Apr 2023)",
+          "url": "https://www.nzherald.co.nz/business/new-maori-health-authority-spending-over-a-million-dollars-a-month-on-consultants-and-contractors/4EAMSWSAIVHFJIQUFLL26NM4JQ/"
+        },
+        {
+          "title": "NZ Herald — Te Aka Whai Ora understaffed and underspend by $66 million (5 Aug 2023)",
+          "url": "https://www.nzherald.co.nz/kahu/te-aka-whai-ora-understaffed-and-underspend-by-66-million/HS5WSRUWDZGJNJWWY5PAJ2BIUA/"
+        },
+        {
+          "title": "Ministry of Health — Memo H2024044051: Update on the disestablishment of Te Aka Whai Ora (Jun 2024, proactively released)",
+          "url": "https://www.health.govt.nz/system/files/2025-05/H2024044051-Memo-Update-on-the-disestablishment-of-Te-Aka-Whai-Ora-M%C4%81ori-Health-Authority.pdf"
+        },
+        {
+          "title": "RNZ — Crown failed to follow process in Māori Health Authority disestablishment: Waitangi Tribunal (29 Nov 2024)",
+          "url": "https://www.rnz.co.nz/news/te-manu-korihi/535186/crown-failed-to-follow-process-in-maori-health-authority-disestablishment-waitangi-tribunal"
+        },
+        {
+          "title": "Waitangi Tribunal — Tribunal releases report on disestablishment of Te Aka Whai Ora (Hautupua, 29 Nov 2024)",
+          "url": "https://www.waitangitribunal.govt.nz/en/news/tribunal-releases-report-on-disestablishment-of-te-aka-whai-ora"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "charter-schools",
+      "name": "Charter Schools (Partnership Schools)",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "education",
+      "status": "zombie",
+      "announced": "2011-12-05",
+      "ended": "2018-10-18",
+      "started_by": "key2",
+      "ended_by": "ardern1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Money demonstrably went out the door in both directions — $3.4m in establishment grants to schools that never opened, contract-termination and conversion payments in 2018, then agency set-up and establishment costs for the 2024-25 revival — but no clean public total exists for either leg, so nothing is counted.",
+      "extra_costs": [
+        {
+          "label": "Grants to schools that never opened",
+          "note": "$3.4m in establishment grants was paid to five approved charter schools that never opened as charter schools after the 2017 change of government; contracts signed before the election bound the Crown (NZ Herald, Apr 2018)."
+        },
+        {
+          "label": "2018 exit and conversion payments",
+          "note": "Documented examples only: $291,000 to Villa Education Trust to terminate two school contracts, $1.74m to the schools' establishment board to convert them to designated character status, and $450,000 the establishment board paid to Villa Education Trust — the schools' owner, with the same trustees — on the way back into the state system, criticised by the Auditor-General (RNZ/OAG, 2021)."
+        },
+        {
+          "label": "Revival programme",
+          "note": "$153m over four years from Budget 2024 for up to 15 new charter schools, 35 state-school conversions and a new Charter School Agency — future programme spend, never counted. Uptake has lagged the envelope of up to 50: 16 schools and 1,471 students as at March 2026, and zero state-school conversions as of May 2026."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "up to $16m",
+          "label": "Estimated compensation for terminating charter contracts (2018)",
+          "note": "A reported estimate of up to $1m per school across twelve operating and five approved schools. Actual settlements were negotiated school by school and no total was published. An estimate, never counted.",
+          "source": "NZ Herald via Wikipedia, 2018"
+        },
+        {
+          "figure": "$125m+",
+          "label": "NZEI's OIA-based cost of the 2014-18 experiment",
+          "note": "Union calculation: up to $48,421 per student per year, with ~30% of spend on Ministry overhead. Operational spending that bought real schooling; attributed, never counted.",
+          "source": "NZEI Te Riu Roa, Feb 2024"
+        },
+        {
+          "figure": "$87,808/student",
+          "label": "NZEI's per-student cost of the revived scheme",
+          "note": "Divides $37.4m of early-stage spend by 427 enrolments as at December 2025. The government counters that rolls in the original seven schools had tripled by March 2026 and that ongoing funding follows the child at state-school rates. Neither side's number is counted.",
+          "source": "NZEI Te Riu Roa, Mar 2026"
+        }
+      ],
+      "summary": "Opened 2014, abolished 2018, reopened 2025 — the public paid for the conversions both ways.",
+      "plain": "Charter schools are publicly funded schools run by private sponsors with freedom over curriculum, hours and pay. New Zealand opened its first in 2014 under a National-ACT deal, abolished the model in 2018 and converted all twelve schools into the state system, then recreated it in 2024 with $153m in funding. Within a decade the public paid to convert schools out of the model, then back into it.",
+      "events": [
+        {
+          "date": "2011-12-05",
+          "what": "National-ACT confidence and supply agreement commits to trialling charter schools in areas such as South Auckland and central/eastern Christchurch. (The agreement predates the new ministry's swearing-in on 14 December 2011.)",
+          "source": "https://img.scoop.co.nz/media/pdfs/1112/NationalACT_Confidence_and_Supply_Agreement.pdf",
+          "op": "Promised"
+        },
+        {
+          "date": "2013-06-04",
+          "what": "Education Amendment Bill passes its third reading 62 votes to 57, creating 'partnership schools | kura hourua' (Education Amendment Act 2013).",
+          "source": "https://www.legislation.govt.nz/act/public/2013/34/en/latest/",
+          "op": "Passed"
+        },
+        {
+          "date": "2014-02-01",
+          "what": "First five partnership schools open in Auckland and Northland for Term 1 2014.",
+          "op": "Opened"
+        },
+        {
+          "date": "2018-05-15",
+          "what": "Hipkins issues formal notice ending all charter contracts at the close of the 2018 school year; every operating school applies to join the state system.",
+          "source": "https://www.beehive.govt.nz/release/charter-school-contracts",
+          "op": "Scrapped"
+        },
+        {
+          "date": "2018-10-18",
+          "what": "Education Amendment Bill passes its third reading 63 votes to 56, removing the model from law; the twelve schools convert to designated character or state-integrated status.",
+          "source": "https://www.rnz.co.nz/news/national/368962/education-bill-passing-signals-end-of-privatisation-and-deregulation",
+          "op": "Repealed"
+        },
+        {
+          "date": "2023-11-24",
+          "what": "National-ACT coalition agreement pledges to bring charter schools back.",
+          "op": "Revived"
+        },
+        {
+          "date": "2024-05-14",
+          "what": "Budget 2024 allocates $153m over four years for up to 15 new charter schools and 35 state-school conversions.",
+          "source": "https://www.beehive.govt.nz/release/charter-schools-lift-educational-outcomes",
+          "op": "Funded"
+        },
+        {
+          "date": "2024-09-25",
+          "what": "Education and Training Amendment Bill passes its third reading, re-establishing charter schools.",
+          "source": "https://www.rnz.co.nz/news/political/528977/legislation-re-introducing-charter-schools-passes-final-reading",
+          "op": "Passed"
+        },
+        {
+          "date": "2025-02-03",
+          "what": "First of seven new charter schools open for Term 1 2025; the rest open by 10 February.",
+          "source": "https://www.1news.co.nz/2025/02/03/first-charter-schools-open-doors-more-to-come-this-week/",
+          "op": "Reopened"
+        },
+        {
+          "date": "2025-10-14",
+          "what": "Three more schools announced for Term 1 2026, taking the total to 14 against Budget 2024's envelope of up to 50; the Charter School Agency is weighing four formal state-school conversion applications.",
+          "source": "https://www.1news.co.nz/2025/10/14/three-new-charter-schools-to-open-in-term-one-2026/",
+          "op": "Expanded"
+        },
+        {
+          "date": "2026-05-27",
+          "what": "No state school has yet converted — Seymour says property liabilities are putting boards off; 16 charter schools with 1,471 students as at 1 March 2026.",
+          "source": "https://www.rnz.co.nz/news/education/596514/property-problems-preventing-state-schools-going-charter-seymour",
+          "op": "Stalled"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wikipedia — Charter schools in New Zealand",
+          "url": "https://en.wikipedia.org/wiki/Charter_schools_in_New_Zealand"
+        },
+        {
+          "title": "Scoop — National-ACT Confidence and Supply Agreement (5 Dec 2011)",
+          "url": "https://img.scoop.co.nz/media/pdfs/1112/NationalACT_Confidence_and_Supply_Agreement.pdf"
+        },
+        {
+          "title": "Beehive — Charter school contracts (May 2018)",
+          "url": "https://www.beehive.govt.nz/release/charter-school-contracts"
+        },
+        {
+          "title": "RNZ — Education bill passing signals end of 'privatisation and deregulation' (Oct 2018)",
+          "url": "https://www.rnz.co.nz/news/national/368962/education-bill-passing-signals-end-of-privatisation-and-deregulation"
+        },
+        {
+          "title": "Beehive — Charter schools to lift educational outcomes (Budget 2024, $153m)",
+          "url": "https://www.beehive.govt.nz/release/charter-schools-lift-educational-outcomes"
+        },
+        {
+          "title": "NZ Herald — Charter schools that may never open were paid $3.4m (Apr 2018)",
+          "url": "https://www.nzherald.co.nz/nz/charter-schools-that-may-never-open-were-paid-34m/7IBBM624ADIXOYIKGQMR5UBRRU/"
+        },
+        {
+          "title": "RNZ — Charter schools paid $450k to owners before joining state system (Auditor-General inquiry, Nov 2021)",
+          "url": "https://www.rnz.co.nz/news/national/456582/charter-schools-use-govt-funding-to-pay-450k-to-owners-before-joining-state-school-system"
+        },
+        {
+          "title": "NZEI Te Riu Roa — OIA shows the true cost of charter schools (Feb 2024)",
+          "url": "https://www.nzeiteriuroa.org.nz/about-us/media-releases/oia-shows-the-eyewatering-true-cost-of-charter-schools"
+        },
+        {
+          "title": "RNZ — Legislation re-introducing charter schools passes final reading (Sep 2024)",
+          "url": "https://www.rnz.co.nz/news/political/528977/legislation-re-introducing-charter-schools-passes-final-reading"
+        },
+        {
+          "title": "1News — First charter schools open doors, more to come this week (Feb 2025)",
+          "url": "https://www.1news.co.nz/2025/02/03/first-charter-schools-open-doors-more-to-come-this-week/"
+        },
+        {
+          "title": "1News — Three new charter schools to open in term one 2026 (Oct 2025)",
+          "url": "https://www.1news.co.nz/2025/10/14/three-new-charter-schools-to-open-in-term-one-2026/"
+        },
+        {
+          "title": "NZEI Te Riu Roa — $90,000 per student: charter schools bleeding taxpayers dry (Mar 2026)",
+          "url": "https://www.nzeiteriuroa.org.nz/about-us/media-releases/90-000-per-student-charter-schools-bleeding-taxpayers-dry"
+        },
+        {
+          "title": "Beehive — Over 200% roll growth in first seven charter schools (Apr 2026)",
+          "url": "https://www.beehive.govt.nz/release/over-200-roll-growth-first-seven-charter-schools"
+        },
+        {
+          "title": "RNZ — Property problems preventing state schools going charter (May 2026)",
+          "url": "https://www.rnz.co.nz/news/education/596514/property-problems-preventing-state-schools-going-charter-seymour"
+        }
+      ],
+      "essay": null,
+      "consequential": [
+        {
+          "label": "Reinstating charter schools (2024–25)",
+          "amount_nzd": 153000000,
+          "note": "Budget 2024 allocation to re-establish the model abolished in 2018.",
+          "source": "Budget 2024 / RNZ"
+        }
+      ]
+    },
+    {
+      "id": "tvnz-rnz-merger",
+      "name": "TVNZ–RNZ Merger (ANZPM)",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "economy",
+      "status": "cancelled",
+      "announced": "2022-03-10",
+      "ended": "2023-02-08",
+      "started_by": "ardern2",
+      "ended_by": "ardern2",
+      "sunk_nzd": 19600000,
+      "firm": [
+        {
+          "label": "Final establishment-programme spend: contractors, reimbursements, overheads, boards",
+          "amount_nzd": 19600000,
+          "source": "Ministry for Culture and Heritage final costings, reported by RNZ (and 1News), 5 Apr 2023",
+          "url": "https://www.rnz.co.nz/news/political/487388/cancelled-public-media-project-cost-almost-20m"
+        }
+      ],
+      "firm_note": "MCH final costings: ~$12m on contractors and consultants (including PwC and Deloitte, averaging ~$6,000/week, with engagements dating back to January 2020 — so the total includes pre-announcement programme work), $3m reimbursing RNZ, TVNZ and NZ On Air for project work, $2.6m on offices and overheads, and ~$400k on the governance group and establishment board — including $16,000 paid to the board after cancellation. The widely-reported ~$16.1m was the interim figure at the time of scrapping; $19.6m is the final number. MCH returned the unspent $24.8m of its $44m transition budget.",
+      "extra_costs": [
+        {
+          "label": "Consolation funding",
+          "note": "With the merger dead, RNZ was handed an extra $25.7m a year (and NZ On Air a boost) to 'strengthen public media' instead (1News/NZ Herald, Apr 2023). Real money, but a replacement policy — never counted here."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$327m over three years",
+          "label": "Budget 2022 Crown funding earmarked for the new entity",
+          "note": "Allocated for ANZPM's first three years from 2023 and freed up when the merger died. A would-have-cost, not money spent. Never counted.",
+          "source": "NZ Herald / BusinessDesk, May 2022"
+        }
+      ],
+      "summary": "$19.6m to design a broadcaster that never went to air — scrapped by the government that announced it.",
+      "plain": "Labour's plan to fold TVNZ and RNZ into one new public broadcaster, Aotearoa New Zealand Public Media, due on air by mid-2023. Eleven months after the announcement, new PM Chris Hipkins scrapped it in his cost-of-living policy reset — before the entity ever legally existed. Final costings put the spend at $19.6m, roughly 60 percent of it on contractors and consultants.",
+      "events": [
+        {
+          "date": "2021-08-26",
+          "op": "Studied",
+          "what": "Government-commissioned business case backs replacing TVNZ and RNZ with a single new public media entity."
+        },
+        {
+          "date": "2022-03-10",
+          "op": "Announced",
+          "what": "Cabinet decision announced: TVNZ and RNZ to be folded into a new public media entity — initially as its subsidiaries — operational by 1 July 2023. Establishment board to follow within a month.",
+          "source": "https://www.beehive.govt.nz/release/new-public-media-entity-showcase-new-zealand-voices-and-stories"
+        },
+        {
+          "date": "2022-05-19",
+          "op": "Funded",
+          "what": "Budget 2022 earmarks $327m over three years for the new entity.",
+          "source": "https://www.nzherald.co.nz/nz/new-public-tv-and-radio-entity-gets-327m-funding-boost/LMIFPU3PLMV7TY75XRVQ6SBCNM/"
+        },
+        {
+          "date": "2022-06-23",
+          "op": "Introduced",
+          "what": "Aotearoa New Zealand Public Media Bill introduced (first reading passes 26 July); legal establishment planned for 1 March 2023."
+        },
+        {
+          "date": "2023-02-08",
+          "op": "Scrapped",
+          "what": "Hipkins' policy reset stops the merger entirely — same government, eleven months after announcing it. RNZ and NZ On Air get funding boosts instead.",
+          "source": "https://www.rnz.co.nz/news/political/483875/watch-tvnz-rnz-merger-scrapped-income-insurance-and-hate-speech-laws-delayed"
+        },
+        {
+          "date": "2023-04-05",
+          "op": "Costed",
+          "what": "Final costings released: $19.6m spent, ~60% of it on contractors and consultants; board paid $16,000 after the halt.",
+          "source": "https://www.rnz.co.nz/news/political/487388/cancelled-public-media-project-cost-almost-20m"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — New public media entity to showcase New Zealand voices and stories (Mar 2022)",
+          "url": "https://www.beehive.govt.nz/release/new-public-media-entity-showcase-new-zealand-voices-and-stories"
+        },
+        {
+          "title": "RNZ — TVNZ/RNZ merger scrapped, income insurance and hate speech laws delayed (Feb 2023)",
+          "url": "https://www.rnz.co.nz/news/political/483875/watch-tvnz-rnz-merger-scrapped-income-insurance-and-hate-speech-laws-delayed"
+        },
+        {
+          "title": "RNZ — Cancelled public media project cost almost $20m (Apr 2023)",
+          "url": "https://www.rnz.co.nz/news/political/487388/cancelled-public-media-project-cost-almost-20m"
+        },
+        {
+          "title": "1News — Nearly $20m of public money spent on scrapped media merger (Apr 2023)",
+          "url": "https://www.1news.co.nz/2023/04/05/nearly-20m-of-public-money-spent-on-scrapped-media-merger/"
+        },
+        {
+          "title": "NZ Herald — New public TV and radio entity gets $327m funding boost (May 2022)",
+          "url": "https://www.nzherald.co.nz/nz/new-public-tv-and-radio-entity-gets-327m-funding-boost/LMIFPU3PLMV7TY75XRVQ6SBCNM/"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "mill-road",
+      "name": "Mill Road Corridor",
+      "lat": -37.03,
+      "lng": 174.93,
+      "region": "Auckland (Flat Bush–Drury)",
+      "sector": "transport",
+      "status": "restored",
+      "announced": "2020-01-29",
+      "ended": "2025-04-24",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Properties were bought along the corridor by Auckland Transport and, from 2020, Waka Kotahi, and the road was planned twice — but no clean sunk-cost or property-spend figure has ever been published; the agency was tight-lipped even before the scrapping. Contributes $0 to every total here until a figure is sourced.",
+      "extra_costs": [
+        {
+          "label": "Property purchases",
+          "note": "Auckland Transport began buying properties along the corridor, with Waka Kotahi taking over the purchasing from 2020. The total was never disclosed (RNZ), and the land is back in play now the corridor is revived."
+        },
+        {
+          "label": "Round two planning bill",
+          "note": "$91.1m approved in April 2025 for Stage 1 design and consents alone — for a corridor first consulted on by Manukau City Council in 2009, route-protected by Auckland Transport in the mid-2010s, and already investigated under the NZ Upgrade Programme."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "up to $3.5b",
+          "label": "Projected full-corridor cost cited when the project was dropped",
+          "note": "What proceeding as originally scoped 'would have cost', per Michael Wood — a projection, not money spent. Never counted here.",
+          "source": "Beehive / RNZ, 4 June 2021"
+        },
+        {
+          "figure": "~$1.3b",
+          "label": "Projected cost of Stage 1 alone after the 2024 revival",
+          "note": "Future build cost for roughly a third of the corridor — close to the 2020 budget for the whole 21.5km. Not counted.",
+          "source": "RNZ, March 2024"
+        }
+      ],
+      "summary": "Funded 2020, scrapped 2021, revived 2024 — Stage 1 alone is now priced at nearly the whole 2020 budget.",
+      "plain": "A 21.5km corridor east of the Southern Motorway, from Manukau to south of Drury. Given $1.354b in the 2020 NZ Upgrade Programme, it was dropped in June 2021 after estimates ballooned to as much as $3.5b, then brought back as a Road of National Significance in 2024. Stage 1 construction was due to start as early as mid-2026 — six years after the road was first funded.",
+      "events": [
+        {
+          "date": "2020-01-29",
+          "op": "Funded",
+          "what": "$1.354b allocated in the NZ Upgrade Programme for a 21.5km Manukau–Drury corridor.",
+          "source": "https://www.greaterauckland.org.nz/2021/06/08/the-nz-upgrade-blowout/"
+        },
+        {
+          "date": "2020-05-12",
+          "op": "Buying",
+          "what": "Waka Kotahi takes over from Auckland Transport and continues buying properties along the corridor; spend undisclosed.",
+          "source": "https://www.rnz.co.nz/news/ldr/416453/mill-rd-property-purchases-set-to-hit-top-gear"
+        },
+        {
+          "date": "2021-06-04",
+          "op": "Scrapped",
+          "what": "Dropped from the NZ Upgrade Programme after estimates hit up to $3.5b; replaced with safety improvements on the existing road plus SH1, rail and new-station investment around Drury.",
+          "source": "https://www.beehive.govt.nz/release/nz-upgrade-programme-kept-track"
+        },
+        {
+          "date": "2024-03-04",
+          "op": "Revived",
+          "what": "Draft GPS 2024 revives Mill Road as a Road of National Significance.",
+          "source": "https://www.rnz.co.nz/news/national/510930/eye-watering-amount-of-money-for-south-auckland-roading-project-cyclists-say"
+        },
+        {
+          "date": "2024-10-06",
+          "op": "Fast-tracked",
+          "what": "Named among the 149 projects listed in the Fast-track Approvals Bill schedule.",
+          "source": "https://www.rnz.co.nz/news/national/530052/mill-road-project-construction-through-south-auckland-a-fast-track-project"
+        },
+        {
+          "date": "2025-04-24",
+          "op": "Restored",
+          "what": "NZTA board endorses the Stage 1 investment case and approves $91.1m for design and consents; construction as early as mid-2026.",
+          "source": "https://www.beehive.govt.nz/release/progress-mill-road-stage-one"
+        },
+        {
+          "date": "2025-10-20",
+          "op": "Consenting",
+          "what": "RoNS progress update: Mill Road Stage 1 still working through its Fast-track Approvals Act application — consents not yet granted.",
+          "source": "https://www.beehive.govt.nz/release/next-steps-roads-national-significance"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — NZ Upgrade Programme kept on track (4 Jun 2021)",
+          "url": "https://www.beehive.govt.nz/release/nz-upgrade-programme-kept-track"
+        },
+        {
+          "title": "RNZ — Auckland's soaring property prices blamed for Mill Rd cost blow-out (4 Jun 2021)",
+          "url": "https://www.rnz.co.nz/news/ldr/444071/auckland-s-soaring-property-prices-blamed-for-mill-rd-cost-blow-out"
+        },
+        {
+          "title": "Greater Auckland — The NZ Upgrade Blowout (8 Jun 2021)",
+          "url": "https://www.greaterauckland.org.nz/2021/06/08/the-nz-upgrade-blowout/"
+        },
+        {
+          "title": "RNZ — Mill Rd property purchases set to hit top gear (12 May 2020)",
+          "url": "https://www.rnz.co.nz/news/ldr/416453/mill-rd-property-purchases-set-to-hit-top-gear"
+        },
+        {
+          "title": "RNZ — 'Eye watering' amount of money for south Auckland roading project, cyclists say (5 Mar 2024)",
+          "url": "https://www.rnz.co.nz/news/national/510930/eye-watering-amount-of-money-for-south-auckland-roading-project-cyclists-say"
+        },
+        {
+          "title": "RNZ — Mill Road project construction through South Auckland a fast-track project (7 Oct 2024)",
+          "url": "https://www.rnz.co.nz/news/national/530052/mill-road-project-construction-through-south-auckland-a-fast-track-project"
+        },
+        {
+          "title": "Beehive — Progress on Mill Road Stage One (24 Apr 2025)",
+          "url": "https://www.beehive.govt.nz/release/progress-mill-road-stage-one"
+        },
+        {
+          "title": "Beehive — Next steps for Roads of National Significance (20 Oct 2025)",
+          "url": "https://www.beehive.govt.nz/release/next-steps-roads-national-significance"
+        },
+        {
+          "title": "NZTA — Mill Road project page",
+          "url": "https://nzta.govt.nz/projects/south-auckland-projects/mill-road"
+        },
+        {
+          "title": "NZTA — Mill Road history timeline (2025)",
+          "url": "https://nzta.govt.nz/assets/projects/mill-road/mill-road-history-timeline-2025.pdf"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "akl-regional-fuel-tax",
+      "name": "Auckland Regional Fuel Tax",
+      "lat": -36.86,
+      "lng": 174.77,
+      "region": "Auckland",
+      "sector": "tax",
+      "status": "reversed",
+      "announced": "2018-06-26",
+      "ended": "2024-06-30",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A tax repeal, not a project write-off: the ~$780m collected (to September 2023) was ring-fenced for legislated transport projects, and the unspent reserve stayed with three surviving priorities — so nothing is counted as sunk.",
+      "extra_costs": [
+        {
+          "label": "Reserve ring-fenced, projects descoped",
+          "note": "~$341m sat unspent as of September 2023 (MoT). From 8 March 2024 the reserve could legally fund only three projects — Eastern Busway, City Rail Link electric trains and stabling, and road corridor improvements — stripping the RFT funding stream from the other 11 legislated projects."
+        },
+        {
+          "label": "Scheme wind-down",
+          "note": "NZTA estimated ~$3m would be needed over the two years after the scheme ended for rebate processing, compliance audits and administration, recovered from RFT revenue before transfer to Auckland Council (MoT briefing OC230866)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "up to $637.5m",
+          "label": "Foregone RFT revenue to mid-2028 (MoT estimate)",
+          "note": "Officials' estimate of local revenue Auckland Council would lose from early termination (~$150m/year over four and a quarter years, calculated for a March 2024 end; the actual end was June 2024). Revenue never collected, not money spent — never counted.",
+          "source": "MoT briefing OC230866, Nov 2023"
+        },
+        {
+          "figure": "$1.2b over four years",
+          "label": "Auckland transport funding shortfall claimed by Mayor Wayne Brown",
+          "note": "Mayoral claim at repeal, bundling lost RFT revenue with the co-funding it leveraged. Attributed, not counted.",
+          "source": "RNZ, 8 Feb 2024"
+        },
+        {
+          "figure": "~$4.4b",
+          "label": "Transport investment Auckland Council said was put at risk",
+          "note": "Council's framing of the total programme the RFT part-funded across 14 projects, recorded in MoT advice. A delivery-risk claim, not a cost.",
+          "source": "MoT briefing OC230866, Nov 2023"
+        }
+      ],
+      "summary": "Six years of 11.5c/L at the pump, axed four years early with ~$341m still unspent.",
+      "plain": "From July 2018 Aucklanders paid an extra 11.5 cents a litre to fund 14 transport projects, with the tax legislated to run until 2028. The incoming coalition repealed it under urgency and it ended on 30 June 2024 — by September 2023 about $780m had been collected but roughly $341m was still unspent. The remaining money was restricted to three projects, and the other eleven lost their funding stream.",
+      "events": [
+        {
+          "date": "2018-06-26",
+          "op": "Passed",
+          "what": "Regional fuel tax legislation passes its third reading 63–57 — Labour, NZ First and the Greens in favour; National and ACT opposed.",
+          "source": "https://www.stuff.co.nz/national/politics/105031012/regional-fuel-tax-bill-finally-passes"
+        },
+        {
+          "date": "2018-07-01",
+          "op": "Started",
+          "what": "10c/L plus GST (11.5c at the pump) takes effect across Auckland excluding Great Barrier Island, legislated to run to 30 June 2028 and raise ~$1.5b for 14 transport projects.",
+          "source": "https://www.transport.govt.nz/assets/Uploads/Auckland-Regional-Fuel-Tax-Proactive-Release-Ready-for-Public-Release.pdf"
+        },
+        {
+          "date": "2024-02-08",
+          "op": "Axed",
+          "what": "Transport Minister Simeon Brown confirms the tax will end 30 June 2024, fulfilling a coalition commitment, with repeal legislation to be introduced. ~$780m collected and ~$341m unspent as of September 2023.",
+          "source": "https://www.beehive.govt.nz/release/government-axe-auckland-regional-fuel-tax"
+        },
+        {
+          "date": "2024-03-06",
+          "op": "Repealed",
+          "what": "Repeal bill completes its final stages under urgency on 5–6 March, skipping select committee — third reading 6 March, royal assent 7 March. From 8 March only the Eastern Busway, CRL electric trains and stabling, and road corridor improvements can draw on remaining funds.",
+          "source": "https://www.beehive.govt.nz/release/auckland-regional-fuel-tax-abolished"
+        },
+        {
+          "date": "2024-06-30",
+          "op": "Ended",
+          "what": "Tax comes off at the pumps, four years before its legislated end; refund claims accepted until 31 October 2024.",
+          "source": "https://www.nzta.govt.nz/vehicles/regional-fuel-tax"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — Government to axe Auckland Regional Fuel Tax (Feb 2024)",
+          "url": "https://www.beehive.govt.nz/release/government-axe-auckland-regional-fuel-tax"
+        },
+        {
+          "title": "Beehive — Auckland Regional Fuel Tax abolished (Mar 2024)",
+          "url": "https://www.beehive.govt.nz/release/auckland-regional-fuel-tax-abolished"
+        },
+        {
+          "title": "RNZ — Auckland Regional Fuel Tax to end in June, PM announces",
+          "url": "https://www.rnz.co.nz/news/national/508653/auckland-regional-fuel-tax-to-end-in-june-pm-announces"
+        },
+        {
+          "title": "Ministry of Transport — 100 Day Plan: Removing the Auckland RFT scheme (OC230866, proactive release)",
+          "url": "https://www.transport.govt.nz/assets/Uploads/Auckland-Regional-Fuel-Tax-Proactive-Release-Ready-for-Public-Release.pdf"
+        },
+        {
+          "title": "NZTA — Auckland Regional Fuel Tax scheme ended 30 June 2024",
+          "url": "https://www.nzta.govt.nz/vehicles/regional-fuel-tax"
+        },
+        {
+          "title": "NZTA — Regional Fuel Tax fourth quarter report, Q4 2023/24 (final)",
+          "url": "https://www.nzta.govt.nz/assets/resources/regional-fuel-tax-quarterly-reports/rft-q4-2023-2024.pdf"
+        },
+        {
+          "title": "Legislation — Land Transport Management (Repeal of Regional Fuel Tax) Amendment Act 2024",
+          "url": "https://www.legislation.govt.nz/act/public/2024/0009/latest/whole.html"
+        },
+        {
+          "title": "Stuff — Regional Fuel Tax bill finally passes (June 2018)",
+          "url": "https://www.stuff.co.nz/national/politics/105031012/regional-fuel-tax-bill-finally-passes"
+        },
+        {
+          "title": "University of Auckland / Newsroom — The short-sighted scrapping of the regional fuel tax (Feb 2024)",
+          "url": "https://www.auckland.ac.nz/en/news/2024/02/10/short-sighted-scrapping-regional-fuel-tax.html"
+        },
+        {
+          "title": "WhereTheyStand — Land Transport Management (Repeal of Regional Fuel Tax) Amendment Bill (stages, votes, urgency)",
+          "url": "https://wheretheystand.nz/bills/991"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "super-fund-suspension",
+      "name": "NZ Super Fund Contribution Suspension",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "economy",
+      "status": "restored",
+      "announced": "2009-05-28",
+      "ended": "2017-12-14",
+      "started_by": "key1",
+      "ended_by": "ardern1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A fiscal settings flip, not a project: nothing was built and nothing was written off. The only big number is the Guardians' counterfactual model of the compounding the Fund never did — a projection, so it lives in contested, not here.",
+      "extra_costs": [],
+      "contested": [
+        {
+          "figure": "~$27.5b",
+          "label": "Guardians' modelled cost of the eight-year pause",
+          "note": "The Fund's own model, assessed at the December 2017 resumption: ~$12.5b of missed contributions, ~$12b of forgone returns on those contributions, and ~$3b of forgone domestic tax on those returns. The Guardians publish the three components, not a single total — the ~$27.5b is their sum. A counterfactual estimate, not money spent — and the flipside is the Crown borrowed less through the GFC. Never counted here.",
+          "source": "Guardians of NZ Super, contributions model page"
+        }
+      ],
+      "summary": "Eight years of skipped payments; the Fund's own model prices the miss at ~$27.5b.",
+      "plain": "New Zealand saves into the Super Fund now so superannuation costs less later. National stopped the payments during the 2009 financial crisis and Labour–NZ First restarted them in December 2017. No money was written off, but the Fund's own modelling puts the cost of the eight-year pause at roughly $27.5 billion — $12.5b of missed contributions, $12b of returns those contributions never earned, and $3b of tax never paid on those returns.",
+      "events": [
+        {
+          "date": "2003-10-01",
+          "op": "Started",
+          "what": "The 'Cullen Fund' begins investing in October 2003 with a first contribution of $2.4b, under what is now the NZ Superannuation and Retirement Income Act 2001.",
+          "source": "https://nzsuperfund.nz/nz-super-fund-explained/nz-super-fund-story/our-timeline"
+        },
+        {
+          "date": "2009-05-28",
+          "op": "Suspended",
+          "what": "Budget 2009 suspends automatic contributions to avoid further debt; a final partial contribution of $250m goes in for 2009/10. Resumption waits on surpluses big enough to fund the formula — on Treasury's projections, 11 years away (about 2020/21).",
+          "source": "https://www.beehive.govt.nz/release/new-zealand-super-fund-fact-sheet"
+        },
+        {
+          "date": "2017-12-14",
+          "op": "Restored",
+          "what": "Labour–NZ First resumes contributions — $7.7b over the next five years — with payments restarting the next day.",
+          "source": "https://www.beehive.govt.nz/release/super-fund-contributions-secure-generational-legacy"
+        },
+        {
+          "date": "2017-12-15",
+          "op": "First payment",
+          "what": "Robertson hits the button at Treasury on the first monthly instalment — $71m of the $500m planned for 2017/18 — with Ardern looking on. The first payment in nine years.",
+          "source": "https://www.stuff.co.nz/business/99882931/jacinda-ardern-grant-robertson-make-first-super-fund-payment-in-nine-years"
+        },
+        {
+          "date": "2023-11-27",
+          "op": "Continued",
+          "what": "Contributions continue under the National-led coalition — this time the setting survives the change of government.",
+          "source": "https://nzsuperfund.nz/about-the-guardians/purpose-and-mandate/contributions-model/"
+        },
+        {
+          "date": "2025-05-22",
+          "op": "Diverted",
+          "what": "Budget 2025 diverts a further $61m of contributions to the Elevate NZ Venture Fund — on top of the $240m Labour–NZ First diverted to Elevate in 2019.",
+          "source": "https://nzsuperfund.nz/about-the-guardians/purpose-and-mandate/contributions-model/"
+        },
+        {
+          "date": "2026-05-28",
+          "op": "Continued",
+          "what": "Budget 2026 lifts contributions: $3.1b forecast over the next four years, $2.2b more than previously signalled.",
+          "source": "https://www.interest.co.nz/economy/138737/budget-2026-snips-tweaks-and-optimistic-outlook-treasury"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NZ Super Fund — Contributions model (Guardians' estimate of the suspension's cost)",
+          "url": "https://nzsuperfund.nz/about-the-guardians/purpose-and-mandate/contributions-model/"
+        },
+        {
+          "title": "Beehive — New Zealand Super Fund fact sheet, Budget 2009 (29 May 2009)",
+          "url": "https://www.beehive.govt.nz/release/new-zealand-super-fund-fact-sheet"
+        },
+        {
+          "title": "Beehive — Super Fund contributions secure generational legacy (14 Dec 2017)",
+          "url": "https://www.beehive.govt.nz/release/super-fund-contributions-secure-generational-legacy"
+        },
+        {
+          "title": "NZ Super Fund — Our timeline",
+          "url": "https://nzsuperfund.nz/nz-super-fund-explained/nz-super-fund-story/our-timeline"
+        },
+        {
+          "title": "Stuff — Ardern, Robertson make first Super Fund payment in nine years",
+          "url": "https://www.stuff.co.nz/business/99882931/jacinda-ardern-grant-robertson-make-first-super-fund-payment-in-nine-years"
+        },
+        {
+          "title": "interest.co.nz — Budget 2026: snips, tweaks and an optimistic outlook from Treasury (28 May 2026)",
+          "url": "https://www.interest.co.nz/economy/138737/budget-2026-snips-tweaks-and-optimistic-outlook-treasury"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "rbnz-mandate",
+      "name": "RBNZ Dual Mandate",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "economy",
+      "status": "reversed",
+      "announced": "2018-03-26",
+      "ended": "2023-12-20",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A statutory-settings flip: the employment objective was written into the Reserve Bank's mandate by agreement and statute, then struck out by statute. No identifiable Crown money was sunk on the reversed objective itself.",
+      "extra_costs": [],
+      "contested": [],
+      "summary": "Employment written into the central bank's job in 2018, deleted under urgency in 2023 — the new government's first law.",
+      "plain": "In 2018 the Labour-led coalition gave the Reserve Bank two jobs: keep prices stable and support maximum sustainable employment. In December 2023 the incoming coalition repealed the employment half under urgency as the very first law it passed, returning the bank to a single price-stability target. Nothing was built or written off; the whiplash is in the rulebook the bank works to.",
+      "events": [
+        {
+          "date": "2018-03-26",
+          "what": "New Policy Targets Agreement signed by Grant Robertson and incoming Governor Adrian Orr adds 'maximum sustainable employment' alongside price stability.",
+          "source": "https://www.beehive.govt.nz/release/new-pta-requires-reserve-bank-consider-employment-alongside-price-stability-mandate",
+          "op": "Added"
+        },
+        {
+          "date": "2018-12-20",
+          "what": "Reserve Bank of New Zealand (Monetary Policy) Amendment Act 2018 receives royal assent, putting the dual mandate into statute.",
+          "source": "https://www.legislation.govt.nz/act/public/2018/0059/latest/LMS65426.html",
+          "op": "Legislated"
+        },
+        {
+          "date": "2019-04-01",
+          "what": "Act fully in force: the new Monetary Policy Committee takes over under the dual-mandate remit, ending the Governor's sole responsibility for monetary policy.",
+          "source": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/history-of-the-remit-and-policy-targets-agreement",
+          "op": "In force"
+        },
+        {
+          "date": "2023-11-29",
+          "what": "Repeal listed in the coalition's 100-day plan: refocus the Reserve Bank on a single price-stability mandate.",
+          "source": "https://www.rnz.co.nz/news/political/503534/government-confirms-its-100-day-plan",
+          "op": "Targeted"
+        },
+        {
+          "date": "2023-12-13",
+          "what": "Reserve Bank of New Zealand (Economic Objective) Amendment Bill passes its third reading under urgency — the first legislation passed by the new government, taken through all stages in one extended sitting that began 12 December.",
+          "source": "https://www.rnz.co.nz/news/political/504643/reserve-bank-dual-mandate-repeal-passes-through-parliament",
+          "op": "Repealed"
+        },
+        {
+          "date": "2023-12-20",
+          "what": "Royal assent on 19 December; new single-mandate remit takes effect the next day. Employment objective gone after five years.",
+          "source": "https://gazette.govt.nz/notice/id/2023-go5845",
+          "op": "Reverted"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — New PTA requires Reserve Bank to consider employment alongside price stability (Mar 2018)",
+          "url": "https://www.beehive.govt.nz/release/new-pta-requires-reserve-bank-consider-employment-alongside-price-stability-mandate"
+        },
+        {
+          "title": "NZ Legislation — Reserve Bank of New Zealand (Monetary Policy) Amendment Act 2018",
+          "url": "https://www.legislation.govt.nz/act/public/2018/0059/latest/LMS65426.html"
+        },
+        {
+          "title": "RBNZ — History of the Remit and Policy Targets Agreement",
+          "url": "https://www.rbnz.govt.nz/monetary-policy/about-monetary-policy/history-of-the-remit-and-policy-targets-agreement"
+        },
+        {
+          "title": "RNZ — Reserve Bank dual mandate repeal passes through Parliament (Dec 2023)",
+          "url": "https://www.rnz.co.nz/news/political/504643/reserve-bank-dual-mandate-repeal-passes-through-parliament"
+        },
+        {
+          "title": "NZ Gazette — Remit issued for the Monetary Policy Committee (effective 20 Dec 2023)",
+          "url": "https://gazette.govt.nz/notice/id/2023-go5845"
+        },
+        {
+          "title": "RNZ — Government confirms its 100-day plan (Nov 2023)",
+          "url": "https://www.rnz.co.nz/news/political/503534/government-confirms-its-100-day-plan"
+        },
+        {
+          "title": "Treasury — Reserve Bank Dual Mandate Change Information Release",
+          "url": "https://www.treasury.govt.nz/publications/information-release/reserve-bank-dual-mandate"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "gidi-fund",
+      "name": "GIDI Decarbonisation Fund",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "energy",
+      "status": "reversed",
+      "announced": "2020-11-11",
+      "ended": "2023-12-20",
+      "started_by": "ardern2",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A scheme termination with no exit write-off: grants already contracted were honoured and bought real boiler conversions, and the unspent balance was returned to the Crown, so nothing is counted as sunk.",
+      "extra_costs": [
+        {
+          "label": "Committed and honoured",
+          "note": "Around 119 projects had roughly $355m of government co-funding committed, matched by over $890m in private funding (IEA/EECA); contracted projects continued after closure, including NZ Steel's part-funded electric arc furnace."
+        },
+        {
+          "label": "Clawed back",
+          "note": "$640m of unspent GIDI funding was returned to government coffers after closure (RNZ, May 2024)."
+        },
+        {
+          "label": "Aftermath",
+          "note": "In October 2025 Cabinet redirected $4m of cancelled GIDI grant money toward procuring an LNG import terminal — half the $8m procurement budget (NZ Herald, Mar 2026)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "10 Mt CO₂",
+          "label": "Treasury-estimated emissions savings foregone to 2050",
+          "note": "A projection of abatement the fund would have bought, not money spent. Never counted.",
+          "source": "RNZ, May 2024"
+        },
+        {
+          "figure": "$2.047b",
+          "label": "ETS 'climate dividend' Willis said the closures freed for tax relief",
+          "note": "A forecast of future Emissions Trading Scheme cash proceeds across several programme closures, not GIDI-specific spending. Never counted.",
+          "source": "Beehive mini-budget, Dec 2023"
+        }
+      ],
+      "summary": "Paid firms to ditch coal boilers; scrapped as 'corporate welfare' with $640m handed back.",
+      "plain": "A co-funding scheme that paid companies to swap coal and gas boilers for electric and biomass alternatives, launched in 2020 with $70m and expanded with roughly $650m more in 2022. The incoming coalition called it corporate welfare and scrapped it in the December 2023 mini-budget. About $640m of unspent funding went back to the government's books, while grants already contracted were honoured.",
+      "events": [
+        {
+          "date": "2020-11-11",
+          "op": "Started",
+          "what": "GIDI Fund launched by Ardern and Woods: $70m, administered by EECA, co-funding the switch from coal and gas boilers to electricity and biomass.",
+          "source": "https://www.beehive.govt.nz/release/new-fund-launched-reduce-carbon-emissions-coal-and-gas"
+        },
+        {
+          "date": "2022-05-16",
+          "op": "Expanded",
+          "what": "Budget 2022 'supercharges' GIDI with around $650m over four years from the Climate Emergency Response Fund.",
+          "source": "https://www.beehive.govt.nz/release/supercharging-decarbonisation-transforming-energy-system"
+        },
+        {
+          "date": "2023-12-20",
+          "op": "Scrapped",
+          "what": "Mini-budget closes GIDI — Willis: it 'has been subsidising already profitable businesses to reduce emissions'. Closure helps free $2.047b of forecast ETS proceeds as a 'climate dividend' for tax relief.",
+          "source": "https://www.beehive.govt.nz/release/fiscal-repair-job-underway"
+        },
+        {
+          "date": "2024-05-20",
+          "op": "Returned",
+          "what": "RNZ reports $640m of unspent GIDI funding returned to government coffers; Treasury estimated the fund would have delivered 10 Mt of CO₂ savings to 2050.",
+          "source": "https://www.rnz.co.nz/news/national/517269/has-cutting-corporate-welfare-left-a-hole-in-government-climate-plans"
+        },
+        {
+          "date": "2026-03-22",
+          "op": "Aftermath",
+          "what": "NZ Herald reveals Cabinet redirected $4m of cancelled GIDI grants to buy an LNG import terminal — half the $8m procurement budget.",
+          "source": "https://www.nzherald.co.nz/business/half-the-governments-8m-budget-to-buy-an-lng-terminal-comes-from-a-cancelled-fund-to-wean-industry-off-fossil-fuels/premium/SWDSHDJSDVAI3P6C5VFJ7SVHYU/"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — New fund launched to reduce carbon emissions from coal and gas (Nov 2020)",
+          "url": "https://www.beehive.govt.nz/release/new-fund-launched-reduce-carbon-emissions-coal-and-gas"
+        },
+        {
+          "title": "Beehive — Supercharging decarbonisation & transforming the energy system (May 2022)",
+          "url": "https://www.beehive.govt.nz/release/supercharging-decarbonisation-transforming-energy-system"
+        },
+        {
+          "title": "Beehive — Fiscal repair job underway (mini-budget, Dec 2023)",
+          "url": "https://www.beehive.govt.nz/release/fiscal-repair-job-underway"
+        },
+        {
+          "title": "RNZ — Has cutting 'corporate welfare' left a hole in government climate plans? (May 2024)",
+          "url": "https://www.rnz.co.nz/news/national/517269/has-cutting-corporate-welfare-left-a-hole-in-government-climate-plans"
+        },
+        {
+          "title": "EECA — Approved GIDI projects (fund timeline; honoured contracts)",
+          "url": "https://www.eeca.govt.nz/co-funding-and-support/previously-funded-projects/approved-gidi-projects/"
+        },
+        {
+          "title": "IEA — Government Investment in Decarbonising Industry Fund (GIDI) policy record",
+          "url": "https://www.iea.org/policies/14055-government-investment-in-decarbonising-industry-fund-gidi"
+        },
+        {
+          "title": "NZ Herald — Government taps shuttered green fund to push ahead with $8m LNG import plan (Mar 2026)",
+          "url": "https://www.nzherald.co.nz/business/half-the-governments-8m-budget-to-buy-an-lng-terminal-comes-from-a-cancelled-fund-to-wean-industry-off-fossil-fuels/premium/SWDSHDJSDVAI3P6C5VFJ7SVHYU/"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "ninety-day-trials",
+      "name": "90-day Trial Periods",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "economy",
+      "status": "restored",
+      "announced": "2009-03-01",
+      "ended": "2023-12-23",
+      "started_by": "key1",
+      "ended_by": "luxon1",
+      "sunk_nzd": 0,
+      "firm": [],
+      "firm_note": "A pure employment-law setting flip: no project to write off. The churn cost lands on employers and new hires re-papering employment agreements each time the threshold moves, not on the Crown.",
+      "extra_costs": [],
+      "contested": [],
+      "summary": "Four settings in fifteen years: small firms, everyone, small firms, everyone.",
+      "plain": "A clause letting an employer dismiss a new hire in their first 90 days without facing an unjustified-dismissal claim. National introduced it for small employers in 2009 and extended it to everyone in 2011; Labour wound it back to small employers in 2019; the incoming coalition restored it to all employers within weeks of taking office in December 2023. Treasury-funded research found no evidence the trials increased overall hiring.",
+      "events": [
+        {
+          "date": "2009-03-01",
+          "op": "Set: <20 staff",
+          "what": "Introduced for employers with fewer than 20 employees (National, passed under urgency with royal assent 15 December 2008; trial-period sections in force 1 March 2009).",
+          "source": "https://www.legislation.govt.nz/act/public/2008/0106/latest/whole.html"
+        },
+        {
+          "date": "2011-04-01",
+          "op": "Set: all",
+          "what": "Extended to all employers (Employment Relations Amendment Act 2010, in force 1 April 2011).",
+          "source": "https://www.legislation.govt.nz/act/public/2010/0125/latest/whole.html"
+        },
+        {
+          "date": "2019-05-06",
+          "op": "Set: <20 staff",
+          "what": "Restricted back to employers with fewer than 20 employees (Labour's Employment Relations Amendment Act 2018, passed 6 December 2018).",
+          "source": "https://www.mbie.govt.nz/business-and-employment/employment-and-skills/employment-legislation-reviews/employment-relations-amendment-bill/"
+        },
+        {
+          "date": "2023-12-23",
+          "op": "Set: all",
+          "what": "Restored to all employers as a coalition 100-day-plan item; royal assent 22 December 2023, in force the next day.",
+          "source": "https://www.beehive.govt.nz/release/availability-90-day-trials-extended"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Employment Relations Amendment Act 2008 No 106 — NZ Legislation (ss 6-7 in force 1 March 2009)",
+          "url": "https://www.legislation.govt.nz/act/public/2008/0106/latest/whole.html"
+        },
+        {
+          "title": "Employment Relations Amendment Act 2010 No 125 — NZ Legislation (in force 1 April 2011)",
+          "url": "https://www.legislation.govt.nz/act/public/2010/0125/latest/whole.html"
+        },
+        {
+          "title": "Treasury — The Effect of Trial Periods in Employment on Firm Hiring Behaviour (WP 16/03)",
+          "url": "https://www.treasury.govt.nz/publications/wp/effect-trial-periods-employment-firm-hiring-behaviour-wp-16-03"
+        },
+        {
+          "title": "MBIE — Employment Relations Amendment Act 2018",
+          "url": "https://www.mbie.govt.nz/business-and-employment/employment-and-skills/employment-legislation-reviews/employment-relations-amendment-bill/"
+        },
+        {
+          "title": "Beehive — Availability of 90-day trials extended (21 Dec 2023)",
+          "url": "https://www.beehive.govt.nz/release/availability-90-day-trials-extended"
+        },
+        {
+          "title": "Employment Relations (Trial Periods) Amendment Act 2023 — NZ Legislation",
+          "url": "https://www.legislation.govt.nz/act/public/2023/0069/latest/LMS896161.html"
+        },
+        {
+          "title": "Motu — 90 day trial periods have little to no effect",
+          "url": "https://motu.nz/about-us/news/90-day-trial-periods-have-little-to-no-effect"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "income-insurance",
+      "name": "NZ Income Insurance Scheme",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "economy",
+      "status": "cancelled",
+      "announced": "2021-05-20",
+      "ended": "2023-02-08",
+      "started_by": "ardern2",
+      "ended_by": "ardern2",
+      "sunk_nzd": 21600000,
+      "firm": [
+        {
+          "label": "ACC spend preparing to implement the scheme, then halting it — incl. $11.7m on contractors and consultants ($5.4m to PwC), ~$390k staff redundancies and $1.73m contractor termination costs",
+          "amount_nzd": 21600000,
+          "source": "NZ Herald (OIA figures from ACC), 5 May 2023",
+          "url": "https://www.nzherald.co.nz/business/personal-finance/revealed-the-huge-cost-of-the-governments-shelved-income-insurance-scheme/PCCIWVHBDVDSDIKT2VJHBV6ZHI/"
+        }
+      ],
+      "firm_note": "ACC's audited 2023 annual report independently corroborates the scale: ~$5m spent in 2021/22 plus $16.9m in 2022/23 before the programme was disestablished, with $19.6m of that year's $42.2m appropriation returned to the Crown. MBIE largely footed the bill for the policy design itself; that spend was never separately published and contributes $0 to totals here.",
+      "extra_costs": [
+        {
+          "label": "MBIE policy development",
+          "note": "Two years of scheme design (2021-23) ran through MBIE and the tripartite forum with BusinessNZ and the NZCTU. No clean public figure for MBIE's share exists, so it is not counted."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "~$3.5b/year",
+          "label": "Estimated annual cost of the scheme once running, to be funded by new levies",
+          "note": "What the scheme would have cost to operate, paid by a 1.39% levy each on workers and employers. Never collected, never spent. Not counted.",
+          "source": "MBIE discussion document / NZ Herald, Feb 2022"
+        }
+      ],
+      "summary": "Two years of tripartite design, an enabling act and a $21.6m ACC build-out — shelved by the government that designed it.",
+      "plain": "An ACC-style 'jobs insurance' scheme designed by the Labour government with BusinessNZ and the unions: lose your job to redundancy or ill health and you'd get 80% of your pay for up to seven months, funded by a new levy on workers and employers. ACC stood up a 30-person implementation unit under a 2022 enabling act, then Chris Hipkins shelved the whole thing in his February 2023 policy bonfire before the main legislation was ever introduced. ACC had spent $21.6m preparing for, and then unwinding, a scheme that never existed.",
+      "events": [
+        {
+          "date": "2021-05-20",
+          "op": "Announced",
+          "what": "Budget 2021: Government, BusinessNZ and the CTU to jointly design an ACC-style social unemployment insurance scheme.",
+          "source": "https://www.beehive.govt.nz/release/building-stronger-support-workers-post-covid"
+        },
+        {
+          "date": "2022-02-02",
+          "op": "Consulted",
+          "what": "Tripartite discussion document released: 1.39% levy each on workers and employers, 80% of pay for up to seven months, run by ACC.",
+          "source": "https://www.beehive.govt.nz/release/consultation-begins-income-insurance-scheme-protect-workers-benefit-businesses"
+        },
+        {
+          "date": "2022-05-24",
+          "op": "Enacted",
+          "what": "Enabling act received royal assent (third reading 20 May) so ACC could build delivery systems before the scheme itself was legislated — with a sunset clause if it never was.",
+          "source": "https://www.legislation.govt.nz/act/public/2022/0026/latest/whole.html"
+        },
+        {
+          "date": "2023-02-08",
+          "op": "Shelved",
+          "what": "Hipkins reprioritisation: income insurance 'off the table' — no scheme this term. ACC's implementation unit was subsequently disestablished and unspent funding returned to the Crown.",
+          "source": "https://www.rnz.co.nz/news/political/483875/watch-tvnz-rnz-merger-scrapped-income-insurance-and-hate-speech-laws-delayed"
+        },
+        {
+          "date": "2025-03-31",
+          "op": "Lapsed",
+          "what": "The enabling act self-repealed under its sunset clause. The scheme was never established.",
+          "source": "https://www.legislation.govt.nz/act/public/2022/0026/latest/whole.html"
+        }
+      ],
+      "sources": [
+        {
+          "title": "NZ Herald — Revealed: the huge cost of the Government's shelved Income Insurance Scheme (May 2023)",
+          "url": "https://www.nzherald.co.nz/business/personal-finance/revealed-the-huge-cost-of-the-governments-shelved-income-insurance-scheme/PCCIWVHBDVDSDIKT2VJHBV6ZHI/"
+        },
+        {
+          "title": "ACC — Annual Report 2023 (NZIIS programme spend and wind-down)",
+          "url": "https://www.acc.co.nz/assets/corporate-documents/acc8519-acc-annual-report-2023.pdf"
+        },
+        {
+          "title": "Beehive — Building stronger support for workers post COVID (Budget 2021)",
+          "url": "https://www.beehive.govt.nz/release/building-stronger-support-workers-post-covid"
+        },
+        {
+          "title": "Beehive — Consultation begins on income insurance scheme (Feb 2022)",
+          "url": "https://www.beehive.govt.nz/release/consultation-begins-income-insurance-scheme-protect-workers-benefit-businesses"
+        },
+        {
+          "title": "NZ Legislation — Income Insurance Scheme (Enabling Development) Act 2022",
+          "url": "https://www.legislation.govt.nz/act/public/2022/0026/latest/whole.html"
+        },
+        {
+          "title": "RNZ — TVNZ/RNZ merger scrapped, income insurance and hate speech laws delayed (8 Feb 2023)",
+          "url": "https://www.rnz.co.nz/news/political/483875/watch-tvnz-rnz-merger-scrapped-income-insurance-and-hate-speech-laws-delayed"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "speed-limits",
+      "name": "Road to Zero Speed Limit Reductions",
+      "lat": null,
+      "lng": null,
+      "region": "Nationwide",
+      "sector": "transport",
+      "status": "reversed",
+      "announced": "2019-12-19",
+      "ended": "2025-07-01",
+      "started_by": "ardern1",
+      "ended_by": "luxon1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Money was unquestionably spent twice — signs in, then signs out — but no clean nationwide actual is on the public record. Auckland Transport's $8.8m reversal figure is a board-paper forecast, the cost of the original reductions was never centrally totalled, and councils' spend on speed management plans voided by the 2024 rule is only patchily reported. Nothing is counted until an audited figure lands.",
+      "extra_costs": [
+        {
+          "label": "Scrapped speed management plans",
+          "note": "The 2024 rule voided plans councils had not yet implemented. West Coast councils alone reported close to $500,000 sunk on their withdrawn draft plan — Buller $172,000, the regional council $78,000, Westland 'close to' Buller's figure, with the chair putting the combined total at 'pushing $500,000' (RNZ/LDR, Nov 2024)."
+        },
+        {
+          "label": "Paying twice for signs",
+          "note": "Councils installed lower-limit signs in 2020–23, then paid to take them down again. Auckland Transport's reversal programme covered 1,540 streets and 152 schools, unbudgeted in its regional transport plan, with NZTA paying 51% from the National Land Transport Fund."
+        },
+        {
+          "label": "Enforcement churn",
+          "note": "NZTA cancelled and refunded 279 fines issued in a single day on a Lower Hutt street where successive changes left permanent and variable school-zone signs giving conflicting limits (RNZ, Mar 2026)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "$8.8m",
+          "label": "Auckland Transport's forecast cost to reverse its speed limits",
+          "note": "A February 2025 board-paper estimate ('will likely cost'), down from an earlier $25m estimate ($7.5m signs and markings, $16.7m variable school limits, $450k advertising). A forecast, not confirmed spend — never counted.",
+          "source": "The Spinoff, Feb 2025; RNZ, Oct 2024"
+        },
+        {
+          "figure": "$30m",
+          "label": "National's campaign ring-fence to fund reversals",
+          "note": "An 'initial' three-year allocation from the National Land Transport Fund, pledged in September 2023 to buy and install new signage and remove markings. An allocation, not reported spend.",
+          "source": "1News, Sep 2023"
+        }
+      ],
+      "summary": "Paid to put the signs up, paid to take them down.",
+      "plain": "Under Labour's Road to Zero strategy, NZTA and councils lowered speed limits on thousands of roads from 2020. The coalition's 2024 rule ordered limits lowered since January 2020 on specified roads back up by 1 July 2025, so the same stretches of road got new signs twice in five years. After consultation, a handful of roads kept their lower limits.",
+      "events": [
+        {
+          "date": "2019-12-19",
+          "op": "Launched",
+          "what": "Road to Zero launched: cut road deaths and serious injuries 40% by 2030, with lower speed limits a key lever.",
+          "source": "https://www.beehive.govt.nz/release/new-road-safety-investment-and-action-plan-save-lives"
+        },
+        {
+          "date": "2022-05-19",
+          "op": "Passed",
+          "what": "Setting of Speed Limits Rule 2022 takes effect: bylaws out, speed management plans in; reductions roll out across state highways and local roads.",
+          "source": "https://www.nzta.govt.nz/resources/rules/setting-of-speed-limits-2022/"
+        },
+        {
+          "date": "2023-11-24",
+          "op": "Promised",
+          "what": "National–ACT coalition agreement commits to 'reverse speed limit reductions where it is safe to do so'.",
+          "source": "https://assets.nationbuilder.com/actnz/mailings/6945/attachments/original/National_ACT_Agreement.pdf"
+        },
+        {
+          "date": "2024-09-28",
+          "op": "Signed",
+          "what": "Setting of Speed Limits Rule 2024 signed: limits lowered since January 2020 on specified roads must revert by 1 July 2025; variable school-zone limits required by July 2026.",
+          "source": "https://www.rnz.co.nz/news/political/529293/government-signs-off-on-new-speed-limit-rules-reversing-blanket-speed-limit-reductions"
+        },
+        {
+          "date": "2024-10-30",
+          "op": "Repealed",
+          "what": "New rule takes effect, revoking the 2022 rule and voiding speed management plans councils had not yet implemented.",
+          "source": "https://www.nzta.govt.nz/resources/rules/setting-of-speed-limits-2022/"
+        },
+        {
+          "date": "2025-01-29",
+          "op": "Reversed",
+          "what": "Reversals begin with SH2 Featherston–Masterton that night: 38 state highway sections auto-revert; 49 more go to six weeks of public consultation.",
+          "source": "https://www.beehive.govt.nz/release/speed-limit-reduction-reversals-begin"
+        },
+        {
+          "date": "2025-04-23",
+          "op": "Decided",
+          "what": "Consultation outcome: 43 of the 49 consulted state highway sections return to their previous higher limits; six keep their lower limits after clearing the 50% public-support threshold.",
+          "source": "https://www.nzta.govt.nz/media-releases/next-steps-for-state-highway-speed-reversals-programme"
+        },
+        {
+          "date": "2025-07-01",
+          "op": "Completed",
+          "what": "Deadline passes: specified roads nationwide back at their pre-2020 limits.",
+          "source": "https://www.nzta.govt.nz/safety/driving-safely/speed/state-highway-speed-management/speed-reversals-and-consultation-transitional-changes-in-2024-25"
+        },
+        {
+          "date": "2026-03-18",
+          "op": "Aftermath",
+          "what": "NZTA cancels and refunds 279 fines issued in a single day (16 November 2025) on Rata Street, Lower Hutt, where permanent and variable school-zone signs gave conflicting limits.",
+          "source": "https://www.rnz.co.nz/news/national/589891/speed-limit-confusion-nzta-reverses-hundreds-of-fines"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — New road safety investment and action plan to save lives (19 Dec 2019)",
+          "url": "https://www.beehive.govt.nz/release/new-road-safety-investment-and-action-plan-save-lives"
+        },
+        {
+          "title": "Newsroom — The road to zero deaths (Dec 2019)",
+          "url": "https://newsroom.co.nz/2019/12/19/the-road-to-zero/"
+        },
+        {
+          "title": "NZTA — Land Transport Rule: Setting of Speed Limits 2022 (revoked 30 Oct 2024)",
+          "url": "https://www.nzta.govt.nz/resources/rules/setting-of-speed-limits-2022/"
+        },
+        {
+          "title": "Coalition Agreement — NZ National Party & ACT New Zealand (24 Nov 2023)",
+          "url": "https://assets.nationbuilder.com/actnz/mailings/6945/attachments/original/National_ACT_Agreement.pdf"
+        },
+        {
+          "title": "RNZ — Government signs off on new speed limit rule (Sep 2024)",
+          "url": "https://www.rnz.co.nz/news/political/529293/government-signs-off-on-new-speed-limit-rules-reversing-blanket-speed-limit-reductions"
+        },
+        {
+          "title": "Beehive — Speed limit reduction reversals begin (Jan 2025)",
+          "url": "https://www.beehive.govt.nz/release/speed-limit-reduction-reversals-begin"
+        },
+        {
+          "title": "NZTA — Next steps for state highway speed reversals programme (23 Apr 2025)",
+          "url": "https://www.nzta.govt.nz/media-releases/next-steps-for-state-highway-speed-reversals-programme"
+        },
+        {
+          "title": "NZTA — Speed reversals and consultation: transitional changes 2024–25",
+          "url": "https://www.nzta.govt.nz/safety/driving-safely/speed/state-highway-speed-management/speed-reversals-and-consultation-transitional-changes-in-2024-25"
+        },
+        {
+          "title": "The Spinoff — Auckland streets where speed limits are rising, at a cost of $8.8m",
+          "url": "https://thespinoff.co.nz/politics/28-02-2025/the-local-auckland-streets-where-speed-limits-are-rising-at-a-cost-of-8-8m"
+        },
+        {
+          "title": "RNZ — Moving back speed limits, new school signage may cost $25m (Oct 2024)",
+          "url": "https://www.rnz.co.nz/news/national/532196/moving-back-speed-limits-new-school-signage-may-cost-25m-at"
+        },
+        {
+          "title": "RNZ/LDR — Speed limit changes cost Coast ratepayers half a million (Nov 2024)",
+          "url": "https://www.rnz.co.nz/news/ldr/532557/speed-limit-changes-cost-coast-ratepayers-half-a-million"
+        },
+        {
+          "title": "1News — National to spend at least $30m to reverse speed limit changes (Sep 2023)",
+          "url": "https://www.1news.co.nz/2023/09/24/national-to-spend-at-least-30m-to-reverse-speed-limit-changes/"
+        },
+        {
+          "title": "RNZ — Speed limit confusion: NZTA reverses hundreds of fines (Mar 2026)",
+          "url": "https://www.rnz.co.nz/news/national/589891/speed-limit-confusion-nzta-reverses-hundreds-of-fines"
+        }
+      ],
+      "essay": null
+    },
+    {
+      "id": "east-west-link",
+      "name": "East West Link",
+      "lat": -36.93,
+      "lng": 174.81,
+      "region": "Auckland (Onehunga–Penrose)",
+      "sector": "transport",
+      "status": "zombie",
+      "announced": "2014-05-15",
+      "ended": "2017-11-02",
+      "started_by": "key2",
+      "ended_by": "ardern1",
+      "sunk_nzd": null,
+      "firm": [],
+      "firm_note": "Stuff reported ~$50m spent by November 2017 (~$39m on consultation and consenting, ~$10m on early works including removing the old Onehunga rail bridge), but no primary NZTA figure for total spend on the original scheme is on the public record. Contributes $0 to every total here until one is sourced.",
+      "extra_costs": [
+        {
+          "label": "Revival re-planning",
+          "note": "$102m approved in October 2025 to progress design, consenting and route protection for the scaled-back revival (Stage 1: Galway Link) — new money on the latest iteration, never counted as sunk (Beehive, 20 Oct 2025)."
+        }
+      ],
+      "contested": [
+        {
+          "figure": "~$50m",
+          "label": "Reported spend when shelved",
+          "note": "Stuff reported ~$39m on the consultation and consenting process and ~$10m on early works. A single secondary report with no primary corroboration — never counted.",
+          "source": "Stuff, 2 Nov 2017"
+        },
+        {
+          "figure": "$1.25b–$1.85b",
+          "label": "Estimated build cost of the consented 2016 design",
+          "note": "NZTA's estimate at RMA lodgement; its per-km cost drew 'world's most expensive road per kilometre' headlines. What it would have cost, not what was spent.",
+          "source": "NZTA OIA MINO-941, Feb 2024"
+        },
+        {
+          "figure": "$3.7b–$4.1b",
+          "label": "2025 investment-case estimate for the revived project",
+          "note": "Roughly double the 2016 estimate. A projection, never counted.",
+          "source": "Greater Auckland, 21 Oct 2025"
+        }
+      ],
+      "summary": "Shelved 2017, consented 2018, overturned 2024, revived at double the price — no road yet.",
+      "plain": "A four-lane freight road between SH20 and SH1 through Auckland's Onehunga–Penrose industrial belt, first funded for investigation in 2014. Labour shelved the ~$1.85b design in late 2017 just before it won consent, and the Supreme Court overturned that consent in April 2024 — weeks after the new National-led government had revived the road. A scaled-back version got $102m for design and consenting in 2025; twelve years on, the road itself remains unbuilt.",
+      "events": [
+        {
+          "date": "2014-05-15",
+          "op": "Started",
+          "what": "$10m for East-West Link investigations in the National government's $375m accelerated Auckland transport package.",
+          "source": "https://www.beehive.govt.nz/release/375m-accelerate-auckland-transport-projects"
+        },
+        {
+          "date": "2016-12-16",
+          "op": "Lodged",
+          "what": "Notices of Requirement and consent applications lodged with the EPA; project estimated at $1.25b–$1.85b.",
+          "source": "https://nzta.govt.nz/assets/About-us/docs/oia-2024/oia-16175-attachment-1.pdf"
+        },
+        {
+          "date": "2017-11-02",
+          "op": "Shelved",
+          "what": "Incoming Labour-led government drops the project from its plans; Stuff reports ~$50m already spent on the now-'defunct' motorway.",
+          "source": "https://www.stuff.co.nz/auckland/98489560/defunct-eastwest-link-cost-taxpayers-50-million"
+        },
+        {
+          "date": "2018-01-23",
+          "op": "Consented",
+          "what": "Board of Inquiry confirms the designations and grants resource consents for the scheme the government had just shelved.",
+          "source": "https://nzta.govt.nz/assets/About-us/docs/oia-2024/oia-16175-attachment-1.pdf"
+        },
+        {
+          "date": "2018-04-01",
+          "op": "Rescoped",
+          "what": "Twyford earmarks ~$800m for a lower-cost version via ATAP; it is never built either.",
+          "source": "https://www.interest.co.nz/news/98080/new-zealand-transport-agency-nzta-re-evaluating-auckland%E2%80%99s-much-maligned-east-west-link"
+        },
+        {
+          "date": "2021-03-01",
+          "op": "Upheld",
+          "what": "High Court dismisses appeals against the consents; Forest & Bird appeals on to the Supreme Court.",
+          "source": "https://nzta.govt.nz/assets/About-us/docs/oia-2024/oia-16175-attachment-1.pdf"
+        },
+        {
+          "date": "2024-03-04",
+          "op": "Revived",
+          "what": "Draft GPS 2024 names the East West Link one of 15 Roads of National Significance.",
+          "source": "https://www.1news.co.nz/2024/03/05/govt-wants-to-build-15-new-four-lane-highways-across-nz/"
+        },
+        {
+          "date": "2024-04-11",
+          "op": "Quashed",
+          "what": "Supreme Court allows Forest & Bird's appeal 4–1 on the result (William Young J dissenting; Glazebrook J concurring for different reasons), overturning the Board of Inquiry's approval and remitting the matter to it for reconsideration.",
+          "source": "https://www.courtsofnz.govt.nz/assets/cases/2024/2024-NZSC-26.pdf"
+        },
+        {
+          "date": "2025-10-20",
+          "op": "Funded",
+          "what": "$102m approved for design, consenting and route protection of a scaled-back staged version; next steps include detailed design of Stage 1 (Galway Link).",
+          "source": "https://www.beehive.govt.nz/release/next-steps-roads-national-significance"
+        },
+        {
+          "date": "2026-12-01",
+          "op": "Pending",
+          "what": "NZTA aims to lodge statutory approvals for the redesigned corridor — largely avoiding the Māngere Inlet foreshore — in late 2026.",
+          "source": "https://www.nzta.govt.nz/projects/east-west-link"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Beehive — $375m to accelerate Auckland transport projects (May 2014)",
+          "url": "https://www.beehive.govt.nz/release/375m-accelerate-auckland-transport-projects"
+        },
+        {
+          "title": "NZTA — East West Link application to the EPA (lodged 16 Dec 2016)",
+          "url": "https://www.nzta.govt.nz/projects/east-west-link-application-to-the-environmental-protection-authority-epa"
+        },
+        {
+          "title": "Stuff — Auckland's defunct East-West Link motorway cost taxpayers $50 million (Nov 2017)",
+          "url": "https://www.stuff.co.nz/auckland/98489560/defunct-eastwest-link-cost-taxpayers-50-million"
+        },
+        {
+          "title": "NZTA OIA MINO-941 — East-West Link Board of Inquiry process (Feb 2024)",
+          "url": "https://nzta.govt.nz/assets/About-us/docs/oia-2024/oia-16175-attachment-1.pdf"
+        },
+        {
+          "title": "Courts of NZ — Royal Forest and Bird v NZ Transport Agency [2024] NZSC 26 (11 Apr 2024)",
+          "url": "https://www.courtsofnz.govt.nz/assets/cases/2024/2024-NZSC-26.pdf"
+        },
+        {
+          "title": "1News — Govt wants to build 15 new four-lane highways across NZ (Mar 2024)",
+          "url": "https://www.1news.co.nz/2024/03/05/govt-wants-to-build-15-new-four-lane-highways-across-nz/"
+        },
+        {
+          "title": "Beehive — Next steps for Roads of National Significance (Oct 2025)",
+          "url": "https://www.beehive.govt.nz/release/next-steps-roads-national-significance"
+        },
+        {
+          "title": "Greater Auckland — Reality bites: RoNS will bankrupt the nation (21 Oct 2025)",
+          "url": "https://www.greaterauckland.org.nz/2025/10/21/rons-reality-needs-to-bite/"
+        },
+        {
+          "title": "NZTA — East West Link project page",
+          "url": "https://www.nzta.govt.nz/projects/east-west-link"
+        }
+      ],
+      "essay": null
+    }
+  ]
+}
