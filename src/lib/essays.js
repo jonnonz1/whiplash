@@ -12,7 +12,7 @@ export const ESSAYS = [
     part: 1,
     title: 'Six Years, $228 Million, Zero Metres of Track',
     blurb: 'What serial reversal of big projects actually costs.',
-    url: null,
+    url: 'https://jonno.nz/posts/zero-metres-of-track/',
   },
   {
     part: 2,
