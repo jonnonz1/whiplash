@@ -1,6 +1,6 @@
 {
   "_note": "Aggregate stats. status:'sourced' cards carry a citation; status:'pending' cards are waiting on the legislation pipeline (specs/whiplash/03-data-pipeline.md) and must never show an invented number. per_term stays empty until the pipeline's amendment graph reproduces the known-facts benchmark.",
-  "generated": "2026-06-12",
+  "generated": "2026-06-14",
   "sources_note": "Legislation data: Parliamentary Counsel Office — free of copyright under s 27 Copyright Act 1994; reuse statement CC BY 4.0.",
   "per_term": [
     {

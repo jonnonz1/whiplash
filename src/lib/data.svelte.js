@@ -10,10 +10,19 @@ export const db = $state({
   projects: [],
   lanes: [],
   aggregates: null,
+  explorer: null,
   generated: null,
 });
 
 export async function loadData() {
+  /* The full-graph explorer dataset is optional: fetch it on its own, never
+     inside the fatal Promise.all, so a missing or broken churn-explorer.json
+     degrades to an empty-state and never blocks the map/churn/method views. */
+  fetch(`${import.meta.env.BASE_URL}data/churn-explorer.json`)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => (db.explorer = j))
+    .catch(() => (db.explorer = null));
+
   try {
     const [govs, projects, acts, aggregates] = await Promise.all(
       ['governments', 'projects', 'churn-acts', 'churn-aggregates'].map((f) =>

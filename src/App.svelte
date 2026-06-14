@@ -4,9 +4,9 @@
   import { db, loadData } from './lib/data.svelte.js';
   import { trackView } from './lib/analytics.js';
   import TopBar from './components/TopBar.svelte';
-  import Landing from './components/Landing.svelte';
   import MapView from './components/MapView.svelte';
   import ChurnView from './components/ChurnView.svelte';
+  import ChurnExplorer from './components/ChurnExplorer.svelte';
   import Methodology from './components/Methodology.svelte';
   import NationwideTray from './components/NationwideTray.svelte';
   import Scrubber from './components/Scrubber.svelte';
@@ -39,22 +39,20 @@
 </script>
 
 <div class="shell">
-  {#if ui.view !== 'landing'}
-    <TopBar />
-  {/if}
+  <TopBar />
 
   {#if db.error}
     <div class="err wl-mono">Failed to load data: {db.error}</div>
   {:else if !db.ready}
     <div class="loading wl-label">// loading the receipts…</div>
-  {:else if ui.view === 'landing'}
-    <Landing />
   {:else if ui.view === 'map'}
     <MapView />
     <NationwideTray />
     <Scrubber />
   {:else if ui.view === 'churn'}
     <ChurnView />
+  {:else if ui.view === 'explore'}
+    <ChurnExplorer />
   {:else}
     <Methodology />
   {/if}
