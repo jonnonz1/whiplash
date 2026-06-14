@@ -1,11 +1,13 @@
-/* Google Analytics 4 — loaded only when VITE_GA_ID is set (so dev and
-   un-configured builds stay clean). Set it as a build-time env var, e.g. on
-   Railway add a service variable VITE_GA_ID=G-XXXXXXXXXX. See .env.example.
+/* Google Analytics 4. The production property ID is baked in as the default
+   so prod builds report out of the box; VITE_GA_ID overrides it (e.g. a
+   different property), and dev builds stay clean unless VITE_GA_ID is set.
+   A GA4 measurement ID is public — it ships in the client bundle regardless.
 
    This is a client-side SPA: there are no real page loads, so automatic
    page_view is disabled and we send one per view change via trackView(). */
 
-const GA_ID = import.meta.env.VITE_GA_ID;
+const GA_PROD_ID = 'G-3RNHN0YX3X';
+const GA_ID = import.meta.env.VITE_GA_ID || (import.meta.env.PROD ? GA_PROD_ID : '');
 
 export function initAnalytics() {
   if (!GA_ID || typeof window === 'undefined') return;
