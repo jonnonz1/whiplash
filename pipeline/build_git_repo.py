@@ -193,8 +193,12 @@ def render_cache(versions, cache_dir, workers):
 # phase 2 — serial fast-import
 # --------------------------------------------------------------------------- #
 def ts_of(date_iso):
+    # GitHub's receive fsck parses the commit timestamp as unsigned and rejects
+    # negatives, so floor pre-1970 consolidations at the epoch. The true date
+    # stays in the commit subject; chronological order is preserved by the
+    # fast-import parent chain, not the timestamp.
     y, m, d = map(int, date_iso.split("-"))
-    return int(datetime(y, m, d, 12, 0, 0, tzinfo=NZ_TZ).timestamp())
+    return max(0, int(datetime(y, m, d, 12, 0, 0, tzinfo=NZ_TZ).timestamp()))
 
 
 def author_for(gid, gov_meta):
