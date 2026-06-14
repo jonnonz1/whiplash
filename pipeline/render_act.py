@@ -92,10 +92,50 @@ def _emit_child_units(el, depth, out):
             _emit_child_units(child, depth, out)
 
 def _emit_table(el, out):
+    """Render a PCO table as GitHub-flavoured markdown. Markdown needs a header
+    separator row to render at all; this also honours the column model so
+    colspanned cells (namest/nameend — 57% of tables) stay under the right
+    headers, drops the all-empty layout "spacer" columns and rows PCO inserts,
+    skips the generic "Column 1/2/3" label row, and escapes pipes."""
+    # column order from <colspec colname=...>; entries address columns by name
+    colnames = [c.get("colname") for c in el.iter() if _tag(c) == "colspec"]
+    col_idx = {n: i for i, n in enumerate(colnames) if n}
+
+    grid = []
     for row in el.iter():
-        if _tag(row) == "row":
-            cells = [" ".join("".join(e.itertext()).split()) for e in row if _tag(e) == "entry"]
-            out.append("| " + " | ".join(cells) + " |")
+        if _tag(row) != "row":
+            continue
+        cells, cursor = [""] * len(colnames), 0
+        for e in row:
+            if _tag(e) != "entry":
+                continue
+            txt = " ".join("".join(e.itertext()).split()).replace("|", "\\|")
+            i = col_idx.get(e.get("namest") or e.get("colname"), cursor)
+            if i >= len(cells):
+                cells.extend([""] * (i - len(cells) + 1))
+            cells[i] = txt
+            end = col_idx.get(e.get("nameend"), i)  # span: leave covered cols empty
+            cursor = max(i, end) + 1
+        grid.append(cells)
+    if not grid:
+        return
+    width = max(len(r) for r in grid)
+    grid = [r + [""] * (width - len(r)) for r in grid]
+    keep = [c for c in range(width) if any(r[c] for r in grid)]  # drop spacer cols
+    grid = [[r[c] for c in keep] for r in grid]
+
+    def noise(r):
+        filled = [c for c in r if c]
+        return not filled or all(c.startswith("Column ") and c[7:].isdigit() for c in filled)
+
+    grid = [r for r in grid if not noise(r)]  # drop spacer + "Column N" rows
+    if not grid:
+        return
+    out.append("")
+    out.append("| " + " | ".join(grid[0]) + " |")
+    out.append("| " + " | ".join(["---"] * len(grid[0])) + " |")
+    for r in grid[1:]:
+        out.append("| " + " | ".join(r) + " |")
 
 def _emit_body(container, out):
     """Emit a provision/preamble body's children as markdown lines; returns the
