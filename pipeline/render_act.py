@@ -97,17 +97,11 @@ def _emit_table(el, out):
             cells = [" ".join("".join(e.itertext()).split()) for e in row if _tag(e) == "entry"]
             out.append("| " + " | ".join(cells) + " |")
 
-def _emit_prov(prov, out):
-    label = _label_of(prov)
-    heading_el = prov.find("heading")
-    heading = " ".join("".join(heading_el.itertext()).split()) if heading_el is not None else ""
-    out.append("")
-    out.append(f"### {label} {heading}".rstrip())
-    body = prov.find("prov.body")
-    if body is None:
-        body = prov
+def _emit_body(container, out):
+    """Emit a provision/preamble body's children as markdown lines; returns the
+    number of lines added (0 ⇒ the caller may want a tombstone)."""
     before = len(out)
-    for child in body:
+    for child in container:
         tag = _tag(child)
         if tag in SKIP_TAGS or tag in ("label", "heading"):
             continue
@@ -120,7 +114,18 @@ def _emit_prov(prov, out):
             if text:
                 out.append(text)
             _emit_child_units(child, 0, out)
-    if len(out) == before:
+    return len(out) - before
+
+def _emit_prov(prov, out):
+    label = _label_of(prov)
+    heading_el = prov.find("heading")
+    heading = " ".join("".join(heading_el.itertext()).split()) if heading_el is not None else ""
+    out.append("")
+    out.append(f"### {label} {heading}".rstrip())
+    body = prov.find("prov.body")
+    if body is None:
+        body = prov
+    if _emit_body(body, out) == 0:
         # PCO empties a repealed/spent section to <prov.body/> with no heading
         # and supplies the "[Repealed]" gravestone in its renderer, not the XML.
         # Without this, the section renders as a bare number with nothing under
@@ -151,6 +156,25 @@ def _walk(el, out, depth=1):
         else:
             _walk(child, out, depth)
 
+def _emit_front(front, out):
+    """Front matter that isn't furniture: the long title (the act's stated
+    purpose) and the preamble (recitals). PCO keeps both in <front>, which the
+    body walk would otherwise skip — losing unique, substantive content."""
+    lt = front.find("long-title")
+    if lt is not None:
+        text = _inline(lt, set())
+        if text:
+            out.append("")
+            out.append(f"> {text}")
+    pre = front.find("preamble")
+    if pre is not None:
+        out.append("")
+        out.append("## Preamble")
+        for block in pre:
+            if _tag(block) == "heading" or _tag(block) in SKIP_TAGS:
+                continue
+            _emit_body(block, out)
+
 def render(xml_path):
     root = ET.parse(xml_path).getroot()
     title_el = root.find(".//cover/title")
@@ -158,8 +182,11 @@ def render(xml_path):
     as_at = root.get("date.as.at", "")
     out = [f"# {title}", f"_Consolidation as at {as_at}_" if as_at else ""]
     cover = root.find("cover")
+    front = root.find("front")
+    if front is not None:
+        _emit_front(front, out)
     for top in root:
-        if top is cover or _tag(top) in SKIP_TAGS:
+        if top is cover or top is front or _tag(top) in SKIP_TAGS:
             continue
         _walk(top, out)
     # collapse runs of blank lines deterministically
