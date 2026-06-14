@@ -106,6 +106,7 @@ def _emit_prov(prov, out):
     body = prov.find("prov.body")
     if body is None:
         body = prov
+    before = len(out)
     for child in body:
         tag = _tag(child)
         if tag in SKIP_TAGS or tag in ("label", "heading"):
@@ -119,6 +120,12 @@ def _emit_prov(prov, out):
             if text:
                 out.append(text)
             _emit_child_units(child, 0, out)
+    if len(out) == before:
+        # PCO empties a repealed/spent section to <prov.body/> with no heading
+        # and supplies the "[Repealed]" gravestone in its renderer, not the XML.
+        # Without this, the section renders as a bare number with nothing under
+        # it; emit the tombstone so a repeal reads as a body replaced by a grave.
+        out.append("[Repealed]")
 
 def _walk(el, out, depth=1):
     for child in el:

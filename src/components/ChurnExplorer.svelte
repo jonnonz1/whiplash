@@ -6,15 +6,13 @@
      primitives only — no new palette. */
   import { ui, TIMELINE } from '../lib/state.svelte.js';
   import { db } from '../lib/data.svelte.js';
-  import { STORY_CARDS } from '../lib/landing.js';
+  import { SECTOR_HEROES } from '../lib/heroes.js';
   import GovBand from './GovBand.svelte';
   import ActPanel from './ActPanel.svelte';
 
-  /* The nz-statute-book cross-links go live once Part A is published; until
-     then every row falls back to legislation.govt.nz. Flip this to the repo
-     URL (e.g. 'https://github.com/jonnonz1/nz-statute-book') to switch act
-     rows over to git history/blame/diff. */
-  const STATUTE_BOOK_REPO = null;
+  /* nz-statute-book is live: act rows link to its git history/blame/diff; the
+     rest (regulations, and any act not in the repo) fall back to legislation.govt.nz. */
+  const STATUTE_BOOK_REPO = 'https://github.com/jonnonz1/nz-statute-book';
 
   const SECTOR_LABELS = {
     tax: 'Tax', health: 'Health', environment: 'Environment',
@@ -100,23 +98,10 @@
   });
   const drillMax = $derived(Math.max(1, ...drill.map((a) => a.count)));
 
-  /* The five plain-language stories from the old front door, indexed by the
-     sector they belong to — a human anchor for the numbers. Tapping one opens
-     its full project story on the map (which is why the map view stays). */
-  const STORY_SECTOR = {
-    'auckland-light-rail': 'transport',
-    'irex-ferries': 'transport',
-    'three-waters': 'water',
-    'dunedin-hospital': 'health',
-    'super-fund-suspension': 'economy',
-  };
-  const storiesBySector = {};
-  for (const c of STORY_CARDS) {
-    const s = STORY_SECTOR[c.project];
-    if (s) (storiesBySector[s] ||= []).push(c);
-  }
-  const sectorStories = $derived(sector ? storiesBySector[sector] || [] : []);
-  const tagOf = (kicker) => kicker.split('·').pop().trim();
+  /* ---- hero band: one emblematic reversal per sector, shown up top ---- */
+  const DEFAULT_HERO = 'transport'; // featured marquee when no sector is picked
+  const hero = $derived(SECTOR_HEROES[sector] || SECTOR_HEROES[DEFAULT_HERO]);
+  const heroFeatured = $derived(!(sector && SECTOR_HEROES[sector]));
   function openStory(pid) {
     ui.selected = pid;
     ui.view = 'map';
@@ -169,6 +154,39 @@
         <span>{exp.velocity.years[0]}–{exp.velocity.years[exp.velocity.years.length - 1]}</span>
       </div>
     </header>
+
+    <!-- HERO BAND — the emblematic reversal for the selected sector, up top -->
+    {#snippet heroBody(h, featured)}
+      <span class="herotag wl-label sig">{featured ? '★ featured reversal — tap any sector below' : h.tag}</span>
+      <span class="herotitle wl-disp">{h.title}</span>
+      <div class="herorows">
+        {#each h.rows as r (r.k)}
+          <div class="herorow">
+            <span class="wl-label hk">{r.k}</span>
+            <span class="hv">
+              <span class="wl-mono" class:strong={r.strong}>{r.t}</span>
+              {#if r.src}<span class="hsrc wl-mono">↗ {r.src}</span>{/if}
+              {#if r.sub}<span class="hsub wl-mono">{r.sub}</span>{/if}
+            </span>
+          </div>
+        {/each}
+      </div>
+      <div class="herogot"><span class="wl-label sig">you got</span> <span class="hgt">{h.got}</span></div>
+    {/snippet}
+
+    <section class="herowrap">
+      {#if hero.project}
+        <button class="hero" onclick={() => openStory(hero.project)} aria-label="{hero.title} — open the full story on the map">
+          {@render heroBody(hero, heroFeatured)}
+          <span class="herocta wl-mono">full story on the map ▸</span>
+        </button>
+      {:else}
+        <a class="hero" href={hero.href} target="_blank" rel="noopener" aria-label="{hero.title} — source">
+          {@render heroBody(hero, heroFeatured)}
+          <span class="herocta wl-mono">{hero.hrefLabel}</span>
+        </a>
+      {/if}
+    </section>
 
     <!-- (a) HEATMAP MATRIX -->
     <section class="block">
@@ -301,32 +319,6 @@
           <button class="wl-pill reset" onclick={() => (ui.exploreSector = null)}>✕ all sectors</button>
         {/if}
       </div>
-
-      {#if sectorStories.length}
-        <div class="stories">
-          <div class="wl-label sig storyhead">// what you didn’t get — in plain language</div>
-          {#each sectorStories as c (c.project)}
-            <button class="story" onclick={() => openStory(c.project)} aria-label="{c.title} — open the full story on the map">
-              <span class="stag wl-label sig">{tagOf(c.kicker)}</span>
-              <span class="wl-disp stitle">{c.title}</span>
-              <div class="srows">
-                {#each c.rows as r (r.k)}
-                  <div class="srow">
-                    <span class="wl-label sk">{r.k}</span>
-                    <span class="stval">
-                      <span class="wl-mono" class:strong={r.strong}>{r.t}</span>
-                      {#if r.src}<span class="ssrc wl-mono">↗ {r.src}</span>{/if}
-                      {#if r.sub}<span class="ssub wl-mono">{r.sub}</span>{/if}
-                    </span>
-                  </div>
-                {/each}
-              </div>
-              <div class="sgot"><span class="wl-label sig">you got</span> <span class="sgt">{c.got}</span></div>
-              <span class="schev wl-mono">full story on the map ▸</span>
-            </button>
-          {/each}
-        </div>
-      {/if}
 
       <ol class="drill">
         {#each drill as a, i (a.id)}
@@ -674,91 +666,88 @@
     flex: none;
   }
 
-  /* plain-language story examples (the five front-door reversals, by sector) */
-  .stories {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-bottom: 16px;
+  /* hero band — the emblematic reversal for the selected sector, up top */
+  .herowrap {
+    padding: 14px 16px 4px;
   }
-  .storyhead {
-    margin-bottom: 2px;
-  }
-  .story {
+  .hero {
     display: block;
     width: 100%;
     text-align: left;
     border: 1px solid var(--line-2);
     border-radius: 3px;
     background: var(--surface);
-    padding: 13px 15px;
+    padding: 16px 18px;
+    color: inherit;
+    text-decoration: none;
     transition: border-color 0.15s ease;
   }
-  .story:hover {
-    border-color: rgba(212, 168, 83, 0.5);
+  .hero:hover {
+    border-color: rgba(212, 168, 83, 0.55);
   }
-  .stag {
+  .herotag {
     display: block;
     font-size: 9px;
   }
-  .stitle {
-    font-size: 18px;
-    margin: 5px 0 10px;
+  .herotitle {
+    display: block;
+    font-size: clamp(22px, 6vw, 30px);
+    margin: 7px 0 12px;
   }
-  .srows {
+  .herorows {
     display: flex;
     flex-direction: column;
-    gap: 6px;
+    gap: 7px;
   }
-  .srow,
-  .sgot {
+  .herorow,
+  .herogot {
     display: grid;
-    grid-template-columns: 60px 1fr;
-    gap: 9px;
+    grid-template-columns: 76px 1fr;
+    gap: 10px;
     align-items: baseline;
   }
-  .sk {
-    font-size: 8.5px;
+  .hk {
+    font-size: 9px;
   }
-  .stval .wl-mono {
-    font-size: 11px;
+  .hv .wl-mono {
+    font-size: 12px;
     color: var(--ink);
-    line-height: 1.4;
+    line-height: 1.45;
   }
-  .stval .strong {
+  .hv .strong {
     font-weight: 700;
   }
-  .ssrc {
-    font-size: 8.5px;
+  .hsrc {
+    font-size: 9px;
     color: var(--signal);
-    margin-left: 6px;
+    margin-left: 7px;
     white-space: nowrap;
   }
-  .ssub {
+  .hsub {
     display: block;
-    font-size: 8.5px;
+    font-size: 9px;
     color: var(--ink-3);
     margin-top: 2px;
   }
-  .sgot {
+  .herogot {
     border-top: 1px solid var(--line);
-    margin-top: 11px;
-    padding-top: 9px;
+    margin-top: 12px;
+    padding-top: 11px;
   }
-  .sgt {
+  .hgt {
     font-family: var(--font-sans);
     font-weight: 500;
-    font-size: 13px;
+    font-size: 15px;
     color: var(--ink);
     line-height: 1.4;
   }
-  .schev {
+  .herocta {
     display: inline-block;
-    margin-top: 10px;
-    font-size: 9px;
+    margin-top: 12px;
+    font-size: 10px;
     color: var(--ink-3);
   }
-  .story:hover .schev {
+  .hero:hover .herocta {
     color: var(--signal);
   }
   .drill {
