@@ -29566,7 +29566,9 @@
               "provision": "Schedule 11 Ngāti Tara Tokanui Claims Settlement Act 2026",
               "govt": "luxon1"
             }
-          ]
+          ],
+          "leg_year": 1991,
+          "leg_no": "0069"
         },
         {
           "id": "nba-spa-2023",
@@ -29589,7 +29591,9 @@
             }
           ],
           "replaced_by_id": "rm-bills-2025",
-          "partial": false
+          "partial": false,
+          "leg_year": 2023,
+          "leg_no": "0046"
         },
         {
           "id": "rm-bills-2025",
@@ -35506,7 +35510,9 @@
             }
           ],
           "replaced_by_id": "lwdw-2024",
-          "partial": false
+          "partial": false,
+          "leg_year": 2022,
+          "leg_no": "0077"
         },
         {
           "id": "lwdw-2024",
@@ -35653,7 +35659,9 @@
             }
           ],
           "full_title": "Local Government (Water Services Preliminary Arrangements) Act 2024",
-          "partial": false
+          "partial": false,
+          "leg_year": 2024,
+          "leg_no": "0031"
         }
       ]
     },
@@ -35827,7 +35835,9 @@
             }
           ],
           "full_title": "Smokefree Environments and Regulated Products (Smoked Tobacco) Amendment Act 2022",
-          "partial": false
+          "partial": false,
+          "leg_year": 2022,
+          "leg_no": "0079"
         },
         {
           "id": "pae-ora-2022",
@@ -37119,7 +37129,9 @@
               "provision": "Heading",
               "govt": "luxon1"
             }
-          ]
+          ],
+          "leg_year": 2022,
+          "leg_no": "0030"
         }
       ]
     },
@@ -37160,7 +37172,9 @@
             }
           ],
           "slot_hint": 1,
-          "partial": false
+          "partial": false,
+          "leg_year": 2022,
+          "leg_no": "0058"
         },
         {
           "id": "three-strikes-2010",
@@ -37173,7 +37187,9 @@
           "amendment_count": 0,
           "ticks": [],
           "events": [],
-          "full_title": "Sentencing and Parole Reform Act 2010"
+          "full_title": "Sentencing and Parole Reform Act 2010",
+          "leg_year": 2010,
+          "leg_no": "0033"
         },
         {
           "id": "three-strikes-2025",
@@ -37186,7 +37202,9 @@
           "amendment_count": 0,
           "ticks": [],
           "events": [],
-          "full_title": "Sentencing (Reinstating Three Strikes) Amendment Act 2024"
+          "full_title": "Sentencing (Reinstating Three Strikes) Amendment Act 2024",
+          "leg_year": 2024,
+          "leg_no": "0054"
         }
       ]
     },
@@ -37260,7 +37278,9 @@
           "amendment_count": 0,
           "ticks": [],
           "events": [],
-          "full_title": "Land Transport (Clean Vehicles) Amendment Act 2022"
+          "full_title": "Land Transport (Clean Vehicles) Amendment Act 2022",
+          "leg_year": 2022,
+          "leg_no": "0002"
         }
       ]
     },
@@ -37279,7 +37299,9 @@
           "amendment_count": 0,
           "ticks": [],
           "events": [],
-          "full_title": "Crown Minerals (Petroleum) Amendment Act 2018"
+          "full_title": "Crown Minerals (Petroleum) Amendment Act 2018",
+          "leg_year": 2018,
+          "leg_no": "0049"
         }
       ]
     }

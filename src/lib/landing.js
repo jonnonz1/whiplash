@@ -1,9 +1,9 @@
-/* Story-first landing content (the "subtraction" front door).
+/* Plain-language reversal stories — "what you didn't get", per project.
 
-   Outcome-first: what you didn't get, in plain language. Every figure is real
-   and sourced in projects.json; each card links to its project so the firm vs
-   claimed receipts are one tap away. The `project` id ties a card to the map's
-   detail panel — keep these in sync with public/data/projects.json. */
+   Outcome-first: every figure is real and sourced in projects.json. Surfaced
+   as per-sector examples in the Churn Explorer (ChurnExplorer.svelte); the
+   `project` id ties each story to the map's detail panel — keep these in sync
+   with public/data/projects.json. (Formerly the landing front door.) */
 
 export const STORY_CARDS = [
   {

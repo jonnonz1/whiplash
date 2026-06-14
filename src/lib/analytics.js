@@ -27,7 +27,7 @@ export function initAnalytics() {
 
 export function trackView(view) {
   if (!GA_ID || typeof window === 'undefined' || !window.gtag) return;
-  const path = view === 'landing' ? '/' : `/${view}`;
+  const path = view === 'explore' ? '/' : `/${view}`;
   window.gtag('event', 'page_view', {
     page_path: path,
     page_title: `Whiplash — ${view}`,

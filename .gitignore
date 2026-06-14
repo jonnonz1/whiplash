@@ -30,3 +30,7 @@ dist-ssr
 data-raw/
 mirror.log
 *.sqlite
+
+# Python pipeline
+__pycache__/
+*.pyc

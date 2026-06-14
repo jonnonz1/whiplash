@@ -33,6 +33,20 @@ from classify import classify  # noqa: E402
 CHURN_OPS = ("amended", "inserted", "substituted", "replaced")
 DEAD_OPS = ("repealed", "revoked")
 
+# Canonical sector order — fixed so churn-explorer.json is diff-stable across
+# regenerations (must cover every key classify() can return).
+SECTORS = ("tax", "health", "environment", "justice", "education",
+           "transport", "economy", "energy", "water", "other")
+
+
+def leg_no(number):
+    """PCO path number — 4-digit zero-padded (e.g. '69' -> '0069'). The
+    legislation.govt.nz permalink builds the page from the year/number in the
+    path (the DLM is only an anchor), so the number must be present and exact:
+    /{type}/public/{year}/{number}/latest/{DLM}.html"""
+    s = str(number or "").strip()
+    return s.zfill(4) if s.isdigit() else s
+
 
 def norm_title(t):
     if not t:
@@ -97,6 +111,11 @@ def enrich_lanes(con, data_dir, govs):
             work_id, work_title = hit
             matched += 1
             act["dlm"] = work_id
+            meta = con.execute(
+                "SELECT year, number FROM works WHERE id = ?", (work_id,)
+            ).fetchone()
+            if meta and meta[0]:
+                act["leg_year"], act["leg_no"] = meta[0], leg_no(meta[1])
             n = con.execute(
                 "SELECT COUNT(*) FROM events WHERE work_id = ? AND op IN (?,?,?,?)",
                 (work_id, *CHURN_OPS),
@@ -240,6 +259,115 @@ def export_aggregates(con, data_dir, govs):
     print(f"aggregates: {len(per_term)} terms, top act = {top[0][1] if top else 'n/a'}", flush=True)
 
 
+def export_explorer(con, data_dir, govs):
+    """Full-graph churn explorer: a sector × government heatmap and an
+    amendment-velocity seismograph over the *whole* statute book, not the 14
+    curated acts.
+
+    Uses the SAME `date >= '2008'` provision-event scan as export_aggregates,
+    so the grand totals reconcile to per_term exactly (131,763 amendments /
+    25,782 repeals). Runs only after the benchmark gate, so partial-corpus
+    numbers can never publish. Amendments and repeals are kept separate (the
+    heatmap colours by amendment intensity; per_term mixes them).
+    """
+    years = list(range(2008, date.today().year + 1))  # 2008–current, inclusive
+    yidx = {y: i for i, y in enumerate(years)}
+    gid_order = {gid: i for i, (_s, _e, gid) in enumerate(govs)}
+
+    def zeros():
+        return {"amendments": [0] * len(years), "repeals": [0] * len(years)}
+
+    cells = {}              # (gid, sector) -> {"amendments", "repeals"}
+    vel = {"__all__": zeros()}  # sector -> {"amendments"[], "repeals"[]}
+    tot_amend = tot_repeal = 0
+
+    for d, op, work_title in con.execute(
+        "SELECT date, op, work_title FROM events WHERE date IS NOT NULL AND date >= '2008'"
+    ):
+        gid = govt_at(govs, d)
+        if not gid:
+            continue
+        if op in CHURN_OPS:
+            kind = "amendments"
+        elif op in DEAD_OPS:
+            kind = "repeals"
+        else:
+            continue  # 'other'/'editorial' — neither, exactly as per_term
+        sector = classify(work_title)
+        cell = cells.setdefault((gid, sector), {"amendments": 0, "repeals": 0})
+        cell[kind] += 1
+        if kind == "amendments":
+            tot_amend += 1
+        else:
+            tot_repeal += 1
+        yr = int(d[:4])
+        if yr in yidx:
+            vel.setdefault(sector, zeros())
+            vel[sector][kind][yidx[yr]] += 1
+            vel["__all__"][kind][yidx[yr]] += 1
+
+    # sector_term: non-zero cells only, ordered by govt timeline then sector
+    sector_term = [
+        {"govt": gid, "sector": sector,
+         "amendments": c["amendments"], "repeals": c["repeals"]}
+        for (gid, sector), c in cells.items()
+    ]
+    sector_term.sort(key=lambda r: (gid_order.get(r["govt"], 99),
+                                    SECTORS.index(r["sector"]) if r["sector"] in SECTORS else 99))
+
+    velocity = {
+        "years": years,
+        "overall": vel["__all__"],
+        "by_sector": {s: vel[s] for s in SECTORS if s in vel},
+    }
+
+    # top amended acts per sector — all-time CHURN count (the definitive
+    # ranking, so tax[0] == most_amended[0]); joined to works for type/year,
+    # which the cross-links need.
+    by_sec_acts = {}
+    for work_id, title, wtype, year, number, c in con.execute(
+        f"""SELECT e.work_id, w.title, w.type, w.year, w.number, COUNT(*) c
+            FROM events e JOIN works w ON e.work_id = w.id
+            WHERE e.op IN {CHURN_OPS!r}
+            GROUP BY e.work_id ORDER BY c DESC, e.work_id"""
+    ):
+        bucket = by_sec_acts.setdefault(classify(title), [])
+        if len(bucket) < 8:
+            bucket.append({"id": work_id, "title": title, "count": c,
+                           "type": wtype, "year": year, "number": leg_no(number)})
+    top_acts_by_sector = {s: by_sec_acts[s] for s in SECTORS if s in by_sec_acts}
+
+    # partial terms: same honesty flags as per_term — 2008 truncates the start
+    # of the earliest term on record, and the current term is still running
+    present = {r["govt"] for r in sector_term}
+    partial_terms = sorted(
+        (gid for (s, e, gid) in govs
+         if gid in present and (s < "2008-01-01" or e == "9999-12-31")),
+        key=lambda g: gid_order.get(g, 99),
+    )
+
+    doc = {
+        "_note": ("Full-graph churn explorer. Same date>=2008 provision-event scan as "
+                  "churn-aggregates per_term, so the totals reconcile exactly. Written only "
+                  "when the known-facts benchmark passes — partial-corpus data never ships."),
+        "generated": date.today().isoformat(),
+        "ops_note": ("amendments = amended/inserted/substituted/replaced; "
+                     "repeals = repealed/revoked; provision-level events since 2008, "
+                     "not whole-act counts."),
+        "sectors": list(SECTORS),
+        "partial_terms": partial_terms,
+        "totals": {"amendments": tot_amend, "repeals": tot_repeal},
+        "sector_term": sector_term,
+        "velocity": velocity,
+        "top_acts_by_sector": top_acts_by_sector,
+    }
+    path = Path(data_dir) / "churn-explorer.json"
+    path.write_text(json.dumps(doc, indent=2, ensure_ascii=False) + "\n")
+    print(f"explorer: {len(sector_term)} cells, "
+          f"totals {tot_amend:,} amend / {tot_repeal:,} repeal "
+          f"(partial: {partial_terms})", flush=True)
+
+
 def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("db")
@@ -262,6 +390,7 @@ def main():
         print("aggregates BLOCKED: known-facts benchmark failed — fix the graph first", flush=True)
         return 1
     export_aggregates(con, args.data_dir, govs)
+    export_explorer(con, args.data_dir, govs)
     return 0
 
 

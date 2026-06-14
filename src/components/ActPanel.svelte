@@ -133,7 +133,7 @@
   <div class="foot">
     <span class="wl-mono fine">
       Source: New Zealand Legislation (PCO) — free of copyright, s 27 Copyright Act 1994.
-      {#if act.dlm}<a href="https://www.legislation.govt.nz/act/public/latest/{act.dlm}.html" target="_blank" rel="noopener">↗ legislation.govt.nz</a>{/if}
+      {#if act.dlm && act.leg_no}<a href="https://www.legislation.govt.nz/act/public/{act.leg_year}/{act.leg_no}/latest/{act.dlm}.html" target="_blank" rel="noopener">↗ legislation.govt.nz</a>{/if}
     </span>
   </div>
 </div>

@@ -1,0 +1,1612 @@
+{
+  "_note": "Full-graph churn explorer. Same date>=2008 provision-event scan as churn-aggregates per_term, so the totals reconcile exactly. Written only when the known-facts benchmark passes — partial-corpus data never ships.",
+  "generated": "2026-06-14",
+  "ops_note": "amendments = amended/inserted/substituted/replaced; repeals = repealed/revoked; provision-level events since 2008, not whole-act counts.",
+  "sectors": [
+    "tax",
+    "health",
+    "environment",
+    "justice",
+    "education",
+    "transport",
+    "economy",
+    "energy",
+    "water",
+    "other"
+  ],
+  "partial_terms": [
+    "clark3",
+    "luxon1"
+  ],
+  "totals": {
+    "amendments": 131763,
+    "repeals": 25782
+  },
+  "sector_term": [
+    {
+      "govt": "clark3",
+      "sector": "tax",
+      "amendments": 866,
+      "repeals": 110
+    },
+    {
+      "govt": "clark3",
+      "sector": "health",
+      "amendments": 99,
+      "repeals": 14
+    },
+    {
+      "govt": "clark3",
+      "sector": "environment",
+      "amendments": 489,
+      "repeals": 54
+    },
+    {
+      "govt": "clark3",
+      "sector": "justice",
+      "amendments": 459,
+      "repeals": 72
+    },
+    {
+      "govt": "clark3",
+      "sector": "education",
+      "amendments": 191,
+      "repeals": 35
+    },
+    {
+      "govt": "clark3",
+      "sector": "transport",
+      "amendments": 737,
+      "repeals": 140
+    },
+    {
+      "govt": "clark3",
+      "sector": "economy",
+      "amendments": 517,
+      "repeals": 126
+    },
+    {
+      "govt": "clark3",
+      "sector": "energy",
+      "amendments": 511,
+      "repeals": 111
+    },
+    {
+      "govt": "clark3",
+      "sector": "water",
+      "amendments": 1,
+      "repeals": 3
+    },
+    {
+      "govt": "clark3",
+      "sector": "other",
+      "amendments": 2542,
+      "repeals": 649
+    },
+    {
+      "govt": "key1",
+      "sector": "tax",
+      "amendments": 3562,
+      "repeals": 971
+    },
+    {
+      "govt": "key1",
+      "sector": "health",
+      "amendments": 179,
+      "repeals": 72
+    },
+    {
+      "govt": "key1",
+      "sector": "environment",
+      "amendments": 2341,
+      "repeals": 258
+    },
+    {
+      "govt": "key1",
+      "sector": "justice",
+      "amendments": 968,
+      "repeals": 113
+    },
+    {
+      "govt": "key1",
+      "sector": "education",
+      "amendments": 644,
+      "repeals": 118
+    },
+    {
+      "govt": "key1",
+      "sector": "transport",
+      "amendments": 899,
+      "repeals": 145
+    },
+    {
+      "govt": "key1",
+      "sector": "economy",
+      "amendments": 854,
+      "repeals": 316
+    },
+    {
+      "govt": "key1",
+      "sector": "energy",
+      "amendments": 465,
+      "repeals": 262
+    },
+    {
+      "govt": "key1",
+      "sector": "other",
+      "amendments": 7134,
+      "repeals": 1172
+    },
+    {
+      "govt": "key2",
+      "sector": "tax",
+      "amendments": 1956,
+      "repeals": 574
+    },
+    {
+      "govt": "key2",
+      "sector": "health",
+      "amendments": 859,
+      "repeals": 101
+    },
+    {
+      "govt": "key2",
+      "sector": "environment",
+      "amendments": 1374,
+      "repeals": 340
+    },
+    {
+      "govt": "key2",
+      "sector": "justice",
+      "amendments": 1860,
+      "repeals": 458
+    },
+    {
+      "govt": "key2",
+      "sector": "education",
+      "amendments": 437,
+      "repeals": 144
+    },
+    {
+      "govt": "key2",
+      "sector": "transport",
+      "amendments": 1090,
+      "repeals": 293
+    },
+    {
+      "govt": "key2",
+      "sector": "economy",
+      "amendments": 944,
+      "repeals": 213
+    },
+    {
+      "govt": "key2",
+      "sector": "energy",
+      "amendments": 2032,
+      "repeals": 147
+    },
+    {
+      "govt": "key2",
+      "sector": "water",
+      "amendments": 0,
+      "repeals": 1
+    },
+    {
+      "govt": "key2",
+      "sector": "other",
+      "amendments": 10863,
+      "repeals": 2666
+    },
+    {
+      "govt": "key3",
+      "sector": "tax",
+      "amendments": 2385,
+      "repeals": 708
+    },
+    {
+      "govt": "key3",
+      "sector": "health",
+      "amendments": 475,
+      "repeals": 175
+    },
+    {
+      "govt": "key3",
+      "sector": "environment",
+      "amendments": 1451,
+      "repeals": 246
+    },
+    {
+      "govt": "key3",
+      "sector": "justice",
+      "amendments": 1741,
+      "repeals": 460
+    },
+    {
+      "govt": "key3",
+      "sector": "education",
+      "amendments": 730,
+      "repeals": 244
+    },
+    {
+      "govt": "key3",
+      "sector": "transport",
+      "amendments": 748,
+      "repeals": 125
+    },
+    {
+      "govt": "key3",
+      "sector": "economy",
+      "amendments": 862,
+      "repeals": 338
+    },
+    {
+      "govt": "key3",
+      "sector": "energy",
+      "amendments": 252,
+      "repeals": 54
+    },
+    {
+      "govt": "key3",
+      "sector": "water",
+      "amendments": 0,
+      "repeals": 1
+    },
+    {
+      "govt": "key3",
+      "sector": "other",
+      "amendments": 10026,
+      "repeals": 2008
+    },
+    {
+      "govt": "ardern1",
+      "sector": "tax",
+      "amendments": 2666,
+      "repeals": 464
+    },
+    {
+      "govt": "ardern1",
+      "sector": "health",
+      "amendments": 522,
+      "repeals": 123
+    },
+    {
+      "govt": "ardern1",
+      "sector": "environment",
+      "amendments": 2456,
+      "repeals": 430
+    },
+    {
+      "govt": "ardern1",
+      "sector": "justice",
+      "amendments": 1684,
+      "repeals": 227
+    },
+    {
+      "govt": "ardern1",
+      "sector": "education",
+      "amendments": 1485,
+      "repeals": 308
+    },
+    {
+      "govt": "ardern1",
+      "sector": "transport",
+      "amendments": 752,
+      "repeals": 132
+    },
+    {
+      "govt": "ardern1",
+      "sector": "economy",
+      "amendments": 1178,
+      "repeals": 181
+    },
+    {
+      "govt": "ardern1",
+      "sector": "energy",
+      "amendments": 118,
+      "repeals": 7
+    },
+    {
+      "govt": "ardern1",
+      "sector": "water",
+      "amendments": 0,
+      "repeals": 1
+    },
+    {
+      "govt": "ardern1",
+      "sector": "other",
+      "amendments": 12958,
+      "repeals": 2036
+    },
+    {
+      "govt": "ardern2",
+      "sector": "tax",
+      "amendments": 1614,
+      "repeals": 189
+    },
+    {
+      "govt": "ardern2",
+      "sector": "health",
+      "amendments": 3123,
+      "repeals": 1213
+    },
+    {
+      "govt": "ardern2",
+      "sector": "environment",
+      "amendments": 2352,
+      "repeals": 338
+    },
+    {
+      "govt": "ardern2",
+      "sector": "justice",
+      "amendments": 837,
+      "repeals": 154
+    },
+    {
+      "govt": "ardern2",
+      "sector": "education",
+      "amendments": 880,
+      "repeals": 121
+    },
+    {
+      "govt": "ardern2",
+      "sector": "transport",
+      "amendments": 1639,
+      "repeals": 212
+    },
+    {
+      "govt": "ardern2",
+      "sector": "economy",
+      "amendments": 845,
+      "repeals": 283
+    },
+    {
+      "govt": "ardern2",
+      "sector": "energy",
+      "amendments": 649,
+      "repeals": 74
+    },
+    {
+      "govt": "ardern2",
+      "sector": "water",
+      "amendments": 849,
+      "repeals": 16
+    },
+    {
+      "govt": "ardern2",
+      "sector": "other",
+      "amendments": 12866,
+      "repeals": 2125
+    },
+    {
+      "govt": "luxon1",
+      "sector": "tax",
+      "amendments": 1826,
+      "repeals": 344
+    },
+    {
+      "govt": "luxon1",
+      "sector": "health",
+      "amendments": 516,
+      "repeals": 223
+    },
+    {
+      "govt": "luxon1",
+      "sector": "environment",
+      "amendments": 1527,
+      "repeals": 242
+    },
+    {
+      "govt": "luxon1",
+      "sector": "justice",
+      "amendments": 2230,
+      "repeals": 201
+    },
+    {
+      "govt": "luxon1",
+      "sector": "education",
+      "amendments": 1032,
+      "repeals": 135
+    },
+    {
+      "govt": "luxon1",
+      "sector": "transport",
+      "amendments": 1204,
+      "repeals": 210
+    },
+    {
+      "govt": "luxon1",
+      "sector": "economy",
+      "amendments": 599,
+      "repeals": 116
+    },
+    {
+      "govt": "luxon1",
+      "sector": "energy",
+      "amendments": 728,
+      "repeals": 132
+    },
+    {
+      "govt": "luxon1",
+      "sector": "water",
+      "amendments": 519,
+      "repeals": 43
+    },
+    {
+      "govt": "luxon1",
+      "sector": "other",
+      "amendments": 8566,
+      "repeals": 1465
+    }
+  ],
+  "velocity": {
+    "years": [
+      2008,
+      2009,
+      2010,
+      2011,
+      2012,
+      2013,
+      2014,
+      2015,
+      2016,
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ],
+    "overall": {
+      "amendments": [
+        6750,
+        5627,
+        5024,
+        6062,
+        4958,
+        10569,
+        7386,
+        4002,
+        4319,
+        9576,
+        8058,
+        7535,
+        8664,
+        11437,
+        6380,
+        7966,
+        4553,
+        8496,
+        4401
+      ],
+      "repeals": [
+        1463,
+        1063,
+        1065,
+        1153,
+        1568,
+        2050,
+        1759,
+        728,
+        992,
+        2317,
+        1316,
+        1168,
+        1527,
+        1615,
+        1933,
+        1186,
+        1245,
+        953,
+        681
+      ]
+    },
+    "by_sector": {
+      "tax": {
+        "amendments": [
+          867,
+          1703,
+          1152,
+          706,
+          801,
+          387,
+          803,
+          286,
+          1145,
+          928,
+          1153,
+          820,
+          714,
+          583,
+          525,
+          489,
+          460,
+          798,
+          555
+        ],
+        "repeals": [
+          138,
+          441,
+          352,
+          150,
+          339,
+          97,
+          140,
+          35,
+          155,
+          519,
+          201,
+          156,
+          107,
+          60,
+          77,
+          50,
+          77,
+          122,
+          144
+        ]
+      },
+      "health": {
+        "amendments": [
+          119,
+          13,
+          54,
+          92,
+          127,
+          584,
+          165,
+          18,
+          191,
+          263,
+          132,
+          146,
+          550,
+          1184,
+          1212,
+          422,
+          305,
+          169,
+          27
+        ],
+        "repeals": [
+          16,
+          7,
+          10,
+          53,
+          32,
+          32,
+          41,
+          16,
+          93,
+          63,
+          13,
+          29,
+          171,
+          341,
+          730,
+          67,
+          174,
+          31,
+          2
+        ]
+      },
+      "environment": {
+        "amendments": [
+          544,
+          941,
+          333,
+          1016,
+          373,
+          791,
+          212,
+          345,
+          159,
+          1219,
+          340,
+          272,
+          1602,
+          697,
+          470,
+          1279,
+          263,
+          842,
+          292
+        ],
+        "repeals": [
+          59,
+          98,
+          42,
+          113,
+          87,
+          106,
+          151,
+          84,
+          45,
+          206,
+          30,
+          65,
+          260,
+          107,
+          115,
+          154,
+          128,
+          49,
+          9
+        ]
+      },
+      "justice": {
+        "amendments": [
+          464,
+          469,
+          214,
+          280,
+          325,
+          1000,
+          609,
+          252,
+          452,
+          965,
+          274,
+          1044,
+          435,
+          254,
+          265,
+          349,
+          653,
+          667,
+          808
+        ],
+        "repeals": [
+          76,
+          78,
+          1,
+          30,
+          137,
+          238,
+          96,
+          35,
+          53,
+          361,
+          76,
+          110,
+          39,
+          17,
+          50,
+          125,
+          55,
+          51,
+          57
+        ]
+      },
+      "education": {
+        "amendments": [
+          296,
+          61,
+          223,
+          255,
+          104,
+          212,
+          127,
+          191,
+          209,
+          324,
+          537,
+          168,
+          799,
+          247,
+          362,
+          258,
+          425,
+          386,
+          215
+        ],
+        "repeals": [
+          43,
+          37,
+          23,
+          50,
+          45,
+          68,
+          31,
+          109,
+          60,
+          75,
+          89,
+          54,
+          165,
+          41,
+          42,
+          38,
+          41,
+          93,
+          1
+        ]
+      },
+      "transport": {
+        "amendments": [
+          737,
+          213,
+          210,
+          476,
+          208,
+          822,
+          143,
+          129,
+          70,
+          528,
+          413,
+          110,
+          211,
+          1123,
+          227,
+          298,
+          405,
+          248,
+          498
+        ],
+        "repeals": [
+          140,
+          32,
+          39,
+          74,
+          73,
+          205,
+          31,
+          32,
+          17,
+          60,
+          41,
+          82,
+          9,
+          64,
+          88,
+          66,
+          104,
+          59,
+          41
+        ]
+      },
+      "economy": {
+        "amendments": [
+          522,
+          176,
+          95,
+          578,
+          170,
+          467,
+          460,
+          426,
+          46,
+          247,
+          383,
+          132,
+          669,
+          524,
+          126,
+          218,
+          72,
+          304,
+          184
+        ],
+        "repeals": [
+          126,
+          82,
+          22,
+          212,
+          54,
+          120,
+          108,
+          33,
+          108,
+          128,
+          61,
+          12,
+          108,
+          108,
+          131,
+          56,
+          37,
+          24,
+          43
+        ]
+      },
+      "energy": {
+        "amendments": [
+          530,
+          52,
+          268,
+          126,
+          75,
+          1598,
+          397,
+          29,
+          91,
+          96,
+          58,
+          43,
+          18,
+          498,
+          120,
+          66,
+          55,
+          475,
+          160
+        ],
+        "repeals": [
+          186,
+          8,
+          160,
+          19,
+          6,
+          122,
+          36,
+          4,
+          12,
+          21,
+          5,
+          1,
+          1,
+          34,
+          38,
+          2,
+          1,
+          46,
+          85
+        ]
+      },
+      "water": {
+        "amendments": [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          16,
+          1,
+          842,
+          39,
+          470,
+          0
+        ],
+        "repeals": [
+          3,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1,
+          0,
+          0,
+          0,
+          23,
+          14,
+          22,
+          0
+        ]
+      },
+      "other": {
+        "amendments": [
+          2670,
+          1999,
+          2475,
+          2533,
+          2775,
+          4708,
+          4470,
+          2326,
+          1956,
+          5006,
+          4768,
+          4800,
+          3666,
+          6311,
+          3072,
+          3745,
+          1876,
+          4137,
+          1662
+        ],
+        "repeals": [
+          676,
+          280,
+          416,
+          452,
+          794,
+          1062,
+          1125,
+          380,
+          449,
+          883,
+          800,
+          658,
+          667,
+          843,
+          662,
+          605,
+          614,
+          456,
+          299
+        ]
+      }
+    }
+  },
+  "top_acts_by_sector": {
+    "tax": [
+      {
+        "id": "DLM1512300",
+        "title": "Income Tax Act 2007",
+        "count": 11577,
+        "type": "act",
+        "year": 2007,
+        "number": "0097"
+      },
+      {
+        "id": "DLM245341",
+        "title": "Income Tax Act 2004",
+        "count": 3300,
+        "type": "act",
+        "year": 2004,
+        "number": "0035"
+      },
+      {
+        "id": "DLM81034",
+        "title": "Goods and Services Tax Act 1985",
+        "count": 1675,
+        "type": "act",
+        "year": 1985,
+        "number": "0141"
+      },
+      {
+        "id": "DLM377336",
+        "title": "Customs and Excise Act 1996",
+        "count": 797,
+        "type": "act",
+        "year": 1996,
+        "number": "0027"
+      },
+      {
+        "id": "DLM220030",
+        "title": "Customs and Excise Regulations 1996",
+        "count": 552,
+        "type": "regulation",
+        "year": 1996,
+        "number": "0232"
+      },
+      {
+        "id": "DLM7038920",
+        "title": "Customs and Excise Act 2018",
+        "count": 160,
+        "type": "act",
+        "year": 2018,
+        "number": "0004"
+      },
+      {
+        "id": "DLM347443",
+        "title": "Taxation Review Authorities Act 1994",
+        "count": 79,
+        "type": "act",
+        "year": 1994,
+        "number": "0165"
+      },
+      {
+        "id": "DLM1184504",
+        "title": "Income Tax Act 1994",
+        "count": 67,
+        "type": "act",
+        "year": 1994,
+        "number": "0164"
+      }
+    ],
+    "health": [
+      {
+        "id": "DLM305839",
+        "title": "Health Act 1956",
+        "count": 753,
+        "type": "act",
+        "year": 1956,
+        "number": "0065"
+      },
+      {
+        "id": "DLM6732828",
+        "title": "Health and Safety at Work (Mining Operations and Quarrying Operations) Regulations 2016",
+        "count": 500,
+        "type": "regulation",
+        "year": 2016,
+        "number": "0017"
+      },
+      {
+        "id": "DLM223190",
+        "title": "Smokefree Environments and Regulated Products Act 1990",
+        "count": 472,
+        "type": "act",
+        "year": 1990,
+        "number": "0108"
+      },
+      {
+        "id": "DLM262175",
+        "title": "Mental Health (Compulsory Assessment and Treatment) Act 1992",
+        "count": 426,
+        "type": "act",
+        "year": 1992,
+        "number": "0046"
+      },
+      {
+        "id": "DLM53789",
+        "title": "Medicines Act 1981",
+        "count": 338,
+        "type": "act",
+        "year": 1981,
+        "number": "0118"
+      },
+      {
+        "id": "DLM278828",
+        "title": "Health and Safety in Employment Act 1992",
+        "count": 321,
+        "type": "act",
+        "year": 1992,
+        "number": "0096"
+      },
+      {
+        "id": "DLM414576",
+        "title": "Agricultural Compounds and Veterinary Medicines Act 1997",
+        "count": 314,
+        "type": "act",
+        "year": 1997,
+        "number": "0087"
+      },
+      {
+        "id": "DLM80050",
+        "title": "New Zealand Public Health and Disability Act 2000",
+        "count": 272,
+        "type": "act",
+        "year": 2000,
+        "number": "0091"
+      }
+    ],
+    "environment": [
+      {
+        "id": "DLM230264",
+        "title": "Resource Management Act 1991",
+        "count": 3877,
+        "type": "act",
+        "year": 1991,
+        "number": "0069"
+      },
+      {
+        "id": "DLM158583",
+        "title": "Climate Change Response Act 2002",
+        "count": 2046,
+        "type": "act",
+        "year": 2002,
+        "number": "0040"
+      },
+      {
+        "id": "DLM394191",
+        "title": "Fisheries Act 1996",
+        "count": 1459,
+        "type": "act",
+        "year": 1996,
+        "number": "0088"
+      },
+      {
+        "id": "DLM103609",
+        "title": "Conservation Act 1987",
+        "count": 797,
+        "type": "act",
+        "year": 1987,
+        "number": "0065"
+      },
+      {
+        "id": "DLM381221",
+        "title": "Hazardous Substances and New Organisms Act 1996",
+        "count": 785,
+        "type": "act",
+        "year": 1996,
+        "number": "0030"
+      },
+      {
+        "id": "DLM276813",
+        "title": "Wildlife Act 1953",
+        "count": 560,
+        "type": "act",
+        "year": 1953,
+        "number": "0031"
+      },
+      {
+        "id": "DLM3955410",
+        "title": "Exclusive Economic Zone and Continental Shelf (Environmental Effects) Act 2012",
+        "count": 432,
+        "type": "act",
+        "year": 2012,
+        "number": "0072"
+      },
+      {
+        "id": "DLM104497",
+        "title": "Fisheries (Auckland and Kermadec Areas Commercial Fishing) Regulations 1986",
+        "count": 382,
+        "type": "regulation",
+        "year": 1986,
+        "number": "0216"
+      }
+    ],
+    "justice": [
+      {
+        "id": "DLM142994",
+        "title": "Family Court Rules 2002",
+        "count": 1488,
+        "type": "regulation",
+        "year": 2002,
+        "number": "0261"
+      },
+      {
+        "id": "DLM58316",
+        "title": "Employment Relations Act 2000",
+        "count": 899,
+        "type": "act",
+        "year": 2000,
+        "number": "0024"
+      },
+      {
+        "id": "DLM135341",
+        "title": "Sentencing Act 2002",
+        "count": 792,
+        "type": "act",
+        "year": 2002,
+        "number": "0009"
+      },
+      {
+        "id": "DLM368903",
+        "title": "Criminal Investigations (Bodily Samples) Act 1995",
+        "count": 747,
+        "type": "act",
+        "year": 1995,
+        "number": "0055"
+      },
+      {
+        "id": "DLM6959800",
+        "title": "High Court Rules 2016",
+        "count": 715,
+        "type": "regulation",
+        "year": 2016,
+        "number": "0225"
+      },
+      {
+        "id": "DLM294848",
+        "title": "Corrections Act 2004",
+        "count": 577,
+        "type": "act",
+        "year": 2004,
+        "number": "0050"
+      },
+      {
+        "id": "DLM327381",
+        "title": "Crimes Act 1961",
+        "count": 560,
+        "type": "act",
+        "year": 1961,
+        "number": "0043"
+      },
+      {
+        "id": "DLM4072718",
+        "title": "Māori Land Court Rules 2011",
+        "count": 486,
+        "type": "regulation",
+        "year": 2011,
+        "number": "0374"
+      }
+    ],
+    "education": [
+      {
+        "id": "DLM175958",
+        "title": "Education Act 1989",
+        "count": 2558,
+        "type": "act",
+        "year": 1989,
+        "number": "0080"
+      },
+      {
+        "id": "LMS170674",
+        "title": "Education and Training Act 2020",
+        "count": 1501,
+        "type": "act",
+        "year": 2020,
+        "number": "0038"
+      },
+      {
+        "id": "DLM286951",
+        "title": "Student Loan Scheme Act 1992",
+        "count": 415,
+        "type": "act",
+        "year": 1992,
+        "number": "0141"
+      },
+      {
+        "id": "DLM3179903",
+        "title": "Student Loan Scheme Act 2011",
+        "count": 394,
+        "type": "act",
+        "year": 2011,
+        "number": "0062"
+      },
+      {
+        "id": "DLM259350",
+        "title": "Student Allowances Regulations 1998",
+        "count": 285,
+        "type": "regulation",
+        "year": 1998,
+        "number": "0277"
+      },
+      {
+        "id": "DLM1412500",
+        "title": "Education (Early Childhood Services) Regulations 2008",
+        "count": 239,
+        "type": "regulation",
+        "year": 2008,
+        "number": "0204"
+      },
+      {
+        "id": "DLM6851982",
+        "title": "Teaching Council Rules 2016",
+        "count": 237,
+        "type": "regulation",
+        "year": 2016,
+        "number": "0122"
+      },
+      {
+        "id": "DLM266245",
+        "title": "Industry Training and Apprenticeships Act 1992",
+        "count": 131,
+        "type": "act",
+        "year": 1992,
+        "number": "0055"
+      }
+    ],
+    "transport": [
+      {
+        "id": "DLM433612",
+        "title": "Land Transport Act 1998",
+        "count": 2355,
+        "type": "act",
+        "year": 1998,
+        "number": "0110"
+      },
+      {
+        "id": "DLM334659",
+        "title": "Maritime Transport Act 1994",
+        "count": 1034,
+        "type": "act",
+        "year": 1994,
+        "number": "0104"
+      },
+      {
+        "id": "DLM214686",
+        "title": "Civil Aviation Act 1990",
+        "count": 874,
+        "type": "act",
+        "year": 1990,
+        "number": "0098"
+      },
+      {
+        "id": "DLM226229",
+        "title": "Land Transport Management Act 2003",
+        "count": 646,
+        "type": "act",
+        "year": 2003,
+        "number": "0118"
+      },
+      {
+        "id": "DLM280561",
+        "title": "Land Transport (Driver Licensing) Rule 1999",
+        "count": 546,
+        "type": "regulation",
+        "year": 1999,
+        "number": "0100"
+      },
+      {
+        "id": "DLM341189",
+        "title": "Transport Act 1962",
+        "count": 395,
+        "type": "act",
+        "year": 1962,
+        "number": "0135"
+      },
+      {
+        "id": "DLM341567",
+        "title": "Railways Act 2005",
+        "count": 317,
+        "type": "act",
+        "year": 2005,
+        "number": "0037"
+      },
+      {
+        "id": "DLM280109",
+        "title": "Land Transport (Offences and Penalties) Regulations 1999",
+        "count": 270,
+        "type": "regulation",
+        "year": 1999,
+        "number": "0099"
+      }
+    ],
+    "economy": [
+      {
+        "id": "DLM319569",
+        "title": "Companies Act 1993",
+        "count": 1246,
+        "type": "act",
+        "year": 1993,
+        "number": "0105"
+      },
+      {
+        "id": "DLM87622",
+        "title": "Commerce Act 1986",
+        "count": 909,
+        "type": "act",
+        "year": 1986,
+        "number": "0005"
+      },
+      {
+        "id": "DLM160808",
+        "title": "Public Finance Act 1989",
+        "count": 694,
+        "type": "act",
+        "year": 1989,
+        "number": "0044"
+      },
+      {
+        "id": "DLM25999",
+        "title": "Securities Act 1978",
+        "count": 665,
+        "type": "act",
+        "year": 1978,
+        "number": "0103"
+      },
+      {
+        "id": "DLM356880",
+        "title": "Overseas Investment Act 2005",
+        "count": 635,
+        "type": "act",
+        "year": 2005,
+        "number": "0082"
+      },
+      {
+        "id": "DLM139726",
+        "title": "Securities Markets Act 1988",
+        "count": 615,
+        "type": "act",
+        "year": 1988,
+        "number": "0234"
+      },
+      {
+        "id": "DLM211511",
+        "title": "Credit Contracts and Consumer Finance Act 2003",
+        "count": 582,
+        "type": "act",
+        "year": 2003,
+        "number": "0052"
+      },
+      {
+        "id": "DLM341365",
+        "title": "Overseas Investment Regulations 2005",
+        "count": 403,
+        "type": "regulation",
+        "year": 2005,
+        "number": "0220"
+      }
+    ],
+    "energy": [
+      {
+        "id": "DLM242535",
+        "title": "Crown Minerals Act 1991",
+        "count": 831,
+        "type": "act",
+        "year": 1991,
+        "number": "0070"
+      },
+      {
+        "id": "DLM2763500",
+        "title": "Electricity (Safety) Regulations 2010",
+        "count": 550,
+        "type": "regulation",
+        "year": 2010,
+        "number": "0036"
+      },
+      {
+        "id": "DLM281857",
+        "title": "Electricity Act 1992",
+        "count": 500,
+        "type": "act",
+        "year": 1992,
+        "number": "0122"
+      },
+      {
+        "id": "DLM285411",
+        "title": "Gas Act 1992",
+        "count": 416,
+        "type": "act",
+        "year": 1992,
+        "number": "0124"
+      },
+      {
+        "id": "DLM2359500",
+        "title": "Gas (Safety and Measurement) Regulations 2010",
+        "count": 408,
+        "type": "regulation",
+        "year": 2010,
+        "number": "0076"
+      },
+      {
+        "id": "DLM230534",
+        "title": "Electricity Governance Regulations 2003",
+        "count": 323,
+        "type": "regulation",
+        "year": 2003,
+        "number": "0374"
+      },
+      {
+        "id": "DLM108729",
+        "title": "Energy Efficiency (Energy Using Products) Regulations 2002",
+        "count": 301,
+        "type": "regulation",
+        "year": 2002,
+        "number": "0009"
+      },
+      {
+        "id": "DLM1120012",
+        "title": "Crown Minerals (Minerals Other than Petroleum) Regulations 2007",
+        "count": 284,
+        "type": "regulation",
+        "year": 2007,
+        "number": "0399"
+      }
+    ],
+    "water": [
+      {
+        "id": "LMS534585",
+        "title": "Water Services Entities Act 2022",
+        "count": 821,
+        "type": "act",
+        "year": 2022,
+        "number": "0077"
+      },
+      {
+        "id": "LMS374529",
+        "title": "Water Services Act 2021",
+        "count": 427,
+        "type": "act",
+        "year": 2021,
+        "number": "0036"
+      },
+      {
+        "id": "LMS294335",
+        "title": "Water Services Authority—Taumata Arowai Act 2020",
+        "count": 79,
+        "type": "act",
+        "year": 2020,
+        "number": "0052"
+      },
+      {
+        "id": "LMS964362",
+        "title": "Local Government (Water Services Preliminary Arrangements) Act 2024",
+        "count": 18,
+        "type": "act",
+        "year": 2024,
+        "number": "0031"
+      },
+      {
+        "id": "LMS1435060",
+        "title": "Water Services (Levies on Water Services) Regulations 2025",
+        "count": 17,
+        "type": "regulation",
+        "year": 2025,
+        "number": "0089"
+      },
+      {
+        "id": "DLM338489",
+        "title": "Waimakariri - Ashley Water Supply Act 1961",
+        "count": 7,
+        "type": "act",
+        "year": 1961,
+        "number": "0131"
+      },
+      {
+        "id": "DLM15438",
+        "title": "Water Supplies Protection Regulations 1961",
+        "count": 6,
+        "type": "regulation",
+        "year": 1961,
+        "number": "0086"
+      },
+      {
+        "id": "LMS586082",
+        "title": "Water Services (Fees and Charges) Regulations 2021",
+        "count": 6,
+        "type": "regulation",
+        "year": 2021,
+        "number": "0371"
+      }
+    ],
+    "other": [
+      {
+        "id": "DLM348342",
+        "title": "Tax Administration Act 1994",
+        "count": 4181,
+        "type": "act",
+        "year": 1994,
+        "number": "0166"
+      },
+      {
+        "id": "DLM359106",
+        "title": "Social Security Act 1964",
+        "count": 2261,
+        "type": "act",
+        "year": 1964,
+        "number": "0136"
+      },
+      {
+        "id": "DLM147087",
+        "title": "Oranga Tamariki Act 1989",
+        "count": 1965,
+        "type": "act",
+        "year": 1989,
+        "number": "0024"
+      },
+      {
+        "id": "DLM307518",
+        "title": "Electoral Act 1993",
+        "count": 1655,
+        "type": "act",
+        "year": 1993,
+        "number": "0087"
+      },
+      {
+        "id": "DLM446000",
+        "title": "Government Superannuation Fund Act 1956",
+        "count": 1578,
+        "type": "act",
+        "year": 1956,
+        "number": "0047"
+      },
+      {
+        "id": "DLM306035",
+        "title": "Building Act 2004",
+        "count": 1400,
+        "type": "act",
+        "year": 2004,
+        "number": "0072"
+      },
+      {
+        "id": "DLM253150",
+        "title": "Child Support Act 1991",
+        "count": 1179,
+        "type": "act",
+        "year": 1991,
+        "number": "0142"
+      },
+      {
+        "id": "LMS404902",
+        "title": "COVID-19 Recovery (Fast-track Consenting) Referred Projects Order 2020",
+        "count": 1150,
+        "type": "regulation",
+        "year": 2020,
+        "number": "0255"
+      }
+    ]
+  }
+}
