@@ -377,10 +377,6 @@
     z-index: 2;
   }
 
-  .floatlabel.below {
-    top: calc(50% + 11px);
-  }
-
   .floatlabel:hover {
     color: var(--signal);
   }
