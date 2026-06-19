@@ -7,6 +7,7 @@
   import MapView from './components/MapView.svelte';
   import ChurnView from './components/ChurnView.svelte';
   import ChurnExplorer from './components/ChurnExplorer.svelte';
+  import TopChangeView from './components/TopChangeView.svelte';
   import Methodology from './components/Methodology.svelte';
   import NationwideTray from './components/NationwideTray.svelte';
   import Scrubber from './components/Scrubber.svelte';
@@ -53,6 +54,8 @@
     <ChurnView />
   {:else if ui.view === 'explore'}
     <ChurnExplorer />
+  {:else if ui.view === 'top'}
+    <TopChangeView />
   {:else}
     <Methodology />
   {/if}

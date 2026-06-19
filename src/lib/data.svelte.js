@@ -11,6 +11,7 @@ export const db = $state({
   lanes: [],
   aggregates: null,
   explorer: null,
+  actHistory: null,
   generated: null,
 });
 
@@ -22,6 +23,14 @@ export async function loadData() {
     .then((r) => (r.ok ? r.json() : null))
     .then((j) => (db.explorer = j))
     .catch(() => (db.explorer = null));
+
+  /* Per-act change-history digests (summary + timeline) for the Top-change
+     view's inline expand. Optional too — the view falls back to the GitHub
+     link when an act isn't precomputed. */
+  fetch(`${import.meta.env.BASE_URL}data/act-history.json`)
+    .then((r) => (r.ok ? r.json() : null))
+    .then((j) => (db.actHistory = j?.acts || null))
+    .catch(() => (db.actHistory = null));
 
   try {
     const [govs, projects, acts, aggregates] = await Promise.all(

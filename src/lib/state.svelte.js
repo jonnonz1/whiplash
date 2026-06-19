@@ -1,5 +1,5 @@
 /* App state, shareable via URL params:
-   ?view=map|churn|explore|method &t=YYYY-MM &govt= &sector= &status= &min= &p= &act= &sec= */
+   ?view=map|churn|explore|top|method &t=YYYY-MM &govt= &sector= &status= &min= &p= &act= &sec= */
 
 import { dateToFrac, fracToDate, nowFrac, clamp, TIMELINE_FROM } from './format.js';
 
@@ -18,7 +18,7 @@ export const ui = $state({
 
 export const TIMELINE = { from: TIMELINE_FROM, to: nowFrac() };
 
-const VIEWS = ['map', 'churn', 'explore', 'method'];
+const VIEWS = ['map', 'churn', 'explore', 'top', 'method'];
 
 export function initFromURL() {
   const q = new URLSearchParams(location.search);
