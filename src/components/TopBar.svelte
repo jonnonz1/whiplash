@@ -6,6 +6,7 @@
     map: 'the graveyard',
     churn: 'the statute book, moving',
     explore: 'the whole statute book',
+    top: 'where the churn lands',
     method: 'how we count',
   };
 
@@ -38,6 +39,7 @@
   <nav class="nav" aria-label="Views">
     <button class="wl-tab" class:on={ui.view === 'map'} onclick={() => go('map')} aria-current={ui.view === 'map' ? 'page' : undefined}>↺ Map</button>
     <button class="wl-tab" class:on={ui.view === 'explore'} onclick={() => go('explore')} aria-current={ui.view === 'explore' ? 'page' : undefined}>⊞ Explore</button>
+    <button class="wl-tab" class:on={ui.view === 'top'} onclick={() => go('top')} aria-current={ui.view === 'top' ? 'page' : undefined}>↟ Top 10</button>
     <button class="wl-tab" class:on={ui.view === 'method'} onclick={() => go('method')} aria-current={ui.view === 'method' ? 'page' : undefined}>Method</button>
   </nav>
   <button class="wl-pill share" onclick={share}>{copied ? '✓ copied' : '⤴ Share'}</button>

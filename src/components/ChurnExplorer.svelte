@@ -7,12 +7,9 @@
   import { ui, TIMELINE } from '../lib/state.svelte.js';
   import { db } from '../lib/data.svelte.js';
   import { SECTOR_HEROES } from '../lib/heroes.js';
+  import { linkFor, linkLabel } from '../lib/leglinks.js';
   import GovBand from './GovBand.svelte';
   import ActPanel from './ActPanel.svelte';
-
-  /* nz-statute-book is live: act rows link to its git history/blame/diff; the
-     rest (regulations, and any act not in the repo) fall back to legislation.govt.nz. */
-  const STATUTE_BOOK_REPO = 'https://github.com/jonnonz1/nz-statute-book';
 
   const SECTOR_LABELS = {
     tax: 'Tax', health: 'Health', environment: 'Environment',
@@ -114,22 +111,6 @@
     for (const lane of db.lanes) for (const a of lane.acts) if (a.dlm) m[a.dlm] = { act: a, lane };
     return m;
   });
-
-  function slug(title) {
-    return title.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
-  }
-  function linkFor(a) {
-    if (STATUTE_BOOK_REPO && a.type === 'act')
-      return `${STATUTE_BOOK_REPO}/commits/main/acts/public/${a.year}/${slug(a.title)}.md`;
-    // legislation.govt.nz builds the page from year/number in the path (the
-    // DLM is only an anchor), so all three are required — the bare
-    // /public/latest/<DLM> form 404s.
-    return `https://www.legislation.govt.nz/${a.type}/public/${a.year}/${a.number}/latest/${a.id}.html`;
-  }
-  function linkLabel(a) {
-    if (STATUTE_BOOK_REPO && a.type === 'act') return 'git history ↗';
-    return 'legislation.govt.nz ↗';
-  }
 
   let panelAct = $state(null);
 </script>
