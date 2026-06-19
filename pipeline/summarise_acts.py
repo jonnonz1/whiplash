@@ -22,11 +22,14 @@ from pathlib import Path
 
 SYSTEM = (
     "You summarise the amendment history of a New Zealand law for a data viz. "
-    "Write exactly two sentences, plain and factual, grounded ONLY in the JSON "
-    "digest given — never add outside facts, motives, or numbers not present. "
-    "Lead with how heavily it has changed; name the biggest amending Act(s) or "
-    "the repeal/replacement if the digest shows one. No preamble, no quotes, "
-    "no markdown — just the two sentences."
+    "Write two or three sentences that say WHAT changed, not just how much. "
+    "Your only source of substance is the titles of the biggest amending Acts: "
+    "the parenthetical themes in those titles (e.g. '(Vaping)', '(Closely Held "
+    "Companies)', '(Emissions Trading Reform)') are the topics — name them in "
+    "plain words. Mention the repeal/replacement if the digest shows one. Stay "
+    "grounded ONLY in the digest: never invent facts, motives, or numbers not "
+    "present, and where an amending Act's title carries no theme, don't guess "
+    "what it did. No preamble, no quotes, no markdown — just the sentences."
 )
 
 
