@@ -1,12 +1,14 @@
 {
   "_note": "Aggregate stats. status:'sourced' cards carry a citation; status:'pending' cards are waiting on the legislation pipeline (specs/whiplash/03-data-pipeline.md) and must never show an invented number. per_term stays empty until the pipeline's amendment graph reproduces the known-facts benchmark.",
-  "generated": "2026-06-14",
+  "generated": "2026-06-20",
   "sources_note": "Legislation data: Parliamentary Counsel Office — free of copyright under s 27 Copyright Act 1994; reuse statement CC BY 4.0.",
   "per_term": [
     {
       "govt": "key3",
       "amendments": 18670,
+      "amendments_acts": 14584,
       "repeals": 4359,
+      "repeals_acts": 2844,
       "by_sector": {
         "other": 12034,
         "tax": 3093,
@@ -23,7 +25,9 @@
     {
       "govt": "ardern2",
       "amendments": 25654,
+      "amendments_acts": 16818,
       "repeals": 4725,
+      "repeals_acts": 2648,
       "by_sector": {
         "other": 14991,
         "justice": 991,
@@ -40,7 +44,9 @@
     {
       "govt": "key2",
       "amendments": 21415,
+      "amendments_acts": 15144,
       "repeals": 4937,
+      "repeals_acts": 3499,
       "by_sector": {
         "other": 13529,
         "transport": 1383,
@@ -57,7 +63,9 @@
     {
       "govt": "ardern1",
       "amendments": 23819,
+      "amendments_acts": 17538,
       "repeals": 3909,
+      "repeals_acts": 2467,
       "by_sector": {
         "other": 14994,
         "environment": 2886,
@@ -74,7 +82,9 @@
     {
       "govt": "luxon1",
       "amendments": 18747,
+      "amendments_acts": 12710,
       "repeals": 3111,
+      "repeals_acts": 2022,
       "by_sector": {
         "other": 10031,
         "environment": 1769,
@@ -92,7 +102,9 @@
     {
       "govt": "clark3",
       "amendments": 6412,
+      "amendments_acts": 4966,
       "repeals": 1314,
+      "repeals_acts": 662,
       "by_sector": {
         "other": 3191,
         "economy": 643,
@@ -110,7 +122,9 @@
     {
       "govt": "key1",
       "amendments": 17046,
+      "amendments_acts": 13426,
       "repeals": 3427,
+      "repeals_acts": 2391,
       "by_sector": {
         "other": 8306,
         "health": 251,
@@ -213,5 +227,6 @@
       "source": "Whiplash pipeline — PCO legislation XML"
     }
   ],
-  "half_life_note": "median age of an act when one of its provisions is repealed or revoked; provision-level, not whole-act lifespan"
+  "half_life_note": "median age of an act when one of its provisions is repealed or revoked; provision-level, not whole-act lifespan",
+  "per_term_note": "amendments/repeals: provision-level events across acts AND regulations. amendments_acts/repeals_acts: public Acts only — the per-term figure the essay cites. Provision-level events since 2008, bucketed by government."
 }

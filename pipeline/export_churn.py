@@ -189,19 +189,28 @@ def export_aggregates(con, data_dir, govs):
     doc = json.loads(path.read_text())
 
     per_term = {}
-    for d, op, work_title in con.execute(
-        "SELECT date, op, work_title FROM events WHERE date IS NOT NULL AND date >= '2008'"
+    for d, op, work_title, wtype in con.execute(
+        """SELECT e.date, e.op, e.work_title, w.type FROM events e
+           JOIN works w ON e.work_id = w.id
+           WHERE e.date IS NOT NULL AND e.date >= '2008'"""
     ):
         gid = govt_at(govs, d)
         if not gid:
             continue
-        bucket = per_term.setdefault(gid, {"govt": gid, "amendments": 0, "repeals": 0, "by_sector": {}})
+        bucket = per_term.setdefault(gid, {"govt": gid, "amendments": 0,
+                                           "amendments_acts": 0, "repeals": 0,
+                                           "repeals_acts": 0, "by_sector": {}})
         sector = classify(work_title)
+        is_act = wtype == "act"
         if op in CHURN_OPS:
             bucket["amendments"] += 1
+            if is_act:
+                bucket["amendments_acts"] += 1
             bucket["by_sector"][sector] = bucket["by_sector"].get(sector, 0) + 1
         elif op in DEAD_OPS:
             bucket["repeals"] += 1
+            if is_act:
+                bucket["repeals_acts"] += 1
             bucket["by_sector"][sector] = bucket["by_sector"].get(sector, 0) + 1
     # honesty flags: the 2008 timeline-start truncates Clark's term, and the
     # current term is still running — neither bucket is comparable as-is
@@ -209,6 +218,11 @@ def export_aggregates(con, data_dir, govs):
         g = next((x for x in govs if x[2] == bucket["govt"]), None)
         if g and (g[0] < "2008-01-01" or g[1] == "9999-12-31"):
             bucket["partial"] = True
+    doc["per_term_note"] = (
+        "amendments/repeals: provision-level events across acts AND regulations. "
+        "amendments_acts/repeals_acts: public Acts only — the per-term figure the "
+        "essay cites. Provision-level events since 2008, bucketed by government."
+    )
     doc["per_term"] = list(per_term.values())
 
     top = con.execute(
