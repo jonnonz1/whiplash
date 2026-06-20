@@ -18,7 +18,7 @@ export const ESSAYS = [
     part: 2,
     title: 'The Fastest Repealers in the West',
     blurb: 'Why New Zealand swings harder than anyone else.',
-    url: null,
+    url: 'https://jonno.nz/posts/fastest-repealers-in-the-west/',
   },
   {
     part: 3,
