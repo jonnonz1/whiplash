@@ -42,7 +42,7 @@
         </p>
         <div class="impacts">
           <div class="impact">
-            <span class="wl-disp ival">$25.5b</span>
+            <span class="wl-disp ival">$27.5b</span>
             <span class="itext">the Super Fund's own estimate of what pausing contributions for eight years cost the next generation</span>
           </div>
           <div class="impact">

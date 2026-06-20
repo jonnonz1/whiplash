@@ -43,7 +43,7 @@ export const SECTOR_HEROES = {
     title: 'A funded retirement.',
     rows: [
       { k: 'Paused', t: '2009–17 — Super Fund contributions halted', sub: 'under National' },
-      { k: 'The hole', t: "$25.5b — by the fund's own estimate", strong: true, src: 'NZ Super Fund' },
+      { k: 'The hole', t: "$27.5b — by the fund's own estimate", strong: true, src: 'NZ Super Fund' },
     ],
     got: 'The bill, passed to people too young to vote.',
     project: 'super-fund-suspension',

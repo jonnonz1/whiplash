@@ -23,7 +23,7 @@
     justice: 'A steady grind across courts and work: the Family Court Rules and the Employment Relations Act lead, with sentencing and criminal-procedure law constantly retuned.',
     transport: 'The Land Transport Act 1998 anchors the sector; maritime and aviation law churn alongside it. Auckland light rail burned $228m on plans for zero metres of track.',
     health: 'The 1956 Health Act still does heavy lifting, with smokefree and mental-health law amended around it. Dunedin Hospital was rescoped for eight years across both governments.',
-    economy: 'The Companies, Commerce and Public Finance Acts churn steadily. Pausing NZ Super Fund contributions (2009–17) left a hole the fund puts at ~$25.5b.',
+    economy: 'The Companies, Commerce and Public Finance Acts churn steadily. Pausing NZ Super Fund contributions (2009–17) left a hole the fund puts at ~$27.5b.',
     education: 'The Education Act 1989 was replaced by the Education and Training Act 2020 — now amended 1,500+ times itself — while student-loan and allowance rules are rewritten underneath, year after year.',
     energy: 'The Crown Minerals Act leads as offshore-exploration policy swings; electricity and gas safety regulations churn beneath it.',
     water: 'The newest churn in the book: Three Waters was built 2020–22, repealed in 2024, and restarted under new names — the Water Services Entities Act 2022 was already amended 821 times before its repeal.',
