@@ -87,8 +87,8 @@
     {#if act.lifespan_note}
       <div class="wl-mono life">in force {act.lifespan_note}</div>
     {/if}
-    {#if act.amendment_count}
-      <div class="wl-mono life">{act.amendment_count} amendment events on record</div>
+    {#if act.events?.length || act.amendment_count}
+      <div class="wl-mono life">{act.events?.length || act.amendment_count} recorded changes</div>
     {/if}
     {#if act.open_note}
       <div class="wl-mono life">{act.open_note}</div>
