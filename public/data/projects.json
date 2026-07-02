@@ -86,17 +86,17 @@
       "ended": "2023-12-13",
       "started_by": "ardern2",
       "ended_by": "luxon1",
-      "sunk_nzd": 651300000,
+      "sunk_nzd": 671000000,
       "firm": [
         {
-          "label": "Directly sunk: procurement, design, consenting, enabling works, settlements",
-          "amount_nzd": 507300000,
-          "source": "KiwiRail, confirmed to RNZ",
-          "url": "https://www.rnz.co.nz/news/political/560273"
+          "label": "Directly sunk: project management, landside infrastructure and wind-down to cancellation (to Dec 2023 and beyond)",
+          "amount_nzd": 449000000,
+          "source": "KiwiRail / 1News, 15 Aug 2025 (final reconciliation; an earlier RNZ figure of $507.3m was an interim mid-2024 number)",
+          "url": "https://www.1news.co.nz/2025/08/15/how-much-it-cost-to-cancel-irex-ferry-contract-671-million/"
         },
         {
-          "label": "Hyundai Mipo shipbuild contract exit settlement",
-          "amount_nzd": 144000000,
+          "label": "Total paid to Hyundai Mipo to exit the shipbuild contract ($144m final settlement Aug 2025 plus $78m earlier payments)",
+          "amount_nzd": 222000000,
           "source": "1News, 15 Aug 2025",
           "url": "https://www.1news.co.nz/2025/08/15/how-much-it-cost-to-cancel-irex-ferry-contract-671-million/"
         }
@@ -123,8 +123,8 @@
           "source": "Labour, 2025"
         }
       ],
-      "summary": "$507.3m sunk, $144m to walk away — and new ferries ordered anyway.",
-      "plain": "Two big rail-capable ferries ordered in 2021 to replace the ageing Interislander fleet. Cancelled in December 2023 over cost blowouts; New Zealand then paid $144m to exit the shipbuilding contract and ordered different ferries.",
+      "summary": "$671m sunk in total, $222m of it to exit the Hyundai contract — and new ferries ordered anyway.",
+      "plain": "Two big rail-capable ferries ordered in 2021 to replace the ageing Interislander fleet. Cancelled in December 2023 over cost blowouts; the whole project cost $671m, including $222m paid to Hyundai to exit the shipbuilding contract, and New Zealand ordered different ferries anyway.",
       "events": [
         {
           "date": "2021-06-01",
@@ -194,8 +194,8 @@
         {
           "label": "NZTA's share of the $180.7m spent July 2015 - March 2024",
           "amount_nzd": 109700000,
-          "source": "The Post / Wikipedia",
-          "url": "https://en.wikipedia.org/wiki/Let%27s_Get_Wellington_Moving"
+          "source": "The Post, 27 Apr 2024",
+          "url": "https://www.thepost.co.nz/nz-news/350258374/180m-final-cost-lets-get-wellington-moving-released"
         }
       ],
       "extra_costs": [
@@ -350,7 +350,7 @@
         },
         {
           "title": "The Spinoff — The new RMA replacement 'all but mirrors' the old one (Dec 2025)",
-          "url": "https://thespinoff.co.nz/the-bulletin/10-12-2025"
+          "url": "https://thespinoff.co.nz/the-bulletin/10-12-2025/rma-era-ends-as-government-launches-once-in-a-generation-planning-overhaul"
         },
         {
           "title": "RNZ — RMA replacement bills sent to select committee",
@@ -433,7 +433,7 @@
         },
         {
           "title": "The Spinoff — Te Pūkenga OIA figures (Jul 2025)",
-          "url": "https://thespinoff.co.nz/politics/16-07-2025"
+          "url": "https://thespinoff.co.nz/politics/16-07-2025/te-pukenga-loses-over-80m-in-funding-855-staff-ahead-of-disestablishment"
         },
         {
           "title": "RNZ — Te Pūkenga disestablishment continues despite $16.6m surplus",
@@ -811,7 +811,7 @@
         },
         {
           "title": "The Spinoff — Tracking the public sector cuts (Apr 2024)",
-          "url": "https://thespinoff.co.nz/politics/18-04-2024"
+          "url": "https://thespinoff.co.nz/politics/18-04-2024/a-running-tally-of-the-public-sector-job-cuts"
         },
         {
           "title": "1News — 8,700 public service jobs to go (May 2026)",
