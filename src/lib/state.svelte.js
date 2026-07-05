@@ -1,5 +1,5 @@
 /* App state, shareable via URL params:
-   ?view=map|churn|explore|top|method &t=YYYY-MM &govt= &sector= &status= &min= &p= &act= &sec= */
+   ?view=map|churn|explore|top|method|corrections &t=YYYY-MM &govt= &sector= &status= &min= &p= &act= &sec= */
 
 import { dateToFrac, fracToDate, nowFrac, clamp, TIMELINE_FROM } from './format.js';
 
@@ -18,9 +18,13 @@ export const ui = $state({
 
 export const TIMELINE = { from: TIMELINE_FROM, to: nowFrac() };
 
-const VIEWS = ['map', 'churn', 'explore', 'top', 'method'];
+const VIEWS = ['map', 'churn', 'explore', 'top', 'method', 'corrections'];
 
 export function initFromURL() {
+  /* /corrections is a citable entry point; normalise it onto the SPA's query scheme */
+  if (location.pathname.replace(/\/$/, '') === '/corrections') {
+    history.replaceState(null, '', '/?view=corrections');
+  }
   const q = new URLSearchParams(location.search);
   const view = q.get('view');
   if (VIEWS.includes(view)) ui.view = view;

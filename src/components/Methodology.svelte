@@ -3,6 +3,9 @@
      that people actually read it. */
   import { ESSAYS, SERIES_NAME, SERIES_HOME } from '../lib/essays.js';
   import { db } from '../lib/data.svelte.js';
+  import { ui } from '../lib/state.svelte.js';
+
+  const CONTACT = 'jonno.nz@gmail.com';
 </script>
 
 <div class="method">
@@ -22,7 +25,7 @@
         </div>
         <div class="rule">
           <span class="wl-data num">02</span>
-          <p><span class="rh">Exit costs count.</span> Penalties paid to walk away — like iReX's $144m.</p>
+          <p><span class="rh">Exit costs count.</span> Penalties paid to walk away — like the $222m to exit iReX's shipbuild contract.</p>
         </div>
         <div class="rule">
           <span class="wl-data num">03</span>
@@ -81,7 +84,7 @@
       <div class="wl-label" style="margin-bottom:8px">// The three kinds of money</div>
       <div class="spec">
         <div class="specbox solid">
-          <span class="fig-firm" style="font-size:18px">$507.3m <a class="src" style="font-size:9px" href="https://www.rnz.co.nz/news/political/560273" target="_blank" rel="noopener">↗ KiwiRail / RNZ</a></span>
+          <span class="fig-firm" style="font-size:18px">$449.0m <a class="src" style="font-size:9px" href="https://www.1news.co.nz/2025/08/15/how-much-it-cost-to-cancel-irex-ferry-contract-671-million/" target="_blank" rel="noopener">↗ KiwiRail / 1News</a></span>
           <div class="wl-mono speccap">FIRM — sourced, one click to the receipt. The only money that enters totals.</div>
         </div>
         <div class="specbox dashed">
@@ -99,15 +102,15 @@
       <div class="wl-grid eg">
         <div class="wl-cell">
           <div class="wl-label">Sunk</div>
-          <div class="wl-data" style="font-size:15px;margin-top:3px">$507.3m</div>
+          <div class="wl-data" style="font-size:15px;margin-top:3px">$449.0m</div>
         </div>
         <div class="wl-cell">
           <div class="wl-label">Contract exit</div>
-          <div class="wl-data" style="font-size:15px;margin-top:3px">$144.0m</div>
+          <div class="wl-data" style="font-size:15px;margin-top:3px">$222.0m</div>
         </div>
         <div class="wl-cell">
           <div class="wl-label">Counted total</div>
-          <div class="wl-data" style="font-size:15px;margin-top:3px;color:var(--signal)">$651.3m</div>
+          <div class="wl-data" style="font-size:15px;margin-top:3px;color:var(--signal)">$671.0m</div>
         </div>
         <div class="wl-cell">
           <div class="wl-label">"Total incl. maintenance"</div>
@@ -129,6 +132,16 @@
           <a href="https://jonno.nz" target="_blank" rel="noopener">John Gregoriadis</a> — no party, no funder. Data as
           at {db.generated}. Pipeline and data:
           <a href="https://github.com/jonnonz1/whiplash" target="_blank" rel="noopener">github.com/jonnonz1/whiplash</a>.
+        </p>
+      </div>
+
+      <div class="block">
+        <div class="wl-label sig" style="margin-bottom:6px">// Contact &amp; corrections</div>
+        <a class="wl-mono mail" href="mailto:{CONTACT}?subject=Whiplash">{CONTACT}</a>
+        <p class="fine" style="margin-top:8px">
+          Journalists and researchers: questions, data requests, interviews — that address, answered fast. Think a
+          number is wrong? It's handled in the open:
+          <button class="corrlink" onclick={() => (ui.view = 'corrections')}>the corrections log →</button>
         </p>
       </div>
     </div>
@@ -303,6 +316,21 @@
     color: var(--ink-2);
     line-height: 1.7;
     margin: 0 0 8px;
+  }
+
+  .mail {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--signal);
+    word-break: break-all;
+  }
+
+  .corrlink {
+    font-family: var(--font-mono);
+    font-size: 9.5px;
+    color: var(--signal);
+    border-bottom: 1px dotted var(--signal);
   }
 
   @media (max-width: 760px) {

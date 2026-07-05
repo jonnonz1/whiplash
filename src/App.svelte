@@ -9,6 +9,7 @@
   import ChurnExplorer from './components/ChurnExplorer.svelte';
   import TopChangeView from './components/TopChangeView.svelte';
   import Methodology from './components/Methodology.svelte';
+  import Corrections from './components/Corrections.svelte';
   import NationwideTray from './components/NationwideTray.svelte';
   import Scrubber from './components/Scrubber.svelte';
 
@@ -56,6 +57,8 @@
     <ChurnExplorer />
   {:else if ui.view === 'top'}
     <TopChangeView />
+  {:else if ui.view === 'corrections'}
+    <Corrections />
   {:else}
     <Methodology />
   {/if}

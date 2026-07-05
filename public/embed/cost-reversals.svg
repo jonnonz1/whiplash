@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" font-family="Helvetica, Arial, sans-serif">
+  <rect width="800" height="460" fill="#ffffff"/>
+  <text x="64" y="40" font-size="22" font-weight="700" fill="#1a1a1a">Spent, then scrapped</text>
+  <text x="64" y="63" font-size="14" fill="#666">Public money sunk into major projects this government cancelled, $ millions</text>
+
+  <!-- gridlines + y labels (max 700) -->
+  <line x1="120" y1="360" x2="740" y2="360" stroke="#bbbbbb"/>
+  <line x1="120" y1="282.9" x2="740" y2="282.9" stroke="#ececec"/>
+  <line x1="120" y1="205.7" x2="740" y2="205.7" stroke="#ececec"/>
+  <line x1="120" y1="128.6" x2="740" y2="128.6" stroke="#ececec"/>
+  <text x="112" y="364" text-anchor="end" font-size="12" fill="#999">$0</text>
+  <text x="112" y="286.9" text-anchor="end" font-size="12" fill="#999">$200m</text>
+  <text x="112" y="209.7" text-anchor="end" font-size="12" fill="#999">$400m</text>
+  <text x="112" y="132.6" text-anchor="end" font-size="12" fill="#999">$600m</text>
+
+  <!-- iReX 671 -->
+  <rect x="150" y="101.2" width="110" height="258.8" rx="2" fill="#3a3a3a"/>
+  <text x="205" y="93" text-anchor="middle" font-size="15" font-weight="600" fill="#222">$671m</text>
+  <text x="205" y="382" text-anchor="middle" font-size="13" fill="#333">iReX ferries</text>
+  <text x="205" y="400" text-anchor="middle" font-size="12" fill="#888">no ferries delivered</text>
+
+  <!-- Light Rail 228 -->
+  <rect x="375" y="272.1" width="110" height="87.9" rx="2" fill="#3a3a3a"/>
+  <text x="430" y="264" text-anchor="middle" font-size="15" font-weight="600" fill="#222">$228m</text>
+  <text x="430" y="382" text-anchor="middle" font-size="13" fill="#333">Auckland Light Rail</text>
+  <text x="430" y="400" text-anchor="middle" font-size="12" fill="#888">zero metres of track</text>
+
+  <!-- LGWM 181 -->
+  <rect x="600" y="290.2" width="110" height="69.8" rx="2" fill="#3a3a3a"/>
+  <text x="655" y="282" text-anchor="middle" font-size="15" font-weight="600" fill="#222">$181m</text>
+  <text x="655" y="382" text-anchor="middle" font-size="13" fill="#333">Let's Get Wellington Moving</text>
+  <text x="655" y="400" text-anchor="middle" font-size="12" fill="#888">disbanded</text>
+
+  <text x="64" y="427" font-size="12" fill="#999">Money actually spent (sunk + cancellation), about $1.08b in total. Replacements and "would have cost" projections excluded.</text>
+  <text x="64" y="446" font-size="12" fill="#666"><tspan font-weight="700">Source: whiplash.jonno.nz</tspan><tspan fill="#999">&#160;&#183; every figure linked to its receipt</tspan></text>
+</svg>

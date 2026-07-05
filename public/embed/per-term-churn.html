@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-NZ">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Every government churns at about the same rate</title>
+<link rel="canonical" href="https://whiplash.jonno.nz/embed/per-term-churn">
+<style>
+  *{box-sizing:border-box}
+  html,body{margin:0}
+  .chart{
+    max-width:760px;margin:0 auto;padding:8px 4px 4px;background:#fff;color:#1a1a1a;
+    font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  .head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:4px 16px}
+  .title{font-size:clamp(19px,4.4vw,23px);font-weight:700;margin:0;letter-spacing:-.01em}
+  .legend{display:flex;gap:16px;font-size:13px;color:#444;white-space:nowrap}
+  .legend span{display:inline-flex;align-items:center;gap:6px}
+  .legend i{width:13px;height:13px;border-radius:2px;display:inline-block}
+  .sub{font-size:14px;color:#666;margin:4px 0 20px}
+  .plot{display:grid;grid-template-columns:52px 1fr;grid-template-rows:320px auto}
+  .yaxis{grid-row:1;grid-column:1;position:relative}
+  .ylab{position:absolute;right:8px;transform:translateY(50%);font-size:12px;color:#999;white-space:nowrap}
+  .region{grid-row:1;grid-column:2;position:relative}
+  .grid{position:absolute;left:0;right:0;border-top:1px solid #ececec}
+  .grid.base{border-top-color:#bbb}
+  .bars{position:absolute;inset:0;display:flex;align-items:flex-end}
+  .col{flex:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:0}
+  .val{margin-bottom:6px;font-weight:700;font-size:14px;color:#333;white-space:nowrap}
+  .bar{width:64%;max-width:82px;border-radius:3px 3px 0 0}
+  .bar.nat{background:#1f6fb2}
+  .bar.lab{background:#cc2b2b}
+  .bar.partial{background:#1f6fb2;opacity:.5}
+  .xaxis{grid-row:2;grid-column:2;display:flex;padding-top:8px}
+  .xcol{flex:1;text-align:center;padding:0 3px;min-width:0}
+  .xname{font-size:13px;color:#333;line-height:1.25}
+  .xsub{font-size:12px;color:#888;line-height:1.25;margin-top:2px}
+  .note{font-size:12px;color:#999;line-height:1.5;margin:18px 2px 0}
+  .note a{color:#555}
+  .note .src{color:#555;font-weight:700}
+</style>
+</head>
+<body>
+<figure class="chart">
+  <div class="head">
+    <p class="title">Every government churns at about the same rate</p>
+    <div class="legend">
+      <span><i style="background:#1f6fb2"></i>National</span>
+      <span><i style="background:#cc2b2b"></i>Labour</span>
+    </div>
+  </div>
+  <p class="sub">Amendments to Acts by parliamentary term, 2008&ndash;2026</p>
+
+  <div class="plot">
+    <div class="yaxis">
+      <span class="ylab" style="bottom:0%">0</span>
+      <span class="ylab" style="bottom:25.641%">5,000</span>
+      <span class="ylab" style="bottom:51.282%">10,000</span>
+      <span class="ylab" style="bottom:76.923%">15,000</span>
+    </div>
+    <div class="region">
+      <div class="grid base" style="bottom:0%"></div>
+      <div class="grid" style="bottom:25.641%"></div>
+      <div class="grid" style="bottom:51.282%"></div>
+      <div class="grid" style="bottom:76.923%"></div>
+      <div class="bars">
+        <div class="col"><span class="val">13,426</span><div class="bar nat" style="height:68.851%"></div></div>
+        <div class="col"><span class="val">15,144</span><div class="bar nat" style="height:77.662%"></div></div>
+        <div class="col"><span class="val">14,584</span><div class="bar nat" style="height:74.790%"></div></div>
+        <div class="col"><span class="val">17,538</span><div class="bar lab" style="height:89.938%"></div></div>
+        <div class="col"><span class="val">16,818</span><div class="bar lab" style="height:86.246%"></div></div>
+        <div class="col"><span class="val">12,710*</span><div class="bar partial" style="height:65.179%"></div></div>
+      </div>
+    </div>
+    <div class="xaxis">
+      <div class="xcol"><div class="xname">Key</div><div class="xsub">2008&ndash;11</div></div>
+      <div class="xcol"><div class="xname">Key</div><div class="xsub">2011&ndash;14</div></div>
+      <div class="xcol"><div class="xname">Key</div><div class="xsub">2014&ndash;17</div></div>
+      <div class="xcol"><div class="xname">Ardern</div><div class="xsub">2017&ndash;20</div></div>
+      <div class="xcol"><div class="xname">Ardern</div><div class="xsub">2020&ndash;23</div></div>
+      <div class="xcol"><div class="xname">Luxon</div><div class="xsub">2023&ndash;26*</div></div>
+    </div>
+  </div>
+
+  <figcaption class="note">
+    * Current term still in progress (data to mid-2026), so the bar is partial.<br>
+    <span class="src">Source: <a href="https://whiplash.jonno.nz" target="_blank" rel="noopener">whiplash.jonno.nz</a></span> &middot; from 241,456 changes to NZ&rsquo;s Acts and regulations since 1872; chart shows Acts only<br>
+    Take this chart: <a href="per-term-churn.png" download target="_blank">PNG</a> &middot; <a href="per-term-churn.svg" download target="_blank">SVG</a> &middot; <a href="per-term-churn.csv" download target="_blank">CSV</a> &mdash; free to republish with the source line &middot; <a href="mailto:jonno.nz@gmail.com?subject=Whiplash">jonno.nz@gmail.com</a>
+  </figcaption>
+</figure>
+</body>
+</html>

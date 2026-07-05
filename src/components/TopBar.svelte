@@ -9,7 +9,10 @@
     explore: 'the whole statute book',
     top: 'where the churn lands',
     method: 'how we count',
+    corrections: 'when we get it wrong',
   };
+
+  const CONTACT = 'jonno.nz@gmail.com';
 
   let copied = $state(false);
 
@@ -42,8 +45,10 @@
     <button class="wl-tab" class:on={ui.view === 'explore'} onclick={() => go('explore')} aria-current={ui.view === 'explore' ? 'page' : undefined}>⊞ Explore</button>
     <button class="wl-tab" class:on={ui.view === 'top'} onclick={() => go('top')} aria-current={ui.view === 'top' ? 'page' : undefined}>↟ Top 10</button>
     <button class="wl-tab" class:on={ui.view === 'method'} onclick={() => go('method')} aria-current={ui.view === 'method' ? 'page' : undefined}>Method</button>
+    <button class="wl-tab" class:on={ui.view === 'corrections'} onclick={() => go('corrections')} aria-current={ui.view === 'corrections' ? 'page' : undefined}>Corrections</button>
     <a class="wl-tab ext" href={SERIES_HOME} target="_blank" rel="noopener">↗ jonno.nz</a>
   </nav>
+  <a class="wl-pill contact" href="mailto:{CONTACT}?subject=Whiplash" title="Email {CONTACT}">✉ <span class="word">Contact</span></a>
   <button class="wl-pill share" onclick={share}>{copied ? '✓ copied' : '⤴ Share'}</button>
   <span class="sr-only" role="status">{copied ? 'Link copied to clipboard' : ''}</span>
 </header>
@@ -55,6 +60,13 @@
 
   .share {
     flex: none;
+  }
+
+  .contact {
+    flex: none;
+    text-decoration: none;
+    color: var(--signal);
+    border-color: var(--signal);
   }
 
   .ext {
@@ -73,6 +85,26 @@
 
     .ext {
       display: none;
+    }
+
+    .contact .word {
+      display: none;
+    }
+
+    /* tabs scroll; logo and the contact/share pills stay pinned */
+    .nav {
+      flex: 1;
+      min-width: 0;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+
+    .nav::-webkit-scrollbar {
+      display: none;
+    }
+
+    .nav :global(.wl-tab) {
+      flex: none;
     }
 
     :global(.wl-top) {
